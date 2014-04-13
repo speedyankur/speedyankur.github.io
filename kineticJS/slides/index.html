@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=1024, user-scalable=no">
-        <title>Phonegap | HTML5</title>
+        <title>Kinetic | HTML5</title>
         <!-- Required stylesheet -->
         <link rel="stylesheet" href="core/deck.core.css">
         <!-- Extension CSS files go here. Remove or add as needed. -->
@@ -33,110 +33,158 @@
             <!-- Begin slides. Just make elements with a class of slide. -->
 
             <section class="slide">
-                <h2>Phonegap</h2>
-                <img src="images/phonegap-idea.png">
-            </section>
-
-            <section class="slide">
-                <h2>What is Phonegap?</h2>
+                <h2><img src="images/phonegap-idea.png"></h2>
                 <ol>
                     <li class="slide">
-                        <p>PhoneGap is an web-based mobile development framework</p>
+                        <p>KineticJS is an HTML5 Canvas JavaScript framework</p>
+                    </li> 
+                    <li class="slide">
+                        <p>It enables high performance animations, transitions, node nesting, layering, filtering and caching</p>
+                    </li>                                     
+                    <li class="slide">
+                        <p>It enables event handling for desktop and mobile applications,</p>
                     </li>
                     <li class="slide">
-                        <p>Avoiding coading for each mobile platform in native development language like JAVA, Obj C, C/C++</p>
-                    </li>
-                    <li class="slide">
-                        <p>HTML5, CSS3, and JavaScript for cross-platform development</p>
-                    </li>
-
+                        <p>You can draw things onto the stage, add event listeners to them, move them, scale them, and rotate them independently from other shapes to support high performance animations</p>
+                    </li>                 
                 </ol>
             </section>
 
             <section class="slide">
-                <h2>Without phonegap</h2>
-                <img src="images/earlier.png">
-            </section>
-
-            <section class="slide">
-                <h2>And Lets see the Power of Phonegap</h2>
-                <img src="images/now.png">
-            </section>
-
-            <section class="slide">
-                <h2>But why Cross-platform mobile using Phonegap?</h2>
+                <h2>How it Works?</h2>
                 <ol>
                     <li class="slide">
-                        <p>One code base, multiple platforms</p>
+                        <p>Kinetic stage is made up of user defined layers</p>
                     </li>
                     <li class="slide">
-                        <p>Reuse existing web developer skills</p>
-                    </li>
+                        <p>Each layer can contain shapes, groups of shapes, or groups of other groups. The stage, layers, groups, and shapes are virtual nodes, similar to DOM nodes in an HTML page</p>
+                    </li>  
                     <li class="slide">
-                        <p>Shorter learning curve</p>
-                    </li>
-                    <li class="slide">
-                        <p>Faster development</p>
-                    </li>
-                    <li class="slide">
-                        <p>Mobile site and app with same code</p>
-                    </li>
-                    <li class="slide">
-                        <p>Reduced QA efforts</p>
-                    </li>
-                    <li class="slide">
-                        <p>Active and growing community</p>
-                    </li>
+                        <p><img src="images/howItworks.png" /></p>
+                    </li>                                      
+                </ol>
+            </section>
 
+            <section class="slide">
+                <h2>Features</h2>
+                <ol>
+                    <li class="slide">
+                        <p>Object Oriented API</p>
+                    </li>                 
+                    <li class="slide">
+                        <p>Node nesting and event bubbling</p>
+                    </li>                      
+                    <li class="slide">
+                        <p>High performance event detection</p>
+                    </li>                       
+                    <li class="slide">
+                        <p>Layering support</p>
+                    </li>                      
+                    <li class="slide">
+                        <p>Nodes can be converted into data URLs, image data, or image objects</p>
+                    </li>                      
+                    <li class="slide">
+                        <p>Nodes can be converted into data URLs, image data, or image objects</p>
+                    </li>                     
+                    <li class="slide">
+                        <p>Animation and Transition support</p>
+                    </li> 
+                    <li class="slide">
+                        <p>Drag and drop with configurable constraints and bounds</p>
+                    </li> 
+                    <li class="slide">
+                        <p>Ready to use shapes including rectangles, circles, images, text, lines, polygons and custom shapes</p>
+                    </li> 
+                    <li class="slide">
+                        <p>Selector support e.g. stage.get('#foo') and layer.get('.bar')</p>
+                    </li> 
+                    <li class="slide">
+                        <p>Desktop and mobile events</p>
+                    </li>                     
+                    <li class="slide">
+                        <p>Event driven architecture which enables developers to subscribe to attr change events, layer draw events, and more</p>
+                    </li>                                                      
+                    <li class="slide">
+                        <p>And Much more...</p>
+                    </li>                      
+                </ol>
+            </section>
+
+            <section class="slide">
+                <h2>How it Works?</h2>
+                <ol>
+                    <li class="slide">
+                        <p>Kinetic stage is made up of user defined layers</p>
+                    </li>
+                    <li class="slide">
+                        <p>Each layer can contain shapes, groups of shapes, or groups of other groups. The stage, layers, groups, and shapes are virtual nodes, similar to DOM nodes in an HTML page</p>
+                    </li>  
+                    <li class="slide">
+                        <p><img src="images/howItworks.png" /></p>
+                    </li>                                      
                 </ol>
             </section>
             <section class="slide">
-                <h2>Supported platforms</h2>
-                <img src="images/platforms.png">
-            </section>
-            <section class="slide">
-                <h2>Available API</h2>
+                <h2>Core Shapes</h2>
                 <ol>
                     <li class="slide">
-                        <p>Accelerometer : Captures device motion in the x, y, and z direction.</p>
+                        <p>Rectangles, circles, images, text, lines, polygons and custom shapes</p>
                     </li>
                     <li class="slide">
-                        <p>Camera : The camera object provides access to the device's default camera application.</p>
-                    </li>
-                    <li class="slide">
-                        <p>Capture : Record audio and videos</p>
-                    </li>
-                    <li class="slide">
-                        <p>Compass : Obtains the direction that the device is pointing.</p>
-                    </li>
-                    <li class="slide">
-                        <p>Geolocation : The geolocation object provides access to location data based on the device's GPS sensor or inferred from network signals.</p>
-                    </li>
-                    <li class="slide">
-                        <p>Notification : Visual, audible, and tactile device notifications.</p>
-                    </li>
-
-                    <li class="slide">
-                        <p>Contacts : The contacts object provides access to the device contacts database.</p>
-                    </li>
-                    <li class="slide">
-                        <p>Device : The device object describes the device's hardware and software.</p>
-                    </li>
-                    <li class="slide">
-                        <p>Events : deviceready, pause, resume.</p>
-                    </li>
-
+                        <p><a href="http://jsfiddle.net/speedyankur/T5EP7/"  target="_blank">Check this fiddle</a></p>
+                    </li>                                    
                 </ol>
+            </section>
+
+            <section class="slide">
+                <h2>Styles</h2>
+                <ol>
+                    <li class="slide">
+                        <p>Opacity</p>
+                    </li>
+                    <li class="slide">
+                        <p>Fill</p>
+                    </li>
+                    <li class="slide">
+                        <p>Stroke</p>
+                    </li>
+                    <li class="slide">
+                        <p>Shadow</p>
+                    </li>
+
+                    <li class="slide">
+                        <p><a href="http://jsfiddle.net/speedyankur/T5EP7/"  target="_blank">Check this fiddle</a></p>
+                    </li>                                    
+                </ol>
+            </section>
+
+
+            <section class="slide">
+                <h2>Animation</h2>
+                <ul>
+                    <li class="slide">
+                        <p>Use the Kinetic.Animation constructor which takes two arguments</p>
+                    </li>
+                    <li class="slide">
+                        <p>1 Updating function</p>
+                    </li>
+                    <li class="slide">
+                        <p>2 And an optional layer, or array of layers, that will be updated with each animation frame.</p>
+                    </li>
+                    <li class="slide">
+                        <p><a href="http://jsfiddle.net/speedyankur/L5z7x/"  target="_blank">Check this fiddle</a></p>
+                    </li>                                    
+                </ul>
             </section>
 
             <section class="slide">
                 <h2>Thanks...</h2>
                 <ul>
                     <li>
-                        <p><a href="https://github.com/speedyankur/Phonegap-KitchenSink">Github</a></p>
+                        <p><a href="http://speedyankur.github.io/kineticJS/demo/index.html">Demo - http://speedyankur.github.io/kineticJS/demo/index.html</a></p>
                     </li>
                     <li>
-                        <p><a href="http://speedyankur.github.io/">Slides</a></p>
+                        <p><a href="http://speedyankur.github.io/">Slides - http://speedyankur.github.io/</a></p>
                     </li>
                 </ul>
             </section>
