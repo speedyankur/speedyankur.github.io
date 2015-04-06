@@ -92,17 +92,7 @@ $(document).ready(function() {
 
     $('#nav-rsvp a').unbind();
     $('#nav-rsvp a, .rsvp-link').click(function() {
-        if ($('#header').hasClass('open')) {
-            $('#header').animate({
-                top: '-=115'
-            }, 750, 'easeInOutCubic');
-            $('#header').removeClass('open');
-        } else {
-            $('#header').animate({
-                top: '+=115'
-            }, 750, 'easeInOutCubic');
-            $('#header').addClass('open');
-        }
+        $('#rsvp').slideToggle('slow');
         return false;
     });
 

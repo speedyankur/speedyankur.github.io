@@ -44,12 +44,12 @@ p {
   margin: 0 0 15px;
 }
 .fineprint {font-size: 0.7em;}
-#global-wrap {}
+#global-wrap {
+  min-width: 1024px;
+}
 #header {
   background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
   padding: 0 0 13px;
-  position: fixed;
-  top: -115px;
   width: 100%;
   z-index: 100;
 }
@@ -63,6 +63,7 @@ p {
   font-size: 14px;
   text-align: left;
   text-transform: uppercase;
+  display: none;
 }
 #rsvp .inside {
   height: 95px;
@@ -146,7 +147,6 @@ p {
 #menu {
   height: 67px;
   margin: 0 auto;
-  width: 1000px;
 }
 #menu .nav {
   list-style: none outside none;
@@ -279,8 +279,8 @@ p {
   position:relative;
 }
 #section-1 {
-  background: url("../img/banner_2.jpg") no-repeat scroll center 67px #CFCFCF;
-  height: 563px;
+  background: url("../img/banner_2.jpg") no-repeat scroll center #CFCFCF;
+  height: 496px;
   padding-top: 67px;
 
 }
