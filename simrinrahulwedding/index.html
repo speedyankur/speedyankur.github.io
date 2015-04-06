@@ -17,7 +17,7 @@
             <div class="wrap">
                 <div id="rsvp">
                     <div class="inside">
-                        <h2><img src="img/hdr-rsvp.png" alt="rsvp"></h2>
+                        <h2><img src="img/guestbook.png" alt="rsvp" style="margin-top: 18px;"></h2>
                         <form id="rsvp-form" action="javascript:void(0);" method="post">
                             <div class="another-wrap">
                                 <div class="input-wrap">
@@ -30,7 +30,7 @@
                                 </div>
                                 <div class="input-wrap">
                                     <label for="number-attending">Your Message:</label>
-                                    <input class="text" name="guest-message" id="guest-message" type="message" />                                    
+                                    <input class="text" name="guest-message" id="guest-message" type="message" />
                                 </div>
                                 <input class="submit" name="submit" value="Submit" type="submit">
                             </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
         <!-- new block -->
-        <div id="section-about" class="section">
+        <div id="section-about" class="section" >
             <div class="wrap abt-wrap">
                 <div class="abt-coupl">
                     <div class="pad-in">
@@ -78,7 +78,7 @@
             </div>
         </div>
         <!-- first look comliments -->
-        <div id="" class="section m-btm">
+        <div id="" class="section" >
             <div class="wrap try"><img src="img/love_fallin.jpg" alt="section 2" height="" width="">
                 <h1 class="sprite initial-r one"><hr class=""></h1>
                 <h1 class="sprite initial-r two"><hr class=""></h1>
@@ -98,10 +98,19 @@
                 <p class="firstlook eigt-posi txt-rt">when i first looked at her she looked like princess</p>
             </div>
         </div>
+        <div id="section-guestbook" class="m-btm">
+            <h2 class="center-align">
+              <img src="img/guestbook_title.png" /><br/><br/>
+              <img src="img/heart_with_lines.png" /><br/>
+              
+            </h2>
+            <ul id="comments">
+            </ul>
+        </div>
+        <!--END OF id="global-wrap"-->
+        <!-- Scripts-->
+        <div id='messagesDiv'></div>
     </div>
-    <!--END OF id="global-wrap"-->
-    <!-- Scripts-->
-    <div id='messagesDiv'></div>
     <script type="text/javascript" src='js/firebase.js'></script>
     <script type="text/javascript" src="js/jquery.1.11.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>

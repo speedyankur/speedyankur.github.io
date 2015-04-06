@@ -35,7 +35,7 @@ $(document).ready(function() {
       });
     */
 
-    var myDataRef = new Firebase('https://simrinrahul.firebaseio.com/');
+    var myDataRef = new Firebase('https://srwedding.firebaseio.com/');
 
 
 
@@ -47,7 +47,8 @@ $(document).ready(function() {
             myDataRef.push({
                 name: name,
                 location: location,
-                text: text
+                text: text,
+                date: (new Date()).toLocaleString()
             });
             $('#guest-name,#guest-location,#guest-message').val('');
         }
@@ -60,18 +61,20 @@ $(document).ready(function() {
         myDataRef.push({
             name: name,
             location: location,
-            text: text
+            text: text,
+            date: (new Date()).toLocaleString()
         });
         $('#guest-name,#guest-location,#guest-message').val('');
+
     });
     myDataRef.on('child_added', function(snapshot) {
         var message = snapshot.val();
-        displayChatMessage(message.name, message.location, message.text);
+        displayChatMessage(message.name, message.location, message.text, message.date);
     });
 
-    function displayChatMessage(name, location, text) {
-        console.log("name:" + name + ",location:" + location + ",text" + text);
-        $('<div/>').text(text).prepend($('<strong/>').text(location + ': ')).prepend($('<em/>').text(name + ': ')).appendTo($('#messagesDiv'));
+    function displayChatMessage(name, location, text, date) {
+        console.log("name:" + name + ",location:" + location + ",text" + text+ "date:"+date);
+        $('<li/>').html('<div class="comment-hdr"><span class="float-right date">'+date+'</span><h3 class="name">'+name+'</h3><span>'+location+'</span></div><div class="comment-body">'+text+'</div><div class="center-align"><img src="img/heart_with_lines.png" /></div>').appendTo($('#comments'))
     };
     $(function() {
         $('ul.nav a').bind('click', function(event) {
