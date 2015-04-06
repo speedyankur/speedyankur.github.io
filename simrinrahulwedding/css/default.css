@@ -484,19 +484,19 @@ margin-top: 22px;
 .try{position: relative;}
 .try h1{position: absolute; padding: 0;}
 
-.try h1.one{ top: 27px;;}
+.try h1.one{ top: 0px;}
 .try h1.one > hr{width:98px;}
 
-.try h1.two{top: 209px;left: 20px;}
-.try h1.two > hr{width:136px;}
+.try h1.two{top: 153px;left: -4px;}
+.try h1.two > hr{width:130px;}
 
-.try h1.thr{top: 378px;left: 19px;}
-.try h1.thr > hr{width:257px;}
+.try h1.thr{top: 303px;left: 10px;}
+.try h1.thr > hr{width:190px;}
 
 .try h1.four{top: 665px;left: -5px;}
 .try h1.four > hr{width:134px;}
 
-.try h1.fiv{top: 68px;right: 1px;}
+.try h1.fiv{top: 0px;right: 1px;}
 .try h1.fiv > hr{width:108px;}
 
 .try h1.six{top: 202px;right: 39px;}
@@ -520,11 +520,11 @@ margin-top: 22px;
 .initial-g{background:url("../img/s_right.png") no-repeat right;}
 .initial-g1{background-position:106px -369px;}
 .firstlook{position:absolute;width:142px;text-align: left;font-size:14px;line-height: 15px;color:#8D8D8D;}
-.fst-posi{top:58px;left:9px;}
-.secn-posi{top:240px;left:29px;}
-.thd-posi{top:411px;left:29px;}
+.fst-posi{top:33px;left:9px;}
+.secn-posi{top: 186px;left: 5px;}
+.thd-posi{  top: 334px;left: 29px;}
 .frth-posi{top:697px;left:6px;}
-.fiv-posi{top:100px;right:2px;}
+.fiv-posi{top:33px;right:2px;}
 .six-posi{top:236px;right:40px;}
 .sev-posi{top:402px;right:31px;}
 .eigt-posi{top:641px;right:4px;}
