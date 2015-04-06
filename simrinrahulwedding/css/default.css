@@ -532,4 +532,6 @@ margin-top: 22px;
 .cent-marg{margin-right: 47px;}
 .centr-marg1{margin-right: 15px;}
 .m-btm{margin-bottom: 118px;}
-textarea{height: 30px;}
+textarea{height: 31px;
+  line-height: 15px;
+  padding: 0;}
