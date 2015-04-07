@@ -50,13 +50,16 @@ p {
 
 #global-wrap {
     min-width: 1024px;
+    position:relative;
 }
 
 #header {
     background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
     padding: 0 0 13px;
+    position: absolute;
     width: 100%;
     z-index: 100;
+
 }
 
 #header .wrap {
@@ -588,8 +591,8 @@ p {
 
 .abt-coupl p {
     text-align: justify;
-    font-size: 14px;
-    color: #787677;
+    font-size: 15px;
+    color: #646263;
 }
 
 .pad-in {
@@ -608,10 +611,11 @@ p {
 
 .try h1.one {
     top: 0px;
+    left:-6px;
 }
 
 .try h1.one > hr {
-    width: 98px;
+    width: 105px;
 }
 
 .try h1.two {
@@ -633,12 +637,12 @@ p {
 }
 
 .try h1.four {
-    top: 665px;
+    top: 602px;
     left: -5px;
 }
 
 .try h1.four > hr {
-    width: 134px;
+    width: 155px;
 }
 
 .try h1.fiv {
@@ -651,25 +655,25 @@ p {
 }
 
 .try h1.six {
-    top: 202px;
-    right: 39px;
+    top: 146px;
+    right: 2px;
 }
 
 .try h1.six > hr {
-    width: 112px;
+    width: 126px;
 }
 
 .try h1.sev {
-    top: 368px;
-    right: 31px;
+    top: 297px;
+    right: 20px;
 }
 
 .try h1.sev > hr {
-    width: 242px;
+    width: 185px;
 }
 
 .try h1.et {
-    top: 604px;
+    top: 601px;
     right: 2px;
 }
 
@@ -701,51 +705,56 @@ p {
 
 .firstlook {
     position: absolute;
-    width: 142px;
+    width: 144px;
     text-align: left;
     font-size: 14px;
-    line-height: 15px;
-    color: #8D8D8D;
+    line-height: 18px;
+    color: #A9A9A9;
 }
 
 .fst-posi {
-    top: 33px;
-    left: 9px;
+    top: 31px;
+    left: 4px;
 }
 
 .secn-posi {
-    top: 186px;
+    top: 184px;
     left: 5px;
 }
 
 .thd-posi {
-    top: 334px;
-    left: 29px;
+    top: 333px;
+    left: 21px;
+    width:206px;
 }
 
 .frth-posi {
-    top: 697px;
+    top: 633px;
     left: 6px;
+     width:180px;
 }
 
 .fiv-posi {
     top: 33px;
     right: 2px;
+
 }
 
 .six-posi {
-    top: 236px;
-    right: 40px;
+    top: 177px;
+    right: 4px;
 }
 
 .sev-posi {
-    top: 402px;
-    right: 31px;
+    top: 331px;
+    right: 21px;
+    width:206px;
 }
 
 .eigt-posi {
-    top: 641px;
+    top: 635px;
     right: 4px;
+    width:180px;
 }
 
 .txt-rt {
@@ -784,11 +793,11 @@ textarea {
 #section-guestbook ul li {
     padding: 20px 0;
 }
-
-#section-guestbook ul li .name {
-    font-size: 20px;
-    color: #333031;
-    font-weight: bold;
+#section-guestbook ul li .name{
+  font-size: 20px;
+  color: #333031;
+  font-weight: bold;
+  margin-bottom: 2px;
 }
 
 #section-guestbook ul li .location {
@@ -805,11 +814,11 @@ textarea {
     font-style: italic;
     color: #2c76cb;
 }
-
-#section-guestbook ul .comment-body {
-    font-size: 15px;
-    color: #333031;
-    font-weight: normal;
+#section-guestbook ul .comment-body{
+  font-size: 15px;
+  color: #333031;
+  font-weight: normal;
+  margin: 15px 0;
 }
 
 .clear {
