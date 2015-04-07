@@ -75,25 +75,25 @@ $(document).ready(function() {
     });
 
     function displayChatMessage(name, location, text, date) {
-        console.log("name:" + name + ",location:" + location + ",text" + text+ "date:"+date);
-        $('<li/>').html('<div class="comment-hdr"><span class="float-right date">'+date+'</span><h3 class="name">'+name+'</h3><span class="location">'+location+'</span></div><div class="comment-body">'+text+'</div><div class="center-align"><img src="img/heart_with_lines.png" /></div>').appendTo($('#comments'))
+        console.log("name:" + name + ",location:" + location + ",text" + text + "date:" + date);
+        $('<li/>').html('<div class="comment-hdr"><span class="float-right date">' + date + '</span><h3 class="name">' + name + '</h3><span class="location">' + location + '</span></div><div class="comment-body">' + text + '</div><div class="center-align"><img src="img/heart_with_lines.png" /></div>').appendTo($('#comments'))
     };
-    $(function() {
-        $('ul.nav a').bind('click', function(event) {
-            var $anchor = $(this);
 
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1500, 'easeInOutExpo');
-            /*
-            if you don't want to use the easing effects:
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top
-            }, 1000);
-            */
-            event.preventDefault();
-        });
+    $('ul.nav a').bind('click', function(event) {
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        event.preventDefault();
     });
+
 
     $('#nav-rsvp a').unbind();
     $('#nav-rsvp a, .rsvp-link').click(function() {

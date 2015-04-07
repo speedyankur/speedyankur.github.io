@@ -366,9 +366,9 @@ p {
 #section-3 {}
 
 #section-3 .slideshow {
-    background: url("../img/bg-photo-frame.png") no-repeat scroll 0 0 transparent;
+    box-shadow: 0 0 10px #eee;    
     height: 505px;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 30px;
     width: 853px;
 }
