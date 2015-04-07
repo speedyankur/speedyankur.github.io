@@ -67,6 +67,9 @@ $(document).ready(function() {
             date: stringDate
         });
         $('#guest-name,#guest-location,#guest-message').val('');
+        $('#close_x').click();
+        alert("Thanks for your Wishes.");
+
 
     });
     myDataRef.on('child_added', function(snapshot) {
