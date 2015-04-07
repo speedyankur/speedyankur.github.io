@@ -632,12 +632,12 @@ p {
 }
 
 .try h1.four {
-    top: 665px;
+    top: 602px;
     left: -5px;
 }
 
 .try h1.four > hr {
-    width: 134px;
+    width: 155px;
 }
 
 .try h1.fiv {
@@ -650,25 +650,25 @@ p {
 }
 
 .try h1.six {
-    top: 202px;
-    right: 39px;
+    top: 146px;
+    right: 2px;
 }
 
 .try h1.six > hr {
-    width: 112px;
+    width: 126px;
 }
 
 .try h1.sev {
-    top: 368px;
-    right: 31px;
+    top: 297px;
+    right: 20px;
 }
 
 .try h1.sev > hr {
-    width: 242px;
+    width: 185px;
 }
 
 .try h1.et {
-    top: 604px;
+    top: 601px;
     right: 2px;
 }
 
@@ -708,22 +708,22 @@ p {
 }
 
 .fst-posi {
-    top: 33px;
+    top: 31px;
     left: 9px;
 }
 
 .secn-posi {
-    top: 186px;
+    top: 184px;
     left: 5px;
 }
 
 .thd-posi {
-    top: 334px;
-    left: 29px;
+    top: 333px;
+    left: 21px;
 }
 
 .frth-posi {
-    top: 697px;
+    top: 633px;
     left: 6px;
 }
 
@@ -733,17 +733,17 @@ p {
 }
 
 .six-posi {
-    top: 236px;
-    right: 40px;
+    top: 177px;
+    right: 4px;
 }
 
 .sev-posi {
-    top: 402px;
-    right: 31px;
+    top: 331px;
+    right: 21px;
 }
 
 .eigt-posi {
-    top: 641px;
+    top: 635px;
     right: 4px;
 }
 
