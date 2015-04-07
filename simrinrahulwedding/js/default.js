@@ -190,6 +190,12 @@ $(document).ready(function() {
 
     $('#section-5 .slideshow-control').width(($('#section-5 .slideshow-control li').length * 30) + 'px');
 
-
+    $(function(){
+        var lastScroll = $(document).scrollTop();
+        $(window).scroll(function(e) {
+            var newScroll = $(document).scrollTop();
+            $("#header").css("top", newScroll)
+        });
+    });
 
 });

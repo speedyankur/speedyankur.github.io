@@ -49,13 +49,16 @@ p {
 
 #global-wrap {
     min-width: 1024px;
+    position:relative;
 }
 
 #header {
     background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
     padding: 0 0 13px;
+    position: absolute;
     width: 100%;
     z-index: 100;
+
 }
 
 #header .wrap {
@@ -792,6 +795,7 @@ textarea {
   font-size: 20px;
   color: #333031;
   font-weight: bold;
+  margin-bottom: 2px;
 }
 #section-guestbook ul li .location{
   font-size: 14px;
@@ -809,10 +813,17 @@ textarea {
   font-size: 15px;
   color: #333031;
   font-weight: normal;
+  margin: 15px 0;
 }
 .clear{
   clear:both;
 }
 .float-right{
   float: right;
+}
+
+
+@media screen and (min-width:1024px){
+
+
 }
