@@ -909,11 +909,11 @@ textarea {
 }
 
 #actions {
+    
     float: left;
     position: absolute;
-    right: 0;
-    height: 31px;
-    bottom: 20px;
+    right: 5px;
+    bottom: 12px;
 }
 
 a.form_button {
@@ -963,4 +963,17 @@ a.form_button {
     background-position: -323px -172px;
     width: 67px;
     height: 22px;
+}
+
+#submit-guestbook{
+    background: url(../img/submit.png) no-repeat;
+    border: none;
+    width: 111px;
+    height: 41px;
+    outline: none;
+    cursor: pointer;
+}
+#submit-guestbook:hover{
+    background: url(../img/submit.png) no-repeat;
+    background-position: 0px -45px;
 }
