@@ -54,15 +54,17 @@ $(document).ready(function() {
         }
     });
     // GuestBook form Form Submit
-    $('#rsvp .submit').click(function() {
+    $('#guestBookForm').submit(function() {
         var name = $('#guest-name').val();
         var location = $('#guest-location').val();
         var text = $('#guest-message').val();
+        var date = new Date();
+        var stringDate = date.format('M j, Y H:i')
         myDataRef.push({
             name: name,
             location: location,
             text: text,
-            date: (new Date()).toLocaleString()
+            date: stringDate
         });
         $('#guest-name,#guest-location,#guest-message').val('');
 
@@ -74,7 +76,7 @@ $(document).ready(function() {
 
     function displayChatMessage(name, location, text, date) {
         console.log("name:" + name + ",location:" + location + ",text" + text+ "date:"+date);
-        $('<li/>').html('<div class="comment-hdr"><span class="float-right date">'+date+'</span><h3 class="name">'+name+'</h3><span>'+location+'</span></div><div class="comment-body">'+text+'</div><div class="center-align"><img src="img/heart_with_lines.png" /></div>').appendTo($('#comments'))
+        $('<li/>').html('<div class="comment-hdr"><span class="float-right date">'+date+'</span><h3 class="name">'+name+'</h3><span class="location">'+location+'</span></div><div class="comment-body">'+text+'</div><div class="center-align"><img src="img/heart_with_lines.png" /></div>').appendTo($('#comments'))
     };
     $(function() {
         $('ul.nav a').bind('click', function(event) {
@@ -95,7 +97,8 @@ $(document).ready(function() {
 
     $('#nav-rsvp a').unbind();
     $('#nav-rsvp a, .rsvp-link').click(function() {
-        $('#rsvp').slideToggle('slow');
+        $('#sign_up').lightbox_me();
+        //$('#rsvp').slideToggle('slow');
         return false;
     });
 

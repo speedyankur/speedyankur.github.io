@@ -28,7 +28,8 @@
 
 body {
     background: url("../img/bg-footer.jpg") no-repeat scroll center bottom transparent;
-    font-family: 'open sans';;
+    font-family: 'open sans';
+    ;
     padding-bottom: 275px;
 }
 
@@ -779,34 +780,178 @@ textarea {
     margin: 10px 75px;
     list-style: none;
 }
-#section-guestbook ul li{
+
+#section-guestbook ul li {
     padding: 20px 0;
 }
-#section-guestbook ul li .name{
-  font-size: 20px;
-  color: #333031;
-  font-weight: bold;
+
+#section-guestbook ul li .name {
+    font-size: 20px;
+    color: #333031;
+    font-weight: bold;
 }
-#section-guestbook ul li .location{
-  font-size: 14px;
-  color: #333031;
-  font-weight: 300;
+
+#section-guestbook ul li .location {
+    font-size: 14px;
+    color: #333031;
+    font-weight: 300;
 }
-#section-guestbook ul .comment-hdr{
-  margin: 5px 0;
+
+#section-guestbook ul .comment-hdr {
+    margin: 5px 0;
 }
-#section-guestbook ul .comment-hdr .date{
-  font-style: italic;
-  color: #2c76cb;
+
+#section-guestbook ul .comment-hdr .date {
+    font-style: italic;
+    color: #2c76cb;
 }
-#section-guestbook ul .comment-body{
-  font-size: 15px;
-  color: #333031;
-  font-weight: normal;
+
+#section-guestbook ul .comment-body {
+    font-size: 15px;
+    color: #333031;
+    font-weight: normal;
 }
-.clear{
-  clear:both;
+
+.clear {
+    clear: both;
 }
-.float-right{
-  float: right;
+
+.float-right {
+    float: right;
+}
+
+#guestbook-container {
+    display: none;
+}
+
+.required {
+    color: red;
+}
+
+#sign_up {
+    -moz-border-radius: 0px;
+    background: #fff;
+    -webkit-border-radius: 0px;
+    border: 1px solid #536376;
+    -webkit-box-shadow: rgba(0, 0, 0, .6) 0px 2px 12px;
+    -moz-box-shadow: rgba(0, 0, 0, .6) 0px 2px 12px;
+    ;
+    padding: 14px 22px;
+    width: 400px;
+    position: relative;
+    display: none;
+}
+
+#sign_up .header {
+    font-size: 22px;
+    margin: 10px 0;
+}
+#sign_up .notes{
+      font-size: 13px;
+}
+
+#sign_up #sign_up_form {
+    margin-top: 13px;
+}
+
+#sign_up label {
+    display: block;
+    margin-bottom: 10px;
+    color: #536376;
+    font-size: .9em;
+}
+
+#sign_up label input {
+    display: block;
+    width: 393px;
+    height: 31px;
+    background-position: -201px 0;
+    padding: 2px 0;
+    font-size: 1.2em;
+    line-height: 31px;
+}
+
+#sign_up label textarea {
+    display: block;
+    width: 393px;
+    height: 62px;
+    padding: 2px 0;
+    font-size: 1.2em;
+    line-height: 31px;
+}
+
+#see_id {
+    width: 228px;
+    height: 23px;
+    background-position: -202px -133px;
+}
+
+#left_out {
+    background-position: -202px -158px;
+    width: 113px;
+    height: 16px;
+}
+
+#sign_up_form {
+    position: relative;
+    background: url(divider.png) repeat-x bottom left;
+    padding-bottom: 54px;
+    margin-bottom: 12px;
+}
+
+#actions {
+    float: left;
+    position: absolute;
+    right: 0;
+    height: 31px;
+    bottom: 20px;
+}
+
+a.form_button {
+    float: left;
+    width: 93px;
+    height: 31px;
+    margin-right: 15px;
+}
+
+#cancel {
+    background-position: -198px -36px;
+}
+
+#log_in {
+    background-position: -291px -36px;
+}
+
+#cancel:hover {
+    background-position: -198px -67px;
+}
+
+#cancel:active {
+    background-position: -198px -98px;
+}
+
+#log_in:hover {
+    background-position: -291px -67px;
+}
+
+#log_in:active {
+    background-position: -291px -98px;
+}
+
+#close_x {
+    width: 26px;
+    height: 26px;
+    overflow: hidden;
+    line-height: 1000px;
+    display: block;
+    position: absolute;
+    top: -13px;
+    right: -8px;
+    background: url(../img/close_icn.png);
+}
+
+#usage {
+    background-position: -323px -172px;
+    width: 67px;
+    height: 22px;
 }

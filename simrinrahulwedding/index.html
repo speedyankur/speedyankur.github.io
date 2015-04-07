@@ -9,34 +9,66 @@
     <!-- Stylesheets-->
     <link type="text/css" rel="stylesheet" media="all" href="css/reset.css">
     <link type="text/css" rel="stylesheet" media="all" href="css/default.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
 </head>
 
 <body>
+    <div id="sign_up">
+        <form action="javascript:void(0);" method="post" name="guestBookForm" id="guestBookForm">
+            <div class="center-align">
+                <h3 class="center-align header" >Sign into GuestBook</h3>
+                <img src="img/heart_with_lines.png" />
+            </div>
+            <div id="sign_up_form">
+                <label><strong>Name <span class="required">*</span></strong>
+                    <input class="sprited" name="guest-name" id="guest-name" type="text" required>
+                </label>
+                <label><strong>Location <span class="required">*</span></strong>
+                    <input required class="sprited" name="guest-location" id="guest-location" type="text">
+                </label>
+                <label><strong>Message <span class="required">*</span></strong>
+                    <textarea class="sprited" name="guest-message" id="guest-message" required></textarea>
+                </label>
+                <div id="actions">
+                    
+                    <input id="submit-guestbook" name="submit" value="Submit" type="submit" />
+                </div>
+            </div>
+        </form>
+        <span class="notes">
+            If you have any questions feel free to reach out to :  
+            <a href="mailto:rahulandsimrin@gmail.com">rahulandsimrin@gmail.com</a>
+        </span>
+        <a id="close_x" class="close sprited" href="#">close</a>
+        <!--
+
+        <form id="rsvp-form" action="javascript:void(0);" method="post">
+            <div class="another-wrap">
+                <div class="input-wrap">
+                    <label for="name">Name:</label>
+                    <input class="text" name="guest-name" id="guest-name" type="text">
+                </div>
+                <div class="input-wrap">
+                    <label for="guest-names">Location:</label>
+                    <input class="text" name="guest-location" id="guest-location" type="text" />
+                </div>
+                <div class="input-wrap">
+                    <label for="number-attending">Your Message:</label>
+                    <input class="text" name="guest-message" id="guest-message" type="message" />
+                </div>
+                <input class="submit" name="submit" value="Submit" type="submit">
+            </div>
+            <p><span style="color:#000000;">If you have any questions feel free to reach out to : </span> <a href="mailto:rahulandsimrin@gmail.com">rahulandsimrin@gmail.com</a>
+            </p>
+        </form>
+    -->
+    </div>
     <div id="global-wrap">
         <div id="header">
             <div class="wrap">
                 <div id="rsvp">
                     <div class="inside">
                         <h2><img src="img/guestbook.png" alt="rsvp" style="margin-top: 18px;"></h2>
-                        <form id="rsvp-form" action="javascript:void(0);" method="post">
-                            <div class="another-wrap">
-                                <div class="input-wrap">
-                                    <label for="name">Name:</label>
-                                    <input class="text" name="guest-name" id="guest-name" type="text">
-                                </div>
-                                <div class="input-wrap">
-                                    <label for="guest-names">Location:</label>
-                                    <input class="text" name="guest-location" id="guest-location" type="text" />
-                                </div>
-                                <div class="input-wrap">
-                                    <label for="number-attending">Your Message:</label>
-                                    <input class="text" name="guest-message" id="guest-message" type="message" />
-                                </div>
-                                <input class="submit" name="submit" value="Submit" type="submit">
-                            </div>
-                            <p><span style="color:#000000;">If you have any questions feel free to reach out to : </span> <a href="mailto:rahulandsimrin@gmail.com">rahulandsimrin@gmail.com</a>
-                            </p>
-                        </form>
                         <a href="#rsvp" class="rsvp-link">Close</a>
                     </div>
                 </div>
@@ -54,6 +86,7 @@
             </div>
         </div>
         <!--END OF id="header"-->
+        <br/><br/><br/>
         <div id="section-1" class="section">
             <div class="wrap">
                 <a href="#rsvp" class="insta"></a>
@@ -61,7 +94,7 @@
             </div>
         </div>
         <!-- new block -->
-        <div id="section-about" class="section" >
+        <div id="section-about" class="section">
             <div class="wrap abt-wrap">
                 <div class="abt-coupl">
                     <div class="pad-in">
@@ -78,7 +111,7 @@
             </div>
         </div>
         <!-- first look comliments -->
-        <div id="" class="section" >
+        <div id="" class="section">
             <div class="wrap try"><img src="img/love_fallin.jpg" alt="section 2" height="" width="">
                 <h1 class="sprite initial-r one"><hr class=""></h1>
                 <h1 class="sprite initial-r two"><hr class=""></h1>
@@ -116,6 +149,8 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/jquery_002.js"></script>
     <script type="text/javascript" src="js/default.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox_me.js"></script>
+    <script type="text/javascript" src="js/date.format.js"></script>
 </body>
 
 </html>
