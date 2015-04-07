@@ -912,9 +912,8 @@ textarea {
     
     float: left;
     position: absolute;
-    right: 0;
-    height: 31px;
-    bottom: 20px;
+    right: 5px;
+    bottom: 12px;
 }
 
 a.form_button {
@@ -969,7 +968,7 @@ a.form_button {
 #submit-guestbook{
     background: url(../img/submit.png) no-repeat;
     border: none;
-    width: 115px;
+    width: 111px;
     height: 41px;
     outline: none;
     cursor: pointer;
