@@ -587,8 +587,8 @@ p {
 
 .abt-coupl p {
     text-align: justify;
-    font-size: 14px;
-    color: #787677;
+    font-size: 15px;
+    color: #646263;
 }
 
 .pad-in {
@@ -607,10 +607,11 @@ p {
 
 .try h1.one {
     top: 0px;
+    left:-6px;
 }
 
 .try h1.one > hr {
-    width: 98px;
+    width: 105px;
 }
 
 .try h1.two {
@@ -700,16 +701,16 @@ p {
 
 .firstlook {
     position: absolute;
-    width: 142px;
+    width: 144px;
     text-align: left;
     font-size: 14px;
-    line-height: 15px;
-    color: #8D8D8D;
+    line-height: 18px;
+    color: #A9A9A9;
 }
 
 .fst-posi {
     top: 31px;
-    left: 9px;
+    left: 4px;
 }
 
 .secn-posi {
@@ -720,16 +721,19 @@ p {
 .thd-posi {
     top: 333px;
     left: 21px;
+    width:206px;
 }
 
 .frth-posi {
     top: 633px;
     left: 6px;
+     width:180px;
 }
 
 .fiv-posi {
     top: 33px;
     right: 2px;
+
 }
 
 .six-posi {
@@ -740,11 +744,13 @@ p {
 .sev-posi {
     top: 331px;
     right: 21px;
+    width:206px;
 }
 
 .eigt-posi {
     top: 635px;
     right: 4px;
+    width:180px;
 }
 
 .txt-rt {
