@@ -316,15 +316,16 @@ p {
 }
 
 .section {
-    background: url("../img/bg-section.png") repeat-x scroll 0 396px transparent;
     padding: 50px 0 50px;
     position: relative;
+    padding-bottom: 0;
 }
 
 #section-1 {
     background: url("../img/banner_2.jpg") no-repeat scroll center #CFCFCF;
     height: 496px;
     padding-top: 67px;
+    padding-bottom: 50px;
 }
 
 #section-1 .wrap {
