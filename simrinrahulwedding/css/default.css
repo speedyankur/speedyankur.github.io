@@ -176,7 +176,7 @@ p {
 #menu .nav li {
     display: inline;
     float: left;
-    margin: 22px 70px 0 0;
+    margin: 22px 50px 0 0;
 }
 
 #menu .nav li.last {
@@ -225,9 +225,9 @@ p {
     width: 29px;
 }
 
-#menu #nav-rsvp a {
-    background: url("../img/bg-menu.png") no-repeat scroll -840px -22px transparent;
-    width: 27px;
+#menu #nav-guestbook a {
+    background: url("../img/bg-menu.png") no-repeat scroll -761px -22px transparent;
+  width: 60px;
 }
 /* Generic slideshow styles */
 
@@ -374,6 +374,9 @@ p {
     padding: 30px;
     width: 853px;
 }
+#section-8 .slideshow{
+    height: 505px;
+}
 
 #section-3 .slideshow li,#section-8 .slideshow li {
     height: 580px;
@@ -382,6 +385,7 @@ p {
 }
 #section-8 .slideshow li{
     background: #EDEDED url("../img/circleWWH.png") no-repeat 22px 36px;
+    height: 505px;
 }
 /* Groomsmen & Bridesmaids */
 
@@ -422,7 +426,7 @@ p {
 #section-4 .slideshow .photo,
 #section-5 .slideshow .photo {
     bottom: 0;
-    left: 50px;
+    left: 15px;
     position: absolute;
 }
 
@@ -500,16 +504,13 @@ p {
 #section-5 .slideshow .item-2 .photo {}
 
 #section-5 .slideshow .item-3 .photo {
-    left: 0px;
 }
 
 #section-5 .slideshow .item-4 .photo {
-    left: 30px;
 }
 
 #section-5 .slideshow .item-5 .photo {
-    bottom: 110px;
-    left: 0px;
+
 }
 
 #section-5 .slideshow .item-6 .photo {}
@@ -688,12 +689,12 @@ p {
 }
 
 .try h1.initial-r > hr {
-    border-top: 1px solid #CBCBCB;
+    border-top: 1px solid #000;
     margin-left: 49px;
 }
 
 .try h1.initial-g > hr {
-    border-top: 1px solid #CBCBCB;
+    border-top: 1px solid #000;
     margin-right: 44px;
 }
 

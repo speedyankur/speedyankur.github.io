@@ -203,11 +203,11 @@ $(document).ready(function() {
         animation: 500,
         easing: 'easeInOutSine',
         wrap: 'last',
-        initCallback: brides_initCallback,
-        itemVisibleInCallback: brides_activeSlide,
+        initCallback: www_initCallback,
+        itemVisibleInCallback: www_activeSlide,
     });
 
-    function brides_initCallback(carousel) {
+    function www_initCallback(carousel) {
         $('#section-8 .slideshow-control li').bind('click', function() {
             $('#section-8 .slideshow-control li').removeClass('active');
             $(this).addClass('active');
@@ -217,7 +217,7 @@ $(document).ready(function() {
         });
     };
 
-    function brides_activeSlide(carousel, object, intval, state) {
+    function www_activeSlide(carousel, object, intval, state) {
         intval--;
         $('#section-8 .slideshow-control li').removeClass('active');
         $('#section-8 .slideshow-control li:eq(' + intval + ')').addClass('active');
