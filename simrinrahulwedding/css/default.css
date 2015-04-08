@@ -236,9 +236,9 @@ p {
     cursor: pointer;
     display: block;
     height: 45px;
-    left: -20px;
+    left: -30px;
     position: absolute;
-    top: 230px;
+    top: 270px;
     width: 23px;
     z-index: 2;
 }
@@ -259,9 +259,9 @@ p {
     cursor: pointer;
     display: block;
     height: 45px;
-    right: -20px;
+    right: -30px;
     position: absolute;
-    top: 230px;
+    top: 270px;
     width: 23px;
     z-index: 2;
 }
@@ -316,7 +316,6 @@ p {
 }
 
 .section {
-    background: url("../img/bg-section.png") repeat-x scroll 0 396px transparent;
     padding: 50px 0 50px;
     position: relative;
     padding-bottom: 0;
@@ -369,15 +368,15 @@ p {
 #section-3 {}
 
 #section-3 .slideshow,#section-8 .slideshow{  
-    background: url("../img/bg-photo-frame3.png") no-repeat scroll 0 0 transparent;
-    height: 505px;
+    box-shadow: 0 0 21px #eee;    
+    height: 570px;
     margin: 10px auto;
     padding: 30px;
     width: 853px;
 }
 
 #section-3 .slideshow li,#section-8 .slideshow li {
-    height: 505px;
+    height: 580px;
     list-style: none outside none;
     width: 853px;
 }
@@ -1004,4 +1003,7 @@ a.form_button {
 #section-8 li.whr_dtail > .where-details p,li.how_dtail > .how-details p{
     font-size: 14px;
     margin-top: 10px;
+}
+#section-3 .jcarousel-item img{
+    width:100%;
 }
