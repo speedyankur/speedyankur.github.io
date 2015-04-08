@@ -164,6 +164,8 @@ $(document).ready(function() {
 
     }
 
+    $('#section-4 .slideshow-control').width(($('#section-4 .slideshow-control li').length * 30) + 'px');
+
 
     // Bridesmaids Slideshow
     $('#section-5 .slideshow').jcarousel({
