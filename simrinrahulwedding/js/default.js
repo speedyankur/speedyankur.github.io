@@ -196,6 +196,37 @@ $(document).ready(function() {
 
     $('#section-5 .slideshow-control').width(($('#section-5 .slideshow-control li').length * 30) + 'px');
 
+    //When/Where/How Slideshow
+
+    $('#section-8 .slideshow').jcarousel({
+        scroll: 1,
+        animation: 500,
+        easing: 'easeInOutSine',
+        wrap: 'last',
+        initCallback: brides_initCallback,
+        itemVisibleInCallback: brides_activeSlide,
+    });
+
+    function brides_initCallback(carousel) {
+        $('#section-8 .slideshow-control li').bind('click', function() {
+            $('#section-8 .slideshow-control li').removeClass('active');
+            $(this).addClass('active');
+            carousel.scroll($.jcarousel.intval($(this).text()));
+
+            return false;
+        });
+    };
+
+    function brides_activeSlide(carousel, object, intval, state) {
+        intval--;
+        $('#section-8 .slideshow-control li').removeClass('active');
+        $('#section-8 .slideshow-control li:eq(' + intval + ')').addClass('active');
+
+    }
+
+    $('#section-8 .slideshow-control').width(($('#section-8 .slideshow-control li').length * 30) + 'px');
+
+
     var lastScroll = $(document).scrollTop();
     $(window).scroll(function(e) {
         var newScroll = $(document).scrollTop();

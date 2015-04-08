@@ -365,17 +365,21 @@ p {
 
 #section-3 {}
 
-#section-3 .slideshow {  
+#section-3 .slideshow,#section-8 .slideshow{  
+    background: url("../img/bg-photo-frame3.png") no-repeat scroll 0 0 transparent;
     height: 505px;
     margin: 10px auto;
     padding: 30px;
     width: 853px;
 }
 
-#section-3 .slideshow li {
+#section-3 .slideshow li,#section-8 .slideshow li {
     height: 505px;
     list-style: none outside none;
     width: 853px;
+}
+#section-8 .slideshow li{
+    background: #EDEDED url("../img/circleWWH.png") no-repeat 22px 36px;
 }
 /* Groomsmen & Bridesmaids */
 
@@ -401,6 +405,7 @@ p {
     position: relative;
     width: 770px;
 }
+
 
 #section-4 .slideshow .jcarousel-prev,
 #section-5 .slideshow .jcarousel-prev {
@@ -975,4 +980,25 @@ a.form_button {
 #submit-guestbook:hover{
     background: url(../img/submit.png) no-repeat;
     background-position: 0px -45px;
+}
+
+#section-8 li{
+   position: relative;
+}
+#section-8 li.whr_dtail > .where-details,li.how_dtail > .how-details{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    text-align: center;
+    border-radius: 50%;
+    width: 385px;
+    height: 385px;
+    
+}
+#section-8 li.whr_dtail > .where-details h3,li.how_dtail > .how-details h3{
+    margin-top: 155px;
+}
+#section-8 li.whr_dtail > .where-details p,li.how_dtail > .how-details p{
+    font-size: 14px;
+    margin-top: 10px;
 }
