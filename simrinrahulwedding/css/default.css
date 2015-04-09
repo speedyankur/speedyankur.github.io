@@ -176,7 +176,7 @@ p {
 #menu .nav li {
     display: inline;
     float: left;
-    margin: 22px 50px 0 0;
+    margin: 22px 52px 0 0;
 }
 
 #menu .nav li.last {
@@ -316,7 +316,7 @@ p {
 }
 
 .section {
-    padding: 50px 0 50px;
+    padding: 110px 0 50px;
     position: relative;
     padding-bottom: 0;
 }
@@ -327,7 +327,7 @@ p {
     padding-top: 67px;
    /* padding-bottom: 50px;*/
 }
-
+#section-3,#section-4,#section-5{background: url("../img/bg-section.png") repeat-x scroll 0 396px transparent;}
 #section-1 .wrap {
     padding: 420px 0 22px;
     position: static;
@@ -384,7 +384,7 @@ p {
     width: 853px;
 }
 #section-8 .slideshow li{
-    background: #EDEDED url("../img/circleWWH.png") no-repeat 22px 36px;
+    background: transparent url("../img/circleWWH.png") no-repeat 22px 36px;
     height: 505px;
 }
 /* Groomsmen & Bridesmaids */
@@ -495,7 +495,7 @@ p {
 
 #section-5 .slideshow-control li:hover,
 #section-5 .slideshow-control li.active {
-    background-position: 0 -40px;
+    background-position: 0 -41px;
     color: #ffffff;
 }
 
@@ -716,7 +716,7 @@ p {
     text-align: left;
     font-size: 14px;
     line-height: 18px;
-    color: #A9A9A9;
+    color: #646263;
 }
 
 .fst-posi {
@@ -851,7 +851,6 @@ textarea {
     border: 1px solid #536376;
     -webkit-box-shadow: rgba(0, 0, 0, .6) 0px 2px 12px;
     -moz-box-shadow: rgba(0, 0, 0, .6) 0px 2px 12px;
-    ;
     padding: 14px 22px;
     width: 400px;
     position: relative;
