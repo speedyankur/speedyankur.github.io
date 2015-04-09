@@ -230,7 +230,8 @@ $(document).ready(function() {
     var lastScroll = $(document).scrollTop();
     $(window).scroll(function(e) {
         var newScroll = $(document).scrollTop();
-        $("#header").css("top", newScroll)
+       // $("#header").css("top", newScroll);
+
     });
 
 

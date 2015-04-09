@@ -56,11 +56,15 @@ p {
 #header {
     background: url("../img/bg-menu-shadow.png") repeat-x scroll center bottom transparent;
     padding: 0 0 13px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 100;
+    -webkit-transition-property: top;
+    -webkit-transition-duration: 0.8s;
 
 }
+
+
 
 #header .wrap {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -1006,4 +1010,41 @@ a.form_button {
 }
 #section-3 .jcarousel-item img{
     width:100%;
+}
+@media (max-width: 320px){
+     #menu .nav li {
+    margin: 14px 21px 0 0;
+    }
+    #menu .nav li#nav-info,#menu .nav li#nav-guestbook,#menu .nav li#nav-bridesmaid{ margin: 1px 21px 0 0;}
+    .wrap{padding: 0 9px 15px;
+    }
+    #menu .nav {
+        overflow: initial;
+        width: auto;
+    }
+}
+@media (min-width: 321px) and (max-width: 360px){
+     #menu .nav li {
+    margin: 14px 24px 0 0;
+    }
+    #menu .nav li#nav-info,#menu .nav li#nav-guestbook,#menu .nav li#nav-bridesmaid{ margin: 1px 24px 0 0;}
+    .wrap{padding: 0 8px 15px;
+    }
+    #menu .nav {
+        overflow: initial;
+        width: auto;
+    }
+
+}
+
+@media (min-width: 361px) and (max-width: 640px) {
+ /*Iphone portrait and smaller*/
+        #menu .nav li {
+            margin: 21px 25px 0 0;
+        }
+        .wrap{padding: 0 10px 15px;}
+    #menu .nav {
+        overflow: initial;
+        width: auto;
+    }
 }
