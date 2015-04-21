@@ -622,7 +622,7 @@ p {
 
 .try h1.one {
     top: 0px;
-    left:-6px;
+    left:1px;
 }
 
 .try h1.one > hr {
@@ -631,7 +631,7 @@ p {
 
 .try h1.two {
     top: 153px;
-    left: -4px;
+    left: 1px;
 }
 
 .try h1.two > hr {
@@ -640,7 +640,7 @@ p {
 
 .try h1.thr {
     top: 303px;
-    left: 10px;
+    left: 1px;
 }
 
 .try h1.thr > hr {
@@ -649,7 +649,7 @@ p {
 
 .try h1.four {
     top: 602px;
-    left: -5px;
+    left: 1px;
 }
 
 .try h1.four > hr {
@@ -697,7 +697,7 @@ p {
     margin-left: 49px;
 }
 
-.try h1.initial-g > hr {
+.try h1.initial-s > hr {
     border-top: 1px solid #000;
     margin-right: 44px;
 }
@@ -705,13 +705,10 @@ p {
 .initial-r {
     background-position: -4px -369px;
 }
+.r-img{background: url("../img/r-img.png") no-repeat left;}
 
-.initial-g {
+.initial-s {
     background: url("../img/s_right.png") no-repeat right;
-}
-
-.initial-g1 {
-    background-position: 106px -369px;
 }
 
 .firstlook {
@@ -1048,3 +1045,4 @@ a.form_button {
         width: auto;
     }
 }
+
