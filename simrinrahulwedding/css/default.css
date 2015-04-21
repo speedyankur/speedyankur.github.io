@@ -613,6 +613,7 @@ p {
 
 .try {
     position: relative;
+    width:1112px;
 }
 
 .try h1 {
@@ -621,39 +622,40 @@ p {
 }
 
 .try h1.one {
-    top: 0px;
-    left:1px;
+    top: 0;
+    left: 1px;
 }
 
+
 .try h1.one > hr {
-    width: 105px;
+    width: 147px;
 }
 
 .try h1.two {
-    top: 153px;
+    top: 186px;
     left: 1px;
 }
 
 .try h1.two > hr {
-    width: 130px;
+    width: 126px;
 }
 
 .try h1.thr {
-    top: 303px;
+    top: 359px;
     left: 1px;
 }
 
 .try h1.thr > hr {
-    width: 190px;
+    width: 262px;
 }
 
 .try h1.four {
-    top: 602px;
+    top: 601px;
     left: 1px;
 }
 
 .try h1.four > hr {
-    width: 155px;
+    width: 208px;
 }
 
 .try h1.fiv {
@@ -662,11 +664,11 @@ p {
 }
 
 .try h1.fiv > hr {
-    width: 108px;
+    width: 147px;
 }
 
 .try h1.six {
-    top: 146px;
+    top: 186px;
     right: 2px;
 }
 
@@ -675,12 +677,12 @@ p {
 }
 
 .try h1.sev {
-    top: 297px;
+    top: 359px;
     right: 20px;
 }
 
 .try h1.sev > hr {
-    width: 185px;
+    width: 262px;
 }
 
 .try h1.et {
@@ -689,7 +691,7 @@ p {
 }
 
 .try h1.et > hr {
-    width: 159px;
+    width: 208px;
 }
 
 .try h1.initial-r > hr {
@@ -713,7 +715,7 @@ p {
 
 .firstlook {
     position: absolute;
-    width: 144px;
+    width: 210px;
     text-align: left;
     font-size: 14px;
     line-height: 18px;
@@ -726,18 +728,18 @@ p {
 }
 
 .secn-posi {
-    top: 184px;
+    top: 218px;
     left: 5px;
 }
 
 .thd-posi {
-    top: 333px;
+    top: 390px;
     left: 21px;
     width:206px;
 }
 
 .frth-posi {
-    top: 633px;
+    top: 635px;
     left: 6px;
      width:180px;
 }
@@ -749,20 +751,21 @@ p {
 }
 
 .six-posi {
-    top: 177px;
+    width:256px;
+    top: 218px;
     right: 4px;
 }
 
 .sev-posi {
-    top: 331px;
+    top: 390px;
     right: 21px;
-    width:206px;
+    width:267px;
 }
 
 .eigt-posi {
     top: 635px;
     right: 4px;
-    width:180px;
+    width:207px;
 }
 
 .txt-rt {
