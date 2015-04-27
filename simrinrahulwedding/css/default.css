@@ -1,7 +1,7 @@
 /* Fonts */
 
 @font-face {
-	font-family: 'KnockoutHTF29-JuniorLiteweigh';
+	font-family: 'KnockoutHTF29-JuniorLiteweight';
 	src: url('../fonts/Knockout-HTF29-JuniorLiteweight.eot?#iefix') format('embedded-opentype'),
 	url('../fonts/Knockout-HTF29-JuniorLiteweight.woff') format('woff'),
 	url('../fonts/Knockout-HTF29-JuniorLiteweight.ttf')  format('truetype'),
@@ -73,7 +73,7 @@ p {
 
 #rsvp {
     background: none repeat scroll 0 0 #FEF041;
-    font-family: 'KnockoutHTF29-JuniorLiteweigh';
+    font-family: 'KnockoutHTF29-JuniorLiteweight';
     font-size: 14px;
     text-align: left;
     text-transform: uppercase;
@@ -604,7 +604,7 @@ p {
     text-align: justify;
     font-size: 17px;
     color: #666666;
-    font-family: 'KnockoutHTF29-JuniorLiteweigh';
+    font-family: 'KnockoutHTF29-JuniorLiteweight';
     line-height: 26px;
 }
 
@@ -722,7 +722,7 @@ p {
     font-size: 16px;
     line-height: 19px;
     color: #646263;
-     font-family: 'KnockoutHTF29-JuniorLiteweigh';
+     font-family: 'KnockoutHTF29-JuniorLiteweight';
 }
 
 .fst-posi {
@@ -797,7 +797,7 @@ textarea {
 .center-align {
     text-align: center
 }
-#section-guestbook{background: none repeat scroll 0 0 transparent;font-family: 'KnockoutHTF29-JuniorLiteweigh';}
+#section-guestbook{background: none repeat scroll 0 0 transparent;font-family: 'KnockoutHTF29-JuniorLiteweight';}
 #section-guestbook ul {
     box-shadow: 0px 0px 20px #eee;
     padding: 10px 75px;
@@ -864,6 +864,7 @@ textarea {
     width: 400px;
     position: relative;
     display: none;
+
 }
 
 #sign_up .header {
