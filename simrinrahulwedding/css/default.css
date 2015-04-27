@@ -1,35 +1,37 @@
-/* Jonathan Dietz */
 /* Fonts */
 
 @font-face {
-    font-family: 'KnockoutHTF49-Liteweight';
-    src: url('knockout-htf49-liteweight-webfont.eot');
-    src: local('☺'), url('../fonts/knockout-htf49-liteweight-webfont.woff') format('woff'), url('../fonts/knockout-htf49-liteweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf49-liteweight-webfont.svg#webfontvEHoer7Y') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'KnockoutHTF29-JuniorLiteweigh';
+	src: url('../fonts/Knockout-HTF29-JuniorLiteweight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Knockout-HTF29-JuniorLiteweight.woff') format('woff'),
+	url('../fonts/Knockout-HTF29-JuniorLiteweight.ttf')  format('truetype'),
+	url('../fonts/Knockout-HTF29-JuniorLiteweight.svg#Knockout-HTF29-JuniorLiteweight') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
 @font-face {
-    font-family: 'KnockoutHTF48-Featherweight';
-    src: url('../fonts/knockout-htf48-featherweight-webfont.eot');
-    src: local('☺'), url('../fonts/knockout-htf48-featherweight-webfont.woff') format('woff'), url('../fonts/knockout-htf48-featherweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf48-featherweight-webfont.svg#webfontc4nlxym6') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'KnockoutHTF48-Featherweight';
+	src: url('../fonts/Knockout-HTF48-Featherweight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Knockout-HTF48-Featherweight.woff') format('woff'),
+	url('../fonts/Knockout-HTF48-Featherweight.ttf')  format('truetype'),
+	url('../fonts/Knockout-HTF48-Featherweight.svg#Knockout-HTF48-Featherweight') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
-
 @font-face {
-    font-family: 'KnockoutHTF29-JuniorLiteweigh';
-    src: url('../fonts/knockout-htf29-juniorliteweight-webfont.eot');
-    src: local('☺'), url('../fonts/knockout-htf29-juniorliteweight-webfont.woff') format('woff'), url('../fonts/knockout-htf29-juniorliteweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf29-juniorliteweight-webfont.svg#webfontlU0EtOKV') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'KnockoutHTF49-Liteweight';
+	src: url('../fonts/Knockout-HTF49-Liteweight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/Knockout-HTF49-Liteweight.woff') format('woff'),
+	url('../fonts/Knockout-HTF49-Liteweight.ttf')  format('truetype'),
+	url('../fonts/Knockout-HTF49-Liteweight.svg#Knockout-HTF49-Liteweight') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 /*******************************/
 
 body {
     background: url("../img/bg-footer.jpg") no-repeat scroll center bottom transparent;
-    font-family: 'open sans';
-    ;
+    font-family: georgia;
     padding-bottom: 275px;
 }
 
@@ -63,8 +65,6 @@ p {
     -webkit-transition-duration: 0.8s;
 
 }
-
-
 
 #header .wrap {
     background: none repeat scroll 0 0 #FFFFFF;
@@ -295,7 +295,7 @@ p {
     display: inline;
     float: left;
     font-family: 'KnockoutHTF49-Liteweight';
-    font-size: 11px;
+    font-size: 10px;
     height: 20px;
     line-height: 20px;
     margin: 0 10px 0 0;
@@ -602,8 +602,10 @@ p {
 
 .abt-coupl p {
     text-align: justify;
-    font-size: 15px;
-    color: #646263;
+    font-size: 17px;
+    color: #666666;
+    font-family: 'KnockoutHTF29-JuniorLiteweigh';
+    line-height: 26px;
 }
 
 .pad-in {
@@ -717,9 +719,10 @@ p {
     position: absolute;
     width: 275px;
     text-align: left;
-    font-size: 13px;
+    font-size: 16px;
     line-height: 19px;
     color: #646263;
+     font-family: 'KnockoutHTF29-JuniorLiteweigh';
 }
 
 .fst-posi {
@@ -794,7 +797,7 @@ textarea {
 .center-align {
     text-align: center
 }
-#section-guestbook{background: none repeat scroll 0 0 transparent;}
+#section-guestbook{background: none repeat scroll 0 0 transparent;font-family: 'KnockoutHTF29-JuniorLiteweigh';}
 #section-guestbook ul {
     box-shadow: 0px 0px 20px #eee;
     padding: 10px 75px;
@@ -806,15 +809,16 @@ textarea {
     padding: 20px 0;
 }
 #section-guestbook ul li .name{
-  font-size: 20px;
-  color: #333031;
+  font-size: 24px;
+  color: #555555;
   font-weight: bold;
   margin-bottom: 2px;
+  letter-spacing: 1px;
 }
 
 #section-guestbook ul li .location {
-    font-size: 14px;
-    color: #333031;
+    font-size: 17px;
+    color: #555555;
     font-weight: 300;
 }
 
@@ -827,8 +831,8 @@ textarea {
     color: #2c76cb;
 }
 #section-guestbook ul .comment-body{
-  font-size: 15px;
-  color: #333031;
+  font-size: 19px;
+  color: #555555;
   font-weight: normal;
   margin: 15px 0;
 }
