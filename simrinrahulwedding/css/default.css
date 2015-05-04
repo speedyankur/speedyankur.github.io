@@ -1,37 +1,32 @@
 /* Fonts */
+@font-face {
+    font-family: 'KnockoutHTF49-Liteweight';
+    src: url('knockout-htf49-liteweight-webfont.eot');
+    src: url('../fonts/knockout-htf49-liteweight-webfont.woff') format('woff'), url('../fonts/knockout-htf49-liteweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf49-liteweight-webfont.svg#webfontvEHoer7Y') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 @font-face {
-	font-family: 'KnockoutHTF29-JuniorLiteweight';
-	src: url(../fonts/Knockout-HTF29-JuniorLiteweight.eot?#iefix) format('embedded-opentype'),
-	url(../fonts/Knockout-HTF29-JuniorLiteweight.woff) format('woff'),
-	url(../fonts/Knockout-HTF29-JuniorLiteweight.ttf)  format('truetype'),
-	url(../fonts/Knockout-HTF29-JuniorLiteweight.svg#Knockout-HTF29-JuniorLiteweight) format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'KnockoutHTF48-Featherweight';
+    src: url('../fonts/knockout-htf48-featherweight-webfont.eot');
+    src: url('../fonts/knockout-htf48-featherweight-webfont.woff') format('woff'), url('../fonts/knockout-htf48-featherweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf48-featherweight-webfont.svg#webfontc4nlxym6') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
+
 @font-face {
-	font-family: 'KnockoutHTF48-Featherweight';
-	src: url(../fonts/Knockout-HTF48-Featherweight.eot?#iefix) format('embedded-opentype'),
-	url(../fonts/Knockout-HTF48-Featherweight.woff) format('woff'),
-	url(../fonts/Knockout-HTF48-Featherweight.ttf)  format('truetype'),
-	url(../fonts/Knockout-HTF48-Featherweight.svg#Knockout-HTF48-Featherweight) format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'KnockoutHTF49-Liteweight';
-	src: url(../fonts/Knockout-HTF49-Liteweight.eot?#iefix) format('embedded-opentype'),
-	url(../fonts/Knockout-HTF49-Liteweight.woff) format('woff'),
-	url(../fonts/Knockout-HTF49-Liteweight.ttf)  format('truetype'),
-	url(../fonts/Knockout-HTF49-Liteweight.svg#Knockout-HTF49-Liteweight) format('svg');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'KnockoutHTF29-JuniorLiteweight';
+    src: url('../fonts/knockout-htf29-juniorliteweight-webfont.eot');
+    src: url('../fonts/knockout-htf29-juniorliteweight-webfont.woff') format('woff'), url('../fonts/knockout-htf29-juniorliteweight-webfont.ttf') format('truetype'), url('../fonts/knockout-htf29-juniorliteweight-webfont.svg#webfontlU0EtOKV') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 /*******************************/
 
 body {
     background: url("../img/bg-footer.jpg") no-repeat scroll center bottom transparent;
-    font-family: georgia;
+    font-family: Georgia, ;
     padding-bottom: 275px;
 }
 
