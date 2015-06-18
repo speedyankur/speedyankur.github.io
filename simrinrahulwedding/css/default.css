@@ -1005,10 +1005,45 @@ a.form_button {
 #section-8 li.whr_dtail > .where-details h3,li.how_dtail > .how-details h3{
     margin-top: 155px;
 }
-#section-8 li.whr_dtail > .where-details p,li.how_dtail > .how-details p{
-    font-size: 14px;
-    margin-top: 10px;
+
+#section-8 li.whr_dtail > .where-details p {
+    font-size: 36px;
+    font-weight: 300;
+    margin-top: 120px;
 }
+
+#section-8 ul.jcarousel-list table {
+    text-align: left;
+    color: #8F8F8F;
+    width: 20em;
+    float: right;
+    margin: 65px 67px 40px;
+}
+
+#section-8 ul.jcarousel-list table tr {
+    height: 35px;
+}
+
+#section-8 ul.jcarousel-list table tr td {
+    padding: 0.5em;
+}
+
+#section-8 ul.jcarousel-list table tr td span, .where-details p {
+    font-size: 22px;
+    font-style: italic;
+    margin: 0 0 5px;
+    font-weight: bold;
+}
+
+li.how_dtail > .how-details p {
+    text-align: left;
+    padding: 90px 32px;
+}
+
+#section-8 ul.jcarousel-list h1 {
+    font-size: 2em;
+}
+
 #section-3 .jcarousel-item img{
     width:100%;
 }
