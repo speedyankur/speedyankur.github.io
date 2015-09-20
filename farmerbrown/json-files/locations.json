@@ -1,0 +1,3210 @@
+{
+    "10180": {
+        "id": "10180",
+        "name": "Abilene, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "10180"
+    },
+    "10420": {
+        "id": "10420",
+        "name": "Akron, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "10420"
+    },
+    "10500": {
+        "id": "10500",
+        "name": "Albany, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "10500"
+    },
+    "10540": {
+        "id": "10540",
+        "name": "Albany, OR",
+        "csr": "1",
+        "state_id": "5602",
+        "region_id": "0",
+        "id_census": "10540"
+    },
+    "10580": {
+        "id": "10580",
+        "name": "Albany-Schenectady-Troy, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "10580"
+    },
+    "10740": {
+        "id": "10740",
+        "name": "Albuquerque, NM",
+        "csr": "1",
+        "state_id": "5333",
+        "region_id": "5355",
+        "id_census": "10740"
+    },
+    "10780": {
+        "id": "10780",
+        "name": "Alexandria, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "10780"
+    },
+    "10900": {
+        "id": "10900",
+        "name": "Allentown-Bethlehem-Easton, PA-NJ",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "10900"
+    },
+    "11020": {
+        "id": "11020",
+        "name": "Altoona, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "11020"
+    },
+    "11100": {
+        "id": "11100",
+        "name": "Amarillo, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "11100"
+    },
+    "11180": {
+        "id": "11180",
+        "name": "Ames, IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "11180"
+    },
+    "11244": {
+        "id": "11244",
+        "name": "Anaheim-Santa Ana-Irvine, CA  (MSAD)",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "11244"
+    },
+    "11260": {
+        "id": "11260",
+        "name": "Anchorage, AK",
+        "csr": "1",
+        "state_id": "5301",
+        "region_id": "5357",
+        "id_census": "11260"
+    },
+    "11460": {
+        "id": "11460",
+        "name": "Ann Arbor, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "11460"
+    },
+    "11500": {
+        "id": "11500",
+        "name": "Anniston-Oxford-Jacksonville, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "11500"
+    },
+    "11540": {
+        "id": "11540",
+        "name": "Appleton, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "11540"
+    },
+    "11700": {
+        "id": "11700",
+        "name": "Asheville, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "11700"
+    },
+    "12020": {
+        "id": "12020",
+        "name": "Athens-Clarke County, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "12020"
+    },
+    "12060": {
+        "id": "12060",
+        "name": "Atlanta-Sandy Springs-Roswell, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "12060"
+    },
+    "12100": {
+        "id": "12100",
+        "name": "Atlantic City-Hammonton, NJ",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "12100"
+    },
+    "12220": {
+        "id": "12220",
+        "name": "Auburn-Opelika, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "12220"
+    },
+    "12260": {
+        "id": "12260",
+        "name": "Augusta-Richmond County, GA-SC",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "12260"
+    },
+    "12420": {
+        "id": "12420",
+        "name": "Austin-Round Rock, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "12420"
+    },
+    "12540": {
+        "id": "12540",
+        "name": "Bakersfield, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "12540"
+    },
+    "12580": {
+        "id": "12580",
+        "name": "Baltimore-Columbia-Towson, MD",
+        "csr": "1",
+        "state_id": "5321",
+        "region_id": "5358",
+        "id_census": "12580"
+    },
+    "12620": {
+        "id": "12620",
+        "name": "Bangor, ME",
+        "csr": "1",
+        "state_id": "5322",
+        "region_id": "5356",
+        "id_census": "12620"
+    },
+    "12700": {
+        "id": "12700",
+        "name": "Barnstable Town, MA",
+        "csr": "1",
+        "state_id": "5320",
+        "region_id": "5356",
+        "id_census": "12700"
+    },
+    "12940": {
+        "id": "12940",
+        "name": "Baton Rouge, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "12940"
+    },
+    "12980": {
+        "id": "12980",
+        "name": "Battle Creek, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "12980"
+    },
+    "13020": {
+        "id": "13020",
+        "name": "Bay City, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "13020"
+    },
+    "13140": {
+        "id": "13140",
+        "name": "Beaumont-Port Arthur, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "13140"
+    },
+    "13220": {
+        "id": "13220",
+        "name": "Beckley, WV",
+        "csr": "1",
+        "state_id": "5350",
+        "region_id": "0",
+        "id_census": "13220"
+    },
+    "13380": {
+        "id": "13380",
+        "name": "Bellingham, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "13380"
+    },
+    "13460": {
+        "id": "13460",
+        "name": "Bend-Redmond, OR",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "5357",
+        "id_census": "13460"
+    },
+    "13740": {
+        "id": "13740",
+        "name": "Billings, MT",
+        "csr": "1",
+        "state_id": "5327",
+        "region_id": "5355",
+        "id_census": "13740"
+    },
+    "13780": {
+        "id": "13780",
+        "name": "Binghamton, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "13780"
+    },
+    "13820": {
+        "id": "13820",
+        "name": "Birmingham-Hoover, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "13820"
+    },
+    "13900": {
+        "id": "13900",
+        "name": "Bismarck, ND",
+        "csr": "1",
+        "state_id": "5329",
+        "region_id": "5359",
+        "id_census": "13900"
+    },
+    "13980": {
+        "id": "13980",
+        "name": "Blacksburg-Christiansburg-Radford, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "13980"
+    },
+    "14010": {
+        "id": "14010",
+        "name": "Bloomington, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "14010"
+    },
+    "14020": {
+        "id": "14020",
+        "name": "Bloomington, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "14020"
+    },
+    "14100": {
+        "id": "14100",
+        "name": "Bloomsburg-Berwick, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "0",
+        "id_census": "14100"
+    },
+    "14260": {
+        "id": "14260",
+        "name": "Boise City, ID",
+        "csr": "1",
+        "state_id": "5314",
+        "region_id": "5355",
+        "id_census": "14260"
+    },
+    "14454": {
+        "id": "14454",
+        "name": "Boston, MA  (MSAD)",
+        "csr": "1",
+        "state_id": "5320",
+        "region_id": "5356",
+        "id_census": "14454"
+    },
+    "14500": {
+        "id": "14500",
+        "name": "Boulder, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "14500"
+    },
+    "14540": {
+        "id": "14540",
+        "name": "Bowling Green, KY",
+        "csr": "1",
+        "state_id": "5318",
+        "region_id": "5353",
+        "id_census": "14540"
+    },
+    "14740": {
+        "id": "14740",
+        "name": "Bremerton-Silverdale, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "14740"
+    },
+    "14860": {
+        "id": "14860",
+        "name": "Bridgeport-Stamford-Norwalk, CT",
+        "csr": "1",
+        "state_id": "5307",
+        "region_id": "5356",
+        "id_census": "14860"
+    },
+    "15180": {
+        "id": "15180",
+        "name": "Brownsville-Harlingen, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "15180"
+    },
+    "15260": {
+        "id": "15260",
+        "name": "Brunswick, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "15260"
+    },
+    "15380": {
+        "id": "15380",
+        "name": "Buffalo-Cheektowaga-Niagara Falls, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "15380"
+    },
+    "15500": {
+        "id": "15500",
+        "name": "Burlington, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "15500"
+    },
+    "15540": {
+        "id": "15540",
+        "name": "Burlington-South Burlington, VT",
+        "csr": "1",
+        "state_id": "5347",
+        "region_id": "5356",
+        "id_census": "15540"
+    },
+    "15680": {
+        "id": "15680",
+        "name": "California-Lexington Park, MD",
+        "csr": "1",
+        "state_id": "5321",
+        "region_id": "0",
+        "id_census": "15680"
+    },
+    "15764": {
+        "id": "15764",
+        "name": "Cambridge-Newton-Framingham, MA  (MSAD)",
+        "csr": "1",
+        "state_id": "5320",
+        "region_id": "5356",
+        "id_census": "15764"
+    },
+    "15804": {
+        "id": "15804",
+        "name": "Camden, NJ  (MSAD)",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "15804"
+    },
+    "15940": {
+        "id": "15940",
+        "name": "Canton-Massillon, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "15940"
+    },
+    "15980": {
+        "id": "15980",
+        "name": "Cape Coral-Fort Myers, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "15980"
+    },
+    "16020": {
+        "id": "16020",
+        "name": "Cape Girardeau, MO-IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "16020"
+    },
+    "16060": {
+        "id": "16060",
+        "name": "Carbondale-Marion, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "0",
+        "id_census": "16060"
+    },
+    "16180": {
+        "id": "16180",
+        "name": "Carson City, NV",
+        "csr": "1",
+        "state_id": "5334",
+        "region_id": "5355",
+        "id_census": "16180"
+    },
+    "16220": {
+        "id": "16220",
+        "name": "Casper, WY",
+        "csr": "1",
+        "state_id": "5351",
+        "region_id": "5355",
+        "id_census": "16220"
+    },
+    "16300": {
+        "id": "16300",
+        "name": "Cedar Rapids, IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "16300"
+    },
+    "16540": {
+        "id": "16540",
+        "name": "Chambersburg-Waynesboro, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "0",
+        "id_census": "16540"
+    },
+    "16580": {
+        "id": "16580",
+        "name": "Champaign-Urbana, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "16580"
+    },
+    "16620": {
+        "id": "16620",
+        "name": "Charleston, WV",
+        "csr": "1",
+        "state_id": "5350",
+        "region_id": "5358",
+        "id_census": "16620"
+    },
+    "16700": {
+        "id": "16700",
+        "name": "Charleston-North Charleston, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "16700"
+    },
+    "16740": {
+        "id": "16740",
+        "name": "Charlotte-Concord-Gastonia, NC-SC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "16740"
+    },
+    "16820": {
+        "id": "16820",
+        "name": "Charlottesville, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "16820"
+    },
+    "16860": {
+        "id": "16860",
+        "name": "Chattanooga, TN-GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "16860"
+    },
+    "16940": {
+        "id": "16940",
+        "name": "Cheyenne, WY",
+        "csr": "1",
+        "state_id": "5351",
+        "region_id": "5355",
+        "id_census": "16940"
+    },
+    "16974": {
+        "id": "16974",
+        "name": "Chicago-Naperville-Arlington Heights, IL  (MSAD)",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "16974"
+    },
+    "17020": {
+        "id": "17020",
+        "name": "Chico, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "17020"
+    },
+    "17140": {
+        "id": "17140",
+        "name": "Cincinnati, OH-KY-IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "17140"
+    },
+    "17300": {
+        "id": "17300",
+        "name": "Clarksville, TN-KY",
+        "csr": "1",
+        "state_id": "5318",
+        "region_id": "5353",
+        "id_census": "17300"
+    },
+    "17420": {
+        "id": "17420",
+        "name": "Cleveland, TN",
+        "csr": "1",
+        "state_id": "5343",
+        "region_id": "5353",
+        "id_census": "17420"
+    },
+    "17460": {
+        "id": "17460",
+        "name": "Cleveland-Elyria, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "17460"
+    },
+    "17660": {
+        "id": "17660",
+        "name": "Coeur d'Alene, ID",
+        "csr": "1",
+        "state_id": "5314",
+        "region_id": "5355",
+        "id_census": "17660"
+    },
+    "17780": {
+        "id": "17780",
+        "name": "College Station-Bryan, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "17780"
+    },
+    "17820": {
+        "id": "17820",
+        "name": "Colorado Springs, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "17820"
+    },
+    "17860": {
+        "id": "17860",
+        "name": "Columbia, MO",
+        "csr": "1",
+        "state_id": "5325",
+        "region_id": "5359",
+        "id_census": "17860"
+    },
+    "17900": {
+        "id": "17900",
+        "name": "Columbia, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "17900"
+    },
+    "17980": {
+        "id": "17980",
+        "name": "Columbus, GA-AL",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "17980"
+    },
+    "18020": {
+        "id": "18020",
+        "name": "Columbus, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "18020"
+    },
+    "18140": {
+        "id": "18140",
+        "name": "Columbus, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "18140"
+    },
+    "18580": {
+        "id": "18580",
+        "name": "Corpus Christi, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "18580"
+    },
+    "18700": {
+        "id": "18700",
+        "name": "Corvallis, OR",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "5357",
+        "id_census": "18700"
+    },
+    "18880": {
+        "id": "18880",
+        "name": "Crestview-Fort Walton Beach-Destin, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "18880"
+    },
+    "19060": {
+        "id": "19060",
+        "name": "Cumberland, MD-WV",
+        "csr": "1",
+        "state_id": "5321",
+        "region_id": "5358",
+        "id_census": "19060"
+    },
+    "19124": {
+        "id": "19124",
+        "name": "Dallas-Plano-Irving, TX  (MSAD)",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "19124"
+    },
+    "19140": {
+        "id": "19140",
+        "name": "Dalton, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "19140"
+    },
+    "19180": {
+        "id": "19180",
+        "name": "Danville, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "19180"
+    },
+    "19300": {
+        "id": "19300",
+        "name": "Daphne-Fairhope-Foley, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "0",
+        "id_census": "19300"
+    },
+    "19340": {
+        "id": "19340",
+        "name": "Davenport-Moline-Rock Island, IA-IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "19340"
+    },
+    "19380": {
+        "id": "19380",
+        "name": "Dayton, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "19380"
+    },
+    "19460": {
+        "id": "19460",
+        "name": "Decatur, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "19460"
+    },
+    "19500": {
+        "id": "19500",
+        "name": "Decatur, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "19500"
+    },
+    "19660": {
+        "id": "19660",
+        "name": "Deltona-Daytona Beach-Ormond Beach, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "19660"
+    },
+    "19740": {
+        "id": "19740",
+        "name": "Denver-Aurora-Lakewood, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "19740"
+    },
+    "19780": {
+        "id": "19780",
+        "name": "Des Moines-West Des Moines, IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "19780"
+    },
+    "19804": {
+        "id": "19804",
+        "name": "Detroit-Dearborn-Livonia, MI  (MSAD)",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "19804"
+    },
+    "20020": {
+        "id": "20020",
+        "name": "Dothan, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "20020"
+    },
+    "20100": {
+        "id": "20100",
+        "name": "Dover, DE",
+        "csr": "1",
+        "state_id": "5309",
+        "region_id": "5358",
+        "id_census": "20100"
+    },
+    "20220": {
+        "id": "20220",
+        "name": "Dubuque, IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "20220"
+    },
+    "20260": {
+        "id": "20260",
+        "name": "Duluth, MN-WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "20260"
+    },
+    "20500": {
+        "id": "20500",
+        "name": "Durham-Chapel Hill, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "20500"
+    },
+    "20524": {
+        "id": "20524",
+        "name": "Dutchess County-Putnam County, NY  (MSAD)",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "0",
+        "id_census": "20524"
+    },
+    "20700": {
+        "id": "20700",
+        "name": "East Stroudsburg, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "0",
+        "id_census": "20700"
+    },
+    "20740": {
+        "id": "20740",
+        "name": "Eau Claire, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "20740"
+    },
+    "20940": {
+        "id": "20940",
+        "name": "El Centro, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "20940"
+    },
+    "20994": {
+        "id": "20994",
+        "name": "Elgin, IL  (MSAD)",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "0",
+        "id_census": "20994"
+    },
+    "21060": {
+        "id": "21060",
+        "name": "Elizabethtown-Fort Knox, KY",
+        "csr": "1",
+        "state_id": "5318",
+        "region_id": "5353",
+        "id_census": "21060"
+    },
+    "21140": {
+        "id": "21140",
+        "name": "Elkhart-Goshen, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "21140"
+    },
+    "21300": {
+        "id": "21300",
+        "name": "Elmira, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "21300"
+    },
+    "21340": {
+        "id": "21340",
+        "name": "El Paso, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "21340"
+    },
+    "21500": {
+        "id": "21500",
+        "name": "Erie, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "21500"
+    },
+    "21660": {
+        "id": "21660",
+        "name": "Eugene, OR",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "5357",
+        "id_census": "21660"
+    },
+    "21780": {
+        "id": "21780",
+        "name": "Evansville, IN-KY",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "21780"
+    },
+    "21820": {
+        "id": "21820",
+        "name": "Fairbanks, AK",
+        "csr": "1",
+        "state_id": "5301",
+        "region_id": "5357",
+        "id_census": "21820"
+    },
+    "22020": {
+        "id": "22020",
+        "name": "Fargo, ND-MN",
+        "csr": "1",
+        "state_id": "5324",
+        "region_id": "5359",
+        "id_census": "22020"
+    },
+    "22140": {
+        "id": "22140",
+        "name": "Farmington, NM",
+        "csr": "1",
+        "state_id": "5333",
+        "region_id": "5355",
+        "id_census": "22140"
+    },
+    "22180": {
+        "id": "22180",
+        "name": "Fayetteville, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "22180"
+    },
+    "22220": {
+        "id": "22220",
+        "name": "Fayetteville-Springdale-Rogers, AR-MO",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "22220"
+    },
+    "22380": {
+        "id": "22380",
+        "name": "Flagstaff, AZ-UT",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "5355",
+        "id_census": "22380"
+    },
+    "22420": {
+        "id": "22420",
+        "name": "Flint, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "22420"
+    },
+    "22500": {
+        "id": "22500",
+        "name": "Florence, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "22500"
+    },
+    "22520": {
+        "id": "22520",
+        "name": "Florence-Muscle Shoals, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "22520"
+    },
+    "22540": {
+        "id": "22540",
+        "name": "Fond du Lac, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "22540"
+    },
+    "22660": {
+        "id": "22660",
+        "name": "Fort Collins, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "22660"
+    },
+    "22744": {
+        "id": "22744",
+        "name": "Fort Lauderdale-Pompano Beach-Deerfield Beach, FL  (MSAD)",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "22744"
+    },
+    "22900": {
+        "id": "22900",
+        "name": "Fort Smith, AR-OK",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "22900"
+    },
+    "23060": {
+        "id": "23060",
+        "name": "Fort Wayne, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "23060"
+    },
+    "23104": {
+        "id": "23104",
+        "name": "Fort Worth-Arlington, TX  (MSAD)",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "23104"
+    },
+    "23420": {
+        "id": "23420",
+        "name": "Fresno, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "23420"
+    },
+    "23460": {
+        "id": "23460",
+        "name": "Gadsden, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "23460"
+    },
+    "23540": {
+        "id": "23540",
+        "name": "Gainesville, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "23540"
+    },
+    "23580": {
+        "id": "23580",
+        "name": "Gainesville, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "23580"
+    },
+    "23844": {
+        "id": "23844",
+        "name": "Gary, IN  (MSAD)",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "23844"
+    },
+    "23900": {
+        "id": "23900",
+        "name": "Gettysburg, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "0",
+        "id_census": "23900"
+    },
+    "24020": {
+        "id": "24020",
+        "name": "Glens Falls, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "24020"
+    },
+    "24140": {
+        "id": "24140",
+        "name": "Goldsboro, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "24140"
+    },
+    "24220": {
+        "id": "24220",
+        "name": "Grand Forks, ND-MN",
+        "csr": "1",
+        "state_id": "5324",
+        "region_id": "5359",
+        "id_census": "24220"
+    },
+    "24260": {
+        "id": "24260",
+        "name": "Grand Island, NE",
+        "csr": "1",
+        "state_id": "5330",
+        "region_id": "0",
+        "id_census": "24260"
+    },
+    "24300": {
+        "id": "24300",
+        "name": "Grand Junction, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "24300"
+    },
+    "24340": {
+        "id": "24340",
+        "name": "Grand Rapids-Wyoming, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "24340"
+    },
+    "24420": {
+        "id": "24420",
+        "name": "Grants Pass, OR",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "0",
+        "id_census": "24420"
+    },
+    "24500": {
+        "id": "24500",
+        "name": "Great Falls, MT",
+        "csr": "1",
+        "state_id": "5327",
+        "region_id": "5355",
+        "id_census": "24500"
+    },
+    "24540": {
+        "id": "24540",
+        "name": "Greeley, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "24540"
+    },
+    "24580": {
+        "id": "24580",
+        "name": "Green Bay, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "24580"
+    },
+    "24660": {
+        "id": "24660",
+        "name": "Greensboro-High Point, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "24660"
+    },
+    "24780": {
+        "id": "24780",
+        "name": "Greenville, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "24780"
+    },
+    "24860": {
+        "id": "24860",
+        "name": "Greenville-Anderson-Mauldin, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "24860"
+    },
+    "25060": {
+        "id": "25060",
+        "name": "Gulfport-Biloxi-Pascagoula, MS",
+        "csr": "1",
+        "state_id": "5326",
+        "region_id": "5353",
+        "id_census": "25060"
+    },
+    "25180": {
+        "id": "25180",
+        "name": "Hagerstown-Martinsburg, MD-WV",
+        "csr": "1",
+        "state_id": "5321",
+        "region_id": "5358",
+        "id_census": "25180"
+    },
+    "25220": {
+        "id": "25220",
+        "name": "Hammond, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "0",
+        "id_census": "25220"
+    },
+    "25260": {
+        "id": "25260",
+        "name": "Hanford-Corcoran, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "25260"
+    },
+    "25420": {
+        "id": "25420",
+        "name": "Harrisburg-Carlisle, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "25420"
+    },
+    "25500": {
+        "id": "25500",
+        "name": "Harrisonburg, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "25500"
+    },
+    "25540": {
+        "id": "25540",
+        "name": "Hartford-West Hartford-East Hartford, CT",
+        "csr": "1",
+        "state_id": "5307",
+        "region_id": "5356",
+        "id_census": "25540"
+    },
+    "25620": {
+        "id": "25620",
+        "name": "Hattiesburg, MS",
+        "csr": "1",
+        "state_id": "5326",
+        "region_id": "5353",
+        "id_census": "25620"
+    },
+    "25860": {
+        "id": "25860",
+        "name": "Hickory-Lenoir-Morganton, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "25860"
+    },
+    "25940": {
+        "id": "25940",
+        "name": "Hilton Head Island-Bluffton-Beaufort, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "0",
+        "id_census": "25940"
+    },
+    "25980": {
+        "id": "25980",
+        "name": "Hinesville, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "25980"
+    },
+    "26140": {
+        "id": "26140",
+        "name": "Homosassa Springs, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "0",
+        "id_census": "26140"
+    },
+    "26300": {
+        "id": "26300",
+        "name": "Hot Springs, AR",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "26300"
+    },
+    "26380": {
+        "id": "26380",
+        "name": "Houma-Thibodaux, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "26380"
+    },
+    "26420": {
+        "id": "26420",
+        "name": "Houston-The Woodlands-Sugar Land, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "26420"
+    },
+    "26580": {
+        "id": "26580",
+        "name": "Huntington-Ashland, WV-KY-OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "26580"
+    },
+    "26620": {
+        "id": "26620",
+        "name": "Huntsville, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "26620"
+    },
+    "26820": {
+        "id": "26820",
+        "name": "Idaho Falls, ID",
+        "csr": "1",
+        "state_id": "5314",
+        "region_id": "5355",
+        "id_census": "26820"
+    },
+    "26900": {
+        "id": "26900",
+        "name": "Indianapolis-Carmel-Anderson, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "26900"
+    },
+    "26980": {
+        "id": "26980",
+        "name": "Iowa City, IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "26980"
+    },
+    "27060": {
+        "id": "27060",
+        "name": "Ithaca, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "27060"
+    },
+    "27100": {
+        "id": "27100",
+        "name": "Jackson, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "27100"
+    },
+    "27140": {
+        "id": "27140",
+        "name": "Jackson, MS",
+        "csr": "1",
+        "state_id": "5326",
+        "region_id": "5353",
+        "id_census": "27140"
+    },
+    "27180": {
+        "id": "27180",
+        "name": "Jackson, TN",
+        "csr": "1",
+        "state_id": "5343",
+        "region_id": "5353",
+        "id_census": "27180"
+    },
+    "27260": {
+        "id": "27260",
+        "name": "Jacksonville, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "27260"
+    },
+    "27340": {
+        "id": "27340",
+        "name": "Jacksonville, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "27340"
+    },
+    "27500": {
+        "id": "27500",
+        "name": "Janesville-Beloit, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "27500"
+    },
+    "27620": {
+        "id": "27620",
+        "name": "Jefferson City, MO",
+        "csr": "1",
+        "state_id": "5325",
+        "region_id": "5359",
+        "id_census": "27620"
+    },
+    "27740": {
+        "id": "27740",
+        "name": "Johnson City, TN",
+        "csr": "1",
+        "state_id": "5343",
+        "region_id": "5353",
+        "id_census": "27740"
+    },
+    "27780": {
+        "id": "27780",
+        "name": "Johnstown, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "27780"
+    },
+    "27860": {
+        "id": "27860",
+        "name": "Jonesboro, AR",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "27860"
+    },
+    "27900": {
+        "id": "27900",
+        "name": "Joplin, MO",
+        "csr": "1",
+        "state_id": "5325",
+        "region_id": "5359",
+        "id_census": "27900"
+    },
+    "27980": {
+        "id": "27980",
+        "name": "Kahului-Wailuku-Lahaina, HI",
+        "csr": "1",
+        "state_id": "5312",
+        "region_id": "0",
+        "id_census": "27980"
+    },
+    "28020": {
+        "id": "28020",
+        "name": "Kalamazoo-Portage, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "28020"
+    },
+    "28100": {
+        "id": "28100",
+        "name": "Kankakee, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "28100"
+    },
+    "28140": {
+        "id": "28140",
+        "name": "Kansas City, MO-KS",
+        "csr": "1",
+        "state_id": "5317",
+        "region_id": "5359",
+        "id_census": "28140"
+    },
+    "28420": {
+        "id": "28420",
+        "name": "Kennewick-Richland, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "28420"
+    },
+    "28660": {
+        "id": "28660",
+        "name": "Killeen-Temple, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "28660"
+    },
+    "28700": {
+        "id": "28700",
+        "name": "Kingsport-Bristol-Bristol, TN-VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "28700"
+    },
+    "28740": {
+        "id": "28740",
+        "name": "Kingston, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "28740"
+    },
+    "28940": {
+        "id": "28940",
+        "name": "Knoxville, TN",
+        "csr": "1",
+        "state_id": "5343",
+        "region_id": "5353",
+        "id_census": "28940"
+    },
+    "29020": {
+        "id": "29020",
+        "name": "Kokomo, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "29020"
+    },
+    "29100": {
+        "id": "29100",
+        "name": "La Crosse-Onalaska, WI-MN",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "29100"
+    },
+    "29180": {
+        "id": "29180",
+        "name": "Lafayette, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "29180"
+    },
+    "29200": {
+        "id": "29200",
+        "name": "Lafayette-West Lafayette, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "29200"
+    },
+    "29340": {
+        "id": "29340",
+        "name": "Lake Charles, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "29340"
+    },
+    "29404": {
+        "id": "29404",
+        "name": "Lake County-Kenosha County, IL-WI  (MSAD)",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "29404"
+    },
+    "29420": {
+        "id": "29420",
+        "name": "Lake Havasu City-Kingman, AZ",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "5355",
+        "id_census": "29420"
+    },
+    "29460": {
+        "id": "29460",
+        "name": "Lakeland-Winter Haven, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "29460"
+    },
+    "29540": {
+        "id": "29540",
+        "name": "Lancaster, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "29540"
+    },
+    "29620": {
+        "id": "29620",
+        "name": "Lansing-East Lansing, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "29620"
+    },
+    "29700": {
+        "id": "29700",
+        "name": "Laredo, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "29700"
+    },
+    "29740": {
+        "id": "29740",
+        "name": "Las Cruces, NM",
+        "csr": "1",
+        "state_id": "5333",
+        "region_id": "5355",
+        "id_census": "29740"
+    },
+    "29820": {
+        "id": "29820",
+        "name": "Las Vegas-Henderson-Paradise, NV",
+        "csr": "1",
+        "state_id": "5334",
+        "region_id": "5355",
+        "id_census": "29820"
+    },
+    "29940": {
+        "id": "29940",
+        "name": "Lawrence, KS",
+        "csr": "1",
+        "state_id": "5317",
+        "region_id": "5359",
+        "id_census": "29940"
+    },
+    "30020": {
+        "id": "30020",
+        "name": "Lawton, OK",
+        "csr": "1",
+        "state_id": "5337",
+        "region_id": "5360",
+        "id_census": "30020"
+    },
+    "30140": {
+        "id": "30140",
+        "name": "Lebanon, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "30140"
+    },
+    "30300": {
+        "id": "30300",
+        "name": "Lewiston, ID-WA",
+        "csr": "1",
+        "state_id": "5314",
+        "region_id": "5355",
+        "id_census": "30300"
+    },
+    "30340": {
+        "id": "30340",
+        "name": "Lewiston-Auburn, ME",
+        "csr": "1",
+        "state_id": "5322",
+        "region_id": "5356",
+        "id_census": "30340"
+    },
+    "30460": {
+        "id": "30460",
+        "name": "Lexington-Fayette, KY",
+        "csr": "1",
+        "state_id": "5318",
+        "region_id": "5353",
+        "id_census": "30460"
+    },
+    "30620": {
+        "id": "30620",
+        "name": "Lima, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "30620"
+    },
+    "30700": {
+        "id": "30700",
+        "name": "Lincoln, NE",
+        "csr": "1",
+        "state_id": "5330",
+        "region_id": "5359",
+        "id_census": "30700"
+    },
+    "30780": {
+        "id": "30780",
+        "name": "Little Rock-North Little Rock-Conway, AR",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "30780"
+    },
+    "30860": {
+        "id": "30860",
+        "name": "Logan, UT-ID",
+        "csr": "1",
+        "state_id": "5314",
+        "region_id": "5355",
+        "id_census": "30860"
+    },
+    "30980": {
+        "id": "30980",
+        "name": "Longview, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "30980"
+    },
+    "31020": {
+        "id": "31020",
+        "name": "Longview, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "31020"
+    },
+    "31084": {
+        "id": "31084",
+        "name": "Los Angeles-Long Beach-Glendale, CA  (MSAD)",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "31084"
+    },
+    "31140": {
+        "id": "31140",
+        "name": "Louisville/Jefferson County, KY-IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "31140"
+    },
+    "31180": {
+        "id": "31180",
+        "name": "Lubbock, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "31180"
+    },
+    "31340": {
+        "id": "31340",
+        "name": "Lynchburg, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "31340"
+    },
+    "31420": {
+        "id": "31420",
+        "name": "Macon, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "31420"
+    },
+    "31460": {
+        "id": "31460",
+        "name": "Madera, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "31460"
+    },
+    "31540": {
+        "id": "31540",
+        "name": "Madison, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "31540"
+    },
+    "31700": {
+        "id": "31700",
+        "name": "Manchester-Nashua, NH",
+        "csr": "1",
+        "state_id": "5331",
+        "region_id": "5356",
+        "id_census": "31700"
+    },
+    "31740": {
+        "id": "31740",
+        "name": "Manhattan, KS",
+        "csr": "1",
+        "state_id": "5317",
+        "region_id": "5359",
+        "id_census": "31740"
+    },
+    "31860": {
+        "id": "31860",
+        "name": "Mankato-North Mankato, MN",
+        "csr": "1",
+        "state_id": "5324",
+        "region_id": "5359",
+        "id_census": "31860"
+    },
+    "31900": {
+        "id": "31900",
+        "name": "Mansfield, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "31900"
+    },
+    "32580": {
+        "id": "32580",
+        "name": "McAllen-Edinburg-Mission, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "32580"
+    },
+    "32780": {
+        "id": "32780",
+        "name": "Medford, OR",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "5357",
+        "id_census": "32780"
+    },
+    "32820": {
+        "id": "32820",
+        "name": "Memphis, TN-MS-AR",
+        "csr": "1",
+        "state_id": "5326",
+        "region_id": "5353",
+        "id_census": "32820"
+    },
+    "32900": {
+        "id": "32900",
+        "name": "Merced, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "32900"
+    },
+    "33124": {
+        "id": "33124",
+        "name": "Miami-Miami Beach-Kendall, FL  (MSAD)",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "33124"
+    },
+    "33140": {
+        "id": "33140",
+        "name": "Michigan City-La Porte, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "33140"
+    },
+    "33220": {
+        "id": "33220",
+        "name": "Midland, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "0",
+        "id_census": "33220"
+    },
+    "33260": {
+        "id": "33260",
+        "name": "Midland, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "33260"
+    },
+    "33340": {
+        "id": "33340",
+        "name": "Milwaukee-Waukesha-West Allis, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "33340"
+    },
+    "33460": {
+        "id": "33460",
+        "name": "Minneapolis-St. Paul-Bloomington, MN-WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "33460"
+    },
+    "33540": {
+        "id": "33540",
+        "name": "Missoula, MT",
+        "csr": "1",
+        "state_id": "5327",
+        "region_id": "5355",
+        "id_census": "33540"
+    },
+    "33660": {
+        "id": "33660",
+        "name": "Mobile, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "33660"
+    },
+    "33700": {
+        "id": "33700",
+        "name": "Modesto, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "33700"
+    },
+    "33740": {
+        "id": "33740",
+        "name": "Monroe, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "33740"
+    },
+    "33780": {
+        "id": "33780",
+        "name": "Monroe, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "33780"
+    },
+    "33860": {
+        "id": "33860",
+        "name": "Montgomery, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "33860"
+    },
+    "33874": {
+        "id": "33874",
+        "name": "Montgomery County-Bucks County-Chester County, PA  (M",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "0",
+        "id_census": "33874"
+    },
+    "34060": {
+        "id": "34060",
+        "name": "Morgantown, WV",
+        "csr": "1",
+        "state_id": "5350",
+        "region_id": "5358",
+        "id_census": "34060"
+    },
+    "34100": {
+        "id": "34100",
+        "name": "Morristown, TN",
+        "csr": "1",
+        "state_id": "5343",
+        "region_id": "5353",
+        "id_census": "34100"
+    },
+    "34580": {
+        "id": "34580",
+        "name": "Mount Vernon-Anacortes, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "34580"
+    },
+    "34620": {
+        "id": "34620",
+        "name": "Muncie, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "34620"
+    },
+    "34740": {
+        "id": "34740",
+        "name": "Muskegon, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "34740"
+    },
+    "34820": {
+        "id": "34820",
+        "name": "Myrtle Beach-Conway-North Myrtle Beach, SC-NC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "34820"
+    },
+    "34900": {
+        "id": "34900",
+        "name": "Napa, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "34900"
+    },
+    "34940": {
+        "id": "34940",
+        "name": "Naples-Immokalee-Marco Island, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "34940"
+    },
+    "34980": {
+        "id": "34980",
+        "name": "Nashville-Davidson--Murfreesboro--Franklin, TN",
+        "csr": "1",
+        "state_id": "5343",
+        "region_id": "5353",
+        "id_census": "34980"
+    },
+    "35004": {
+        "id": "35004",
+        "name": "Nassau County-Suffolk County, NY  (MSAD)",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "0",
+        "id_census": "35004"
+    },
+    "35084": {
+        "id": "35084",
+        "name": "Newark, NJ-PA  (MSAD)",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "35084"
+    },
+    "35100": {
+        "id": "35100",
+        "name": "New Bern, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "0",
+        "id_census": "35100"
+    },
+    "35300": {
+        "id": "35300",
+        "name": "New Haven-Milford, CT",
+        "csr": "1",
+        "state_id": "5307",
+        "region_id": "5356",
+        "id_census": "35300"
+    },
+    "35380": {
+        "id": "35380",
+        "name": "New Orleans-Metairie, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "35380"
+    },
+    "35614": {
+        "id": "35614",
+        "name": "New York-Jersey City-White Plains, NY-NJ  (MSAD)",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "35614"
+    },
+    "35660": {
+        "id": "35660",
+        "name": "Niles-Benton Harbor, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "35660"
+    },
+    "35840": {
+        "id": "35840",
+        "name": "North Port-Sarasota-Bradenton, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "35840"
+    },
+    "35980": {
+        "id": "35980",
+        "name": "Norwich-New London, CT",
+        "csr": "1",
+        "state_id": "5307",
+        "region_id": "5356",
+        "id_census": "35980"
+    },
+    "36084": {
+        "id": "36084",
+        "name": "Oakland-Hayward-Berkeley, CA  (MSAD)",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "36084"
+    },
+    "36100": {
+        "id": "36100",
+        "name": "Ocala, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "36100"
+    },
+    "36140": {
+        "id": "36140",
+        "name": "Ocean City, NJ",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "36140"
+    },
+    "36220": {
+        "id": "36220",
+        "name": "Odessa, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "36220"
+    },
+    "36260": {
+        "id": "36260",
+        "name": "Ogden-Clearfield, UT",
+        "csr": "1",
+        "state_id": "5345",
+        "region_id": "5355",
+        "id_census": "36260"
+    },
+    "36420": {
+        "id": "36420",
+        "name": "Oklahoma City, OK",
+        "csr": "1",
+        "state_id": "5337",
+        "region_id": "5360",
+        "id_census": "36420"
+    },
+    "36500": {
+        "id": "36500",
+        "name": "Olympia-Tumwater, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "36500"
+    },
+    "36540": {
+        "id": "36540",
+        "name": "Omaha-Council Bluffs, NE-IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "36540"
+    },
+    "36740": {
+        "id": "36740",
+        "name": "Orlando-Kissimmee-Sanford, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "36740"
+    },
+    "36780": {
+        "id": "36780",
+        "name": "Oshkosh-Neenah, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "36780"
+    },
+    "36980": {
+        "id": "36980",
+        "name": "Owensboro, KY",
+        "csr": "1",
+        "state_id": "5318",
+        "region_id": "5353",
+        "id_census": "36980"
+    },
+    "37100": {
+        "id": "37100",
+        "name": "Oxnard-Thousand Oaks-Ventura, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "37100"
+    },
+    "37340": {
+        "id": "37340",
+        "name": "Palm Bay-Melbourne-Titusville, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "37340"
+    },
+    "37460": {
+        "id": "37460",
+        "name": "Panama City, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "37460"
+    },
+    "37620": {
+        "id": "37620",
+        "name": "Parkersburg-Vienna, WV",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "37620"
+    },
+    "37860": {
+        "id": "37860",
+        "name": "Pensacola-Ferry Pass-Brent, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "37860"
+    },
+    "37900": {
+        "id": "37900",
+        "name": "Peoria, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "37900"
+    },
+    "37964": {
+        "id": "37964",
+        "name": "Philadelphia, PA  (MSAD)",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "37964"
+    },
+    "38060": {
+        "id": "38060",
+        "name": "Phoenix-Mesa-Scottsdale, AZ",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "5355",
+        "id_census": "38060"
+    },
+    "38220": {
+        "id": "38220",
+        "name": "Pine Bluff, AR",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "38220"
+    },
+    "38300": {
+        "id": "38300",
+        "name": "Pittsburgh, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "38300"
+    },
+    "38340": {
+        "id": "38340",
+        "name": "Pittsfield, MA",
+        "csr": "1",
+        "state_id": "5320",
+        "region_id": "5356",
+        "id_census": "38340"
+    },
+    "38540": {
+        "id": "38540",
+        "name": "Pocatello, ID",
+        "csr": "1",
+        "state_id": "5314",
+        "region_id": "5355",
+        "id_census": "38540"
+    },
+    "38860": {
+        "id": "38860",
+        "name": "Portland-South Portland, ME",
+        "csr": "1",
+        "state_id": "5322",
+        "region_id": "5356",
+        "id_census": "38860"
+    },
+    "38900": {
+        "id": "38900",
+        "name": "Portland-Vancouver-Hillsboro, OR-WA",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "5357",
+        "id_census": "38900"
+    },
+    "38940": {
+        "id": "38940",
+        "name": "Port St. Lucie, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "38940"
+    },
+    "39140": {
+        "id": "39140",
+        "name": "Prescott, AZ",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "5355",
+        "id_census": "39140"
+    },
+    "39300": {
+        "id": "39300",
+        "name": "Providence-Warwick, RI-MA",
+        "csr": "1",
+        "state_id": "5340",
+        "region_id": "5356",
+        "id_census": "39300"
+    },
+    "39340": {
+        "id": "39340",
+        "name": "Provo-Orem, UT",
+        "csr": "1",
+        "state_id": "5345",
+        "region_id": "5355",
+        "id_census": "39340"
+    },
+    "39380": {
+        "id": "39380",
+        "name": "Pueblo, CO",
+        "csr": "1",
+        "state_id": "5306",
+        "region_id": "5355",
+        "id_census": "39380"
+    },
+    "39460": {
+        "id": "39460",
+        "name": "Punta Gorda, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "39460"
+    },
+    "39540": {
+        "id": "39540",
+        "name": "Racine, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "39540"
+    },
+    "39580": {
+        "id": "39580",
+        "name": "Raleigh, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "39580"
+    },
+    "39660": {
+        "id": "39660",
+        "name": "Rapid City, SD",
+        "csr": "1",
+        "state_id": "5342",
+        "region_id": "5359",
+        "id_census": "39660"
+    },
+    "39740": {
+        "id": "39740",
+        "name": "Reading, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "39740"
+    },
+    "39820": {
+        "id": "39820",
+        "name": "Redding, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "39820"
+    },
+    "39900": {
+        "id": "39900",
+        "name": "Reno, NV",
+        "csr": "1",
+        "state_id": "5334",
+        "region_id": "5355",
+        "id_census": "39900"
+    },
+    "40060": {
+        "id": "40060",
+        "name": "Richmond, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "40060"
+    },
+    "40140": {
+        "id": "40140",
+        "name": "Riverside-San Bernardino-Ontario, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "40140"
+    },
+    "40220": {
+        "id": "40220",
+        "name": "Roanoke, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "40220"
+    },
+    "40340": {
+        "id": "40340",
+        "name": "Rochester, MN",
+        "csr": "1",
+        "state_id": "5324",
+        "region_id": "5359",
+        "id_census": "40340"
+    },
+    "40380": {
+        "id": "40380",
+        "name": "Rochester, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "40380"
+    },
+    "40420": {
+        "id": "40420",
+        "name": "Rockford, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "40420"
+    },
+    "40484": {
+        "id": "40484",
+        "name": "Rockingham County-Strafford County, NH  (MSAD)",
+        "csr": "1",
+        "state_id": "5331",
+        "region_id": "5356",
+        "id_census": "40484"
+    },
+    "40580": {
+        "id": "40580",
+        "name": "Rocky Mount, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "40580"
+    },
+    "40660": {
+        "id": "40660",
+        "name": "Rome, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "40660"
+    },
+    "40900": {
+        "id": "40900",
+        "name": "Sacramento--Roseville--Arden-Arcade, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "40900"
+    },
+    "40980": {
+        "id": "40980",
+        "name": "Saginaw, MI",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "40980"
+    },
+    "41060": {
+        "id": "41060",
+        "name": "St. Cloud, MN",
+        "csr": "1",
+        "state_id": "5324",
+        "region_id": "5359",
+        "id_census": "41060"
+    },
+    "41100": {
+        "id": "41100",
+        "name": "St. George, UT",
+        "csr": "1",
+        "state_id": "5345",
+        "region_id": "5355",
+        "id_census": "41100"
+    },
+    "41140": {
+        "id": "41140",
+        "name": "St. Joseph, MO-KS",
+        "csr": "1",
+        "state_id": "5317",
+        "region_id": "5359",
+        "id_census": "41140"
+    },
+    "41180": {
+        "id": "41180",
+        "name": "St. Louis, MO-IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "41180"
+    },
+    "41420": {
+        "id": "41420",
+        "name": "Salem, OR",
+        "csr": "1",
+        "state_id": "5338",
+        "region_id": "5357",
+        "id_census": "41420"
+    },
+    "41500": {
+        "id": "41500",
+        "name": "Salinas, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "41500"
+    },
+    "41540": {
+        "id": "41540",
+        "name": "Salisbury, MD-DE",
+        "csr": "1",
+        "state_id": "5321",
+        "region_id": "5358",
+        "id_census": "41540"
+    },
+    "41620": {
+        "id": "41620",
+        "name": "Salt Lake City, UT",
+        "csr": "1",
+        "state_id": "5345",
+        "region_id": "5355",
+        "id_census": "41620"
+    },
+    "41660": {
+        "id": "41660",
+        "name": "San Angelo, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "41660"
+    },
+    "41700": {
+        "id": "41700",
+        "name": "San Antonio-New Braunfels, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "41700"
+    },
+    "41740": {
+        "id": "41740",
+        "name": "San Diego-Carlsbad, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "41740"
+    },
+    "41884": {
+        "id": "41884",
+        "name": "San Francisco-Redwood City-South San Francisco, CA  (",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "41884"
+    },
+    "41940": {
+        "id": "41940",
+        "name": "San Jose-Sunnyvale-Santa Clara, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "41940"
+    },
+    "42020": {
+        "id": "42020",
+        "name": "San Luis Obispo-Paso Robles-Arroyo Grande, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "42020"
+    },
+    "42034": {
+        "id": "42034",
+        "name": "San Rafael, CA  (MSAD)",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "0",
+        "id_census": "42034"
+    },
+    "42100": {
+        "id": "42100",
+        "name": "Santa Cruz-Watsonville, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "42100"
+    },
+    "42140": {
+        "id": "42140",
+        "name": "Santa Fe, NM",
+        "csr": "1",
+        "state_id": "5333",
+        "region_id": "5355",
+        "id_census": "42140"
+    },
+    "42200": {
+        "id": "42200",
+        "name": "Santa Maria-Santa Barbara, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "42200"
+    },
+    "42220": {
+        "id": "42220",
+        "name": "Santa Rosa, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "42220"
+    },
+    "42340": {
+        "id": "42340",
+        "name": "Savannah, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "42340"
+    },
+    "42540": {
+        "id": "42540",
+        "name": "Scranton--Wilkes-Barre--Hazleton, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "42540"
+    },
+    "42644": {
+        "id": "42644",
+        "name": "Seattle-Bellevue-Everett, WA  (MSAD)",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "42644"
+    },
+    "42680": {
+        "id": "42680",
+        "name": "Sebastian-Vero Beach, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "42680"
+    },
+    "42700": {
+        "id": "42700",
+        "name": "Sebring, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "0",
+        "id_census": "42700"
+    },
+    "43100": {
+        "id": "43100",
+        "name": "Sheboygan, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "43100"
+    },
+    "43300": {
+        "id": "43300",
+        "name": "Sherman-Denison, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "43300"
+    },
+    "43340": {
+        "id": "43340",
+        "name": "Shreveport-Bossier City, LA",
+        "csr": "1",
+        "state_id": "5319",
+        "region_id": "5360",
+        "id_census": "43340"
+    },
+    "43420": {
+        "id": "43420",
+        "name": "Sierra Vista-Douglas, AZ",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "0",
+        "id_census": "43420"
+    },
+    "43524": {
+        "id": "43524",
+        "name": "Silver Spring-Frederick-Rockville, MD  (MSAD)",
+        "csr": "1",
+        "state_id": "5321",
+        "region_id": "5358",
+        "id_census": "43524"
+    },
+    "43580": {
+        "id": "43580",
+        "name": "Sioux City, IA-NE-SD",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "43580"
+    },
+    "43620": {
+        "id": "43620",
+        "name": "Sioux Falls, SD",
+        "csr": "1",
+        "state_id": "5342",
+        "region_id": "5359",
+        "id_census": "43620"
+    },
+    "43780": {
+        "id": "43780",
+        "name": "South Bend-Mishawaka, IN-MI",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "43780"
+    },
+    "43900": {
+        "id": "43900",
+        "name": "Spartanburg, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "43900"
+    },
+    "44060": {
+        "id": "44060",
+        "name": "Spokane-Spokane Valley, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "44060"
+    },
+    "44100": {
+        "id": "44100",
+        "name": "Springfield, IL",
+        "csr": "1",
+        "state_id": "5315",
+        "region_id": "5352",
+        "id_census": "44100"
+    },
+    "44140": {
+        "id": "44140",
+        "name": "Springfield, MA",
+        "csr": "1",
+        "state_id": "5320",
+        "region_id": "5356",
+        "id_census": "44140"
+    },
+    "44180": {
+        "id": "44180",
+        "name": "Springfield, MO",
+        "csr": "1",
+        "state_id": "5325",
+        "region_id": "5359",
+        "id_census": "44180"
+    },
+    "44220": {
+        "id": "44220",
+        "name": "Springfield, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "44220"
+    },
+    "44300": {
+        "id": "44300",
+        "name": "State College, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "44300"
+    },
+    "44420": {
+        "id": "44420",
+        "name": "Staunton-Waynesboro, VA",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "0",
+        "id_census": "44420"
+    },
+    "44700": {
+        "id": "44700",
+        "name": "Stockton-Lodi, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "44700"
+    },
+    "44940": {
+        "id": "44940",
+        "name": "Sumter, SC",
+        "csr": "1",
+        "state_id": "5341",
+        "region_id": "5358",
+        "id_census": "44940"
+    },
+    "45060": {
+        "id": "45060",
+        "name": "Syracuse, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "45060"
+    },
+    "45104": {
+        "id": "45104",
+        "name": "Tacoma-Lakewood, WA  (MSAD)",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "45104"
+    },
+    "45220": {
+        "id": "45220",
+        "name": "Tallahassee, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "45220"
+    },
+    "45300": {
+        "id": "45300",
+        "name": "Tampa-St. Petersburg-Clearwater, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "45300"
+    },
+    "45460": {
+        "id": "45460",
+        "name": "Terre Haute, IN",
+        "csr": "1",
+        "state_id": "5316",
+        "region_id": "5352",
+        "id_census": "45460"
+    },
+    "45500": {
+        "id": "45500",
+        "name": "Texarkana, TX-AR",
+        "csr": "1",
+        "state_id": "5303",
+        "region_id": "5360",
+        "id_census": "45500"
+    },
+    "45540": {
+        "id": "45540",
+        "name": "The Villages, FL",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "0",
+        "id_census": "45540"
+    },
+    "45780": {
+        "id": "45780",
+        "name": "Toledo, OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "45780"
+    },
+    "45820": {
+        "id": "45820",
+        "name": "Topeka, KS",
+        "csr": "1",
+        "state_id": "5317",
+        "region_id": "5359",
+        "id_census": "45820"
+    },
+    "45940": {
+        "id": "45940",
+        "name": "Trenton, NJ",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "45940"
+    },
+    "46060": {
+        "id": "46060",
+        "name": "Tucson, AZ",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "5355",
+        "id_census": "46060"
+    },
+    "46140": {
+        "id": "46140",
+        "name": "Tulsa, OK",
+        "csr": "1",
+        "state_id": "5337",
+        "region_id": "5360",
+        "id_census": "46140"
+    },
+    "46220": {
+        "id": "46220",
+        "name": "Tuscaloosa, AL",
+        "csr": "1",
+        "state_id": "5302",
+        "region_id": "5353",
+        "id_census": "46220"
+    },
+    "46340": {
+        "id": "46340",
+        "name": "Tyler, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "46340"
+    },
+    "46520": {
+        "id": "46520",
+        "name": "Honolulu ('Urban Honolulu'), HI",
+        "csr": "1",
+        "state_id": "5312",
+        "region_id": "5357",
+        "id_census": "46520"
+    },
+    "46540": {
+        "id": "46540",
+        "name": "Utica-Rome, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "5354",
+        "id_census": "46540"
+    },
+    "46660": {
+        "id": "46660",
+        "name": "Valdosta, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "46660"
+    },
+    "46700": {
+        "id": "46700",
+        "name": "Vallejo-Fairfield, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "46700"
+    },
+    "47020": {
+        "id": "47020",
+        "name": "Victoria, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "47020"
+    },
+    "47220": {
+        "id": "47220",
+        "name": "Vineland-Bridgeton, NJ",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "47220"
+    },
+    "47260": {
+        "id": "47260",
+        "name": "Virginia Beach-Norfolk-Newport News, VA-NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "47260"
+    },
+    "47300": {
+        "id": "47300",
+        "name": "Visalia-Porterville, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "47300"
+    },
+    "47380": {
+        "id": "47380",
+        "name": "Waco, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "47380"
+    },
+    "47460": {
+        "id": "47460",
+        "name": "Walla Walla, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "0",
+        "id_census": "47460"
+    },
+    "47580": {
+        "id": "47580",
+        "name": "Warner Robins, GA",
+        "csr": "1",
+        "state_id": "5311",
+        "region_id": "5358",
+        "id_census": "47580"
+    },
+    "47664": {
+        "id": "47664",
+        "name": "Warren-Troy-Farmington Hills, MI  (MSAD)",
+        "csr": "1",
+        "state_id": "5323",
+        "region_id": "5352",
+        "id_census": "47664"
+    },
+    "47894": {
+        "id": "47894",
+        "name": "Washington-Arlington-Alexandria, DC-VA-MD-WV (MSAD)",
+        "csr": "1",
+        "state_id": "5308",
+        "region_id": "5358",
+        "id_census": "47894"
+    },
+    "47940": {
+        "id": "47940",
+        "name": "Waterloo-Cedar Falls, IA",
+        "csr": "1",
+        "state_id": "5313",
+        "region_id": "5359",
+        "id_census": "47940"
+    },
+    "48060": {
+        "id": "48060",
+        "name": "Watertown-Fort Drum, NY",
+        "csr": "1",
+        "state_id": "5335",
+        "region_id": "0",
+        "id_census": "48060"
+    },
+    "48140": {
+        "id": "48140",
+        "name": "Wausau, WI",
+        "csr": "1",
+        "state_id": "5349",
+        "region_id": "5352",
+        "id_census": "48140"
+    },
+    "48260": {
+        "id": "48260",
+        "name": "Weirton-Steubenville, WV-OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "48260"
+    },
+    "48300": {
+        "id": "48300",
+        "name": "Wenatchee-East Wenatchee, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "48300"
+    },
+    "48424": {
+        "id": "48424",
+        "name": "West Palm Beach-Boca Raton-Delray Beach, FL  (MSAD)",
+        "csr": "1",
+        "state_id": "5310",
+        "region_id": "5358",
+        "id_census": "48424"
+    },
+    "48540": {
+        "id": "48540",
+        "name": "Wheeling, WV-OH",
+        "csr": "1",
+        "state_id": "5336",
+        "region_id": "5352",
+        "id_census": "48540"
+    },
+    "48620": {
+        "id": "48620",
+        "name": "Wichita, KS",
+        "csr": "1",
+        "state_id": "5317",
+        "region_id": "5359",
+        "id_census": "48620"
+    },
+    "48660": {
+        "id": "48660",
+        "name": "Wichita Falls, TX",
+        "csr": "1",
+        "state_id": "5344",
+        "region_id": "5360",
+        "id_census": "48660"
+    },
+    "48700": {
+        "id": "48700",
+        "name": "Williamsport, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "48700"
+    },
+    "48864": {
+        "id": "48864",
+        "name": "Wilmington, DE-MD-NJ  (MSAD)",
+        "csr": "1",
+        "state_id": "5332",
+        "region_id": "5354",
+        "id_census": "48864"
+    },
+    "48900": {
+        "id": "48900",
+        "name": "Wilmington, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "48900"
+    },
+    "49020": {
+        "id": "49020",
+        "name": "Winchester, VA-WV",
+        "csr": "1",
+        "state_id": "5346",
+        "region_id": "5358",
+        "id_census": "49020"
+    },
+    "49180": {
+        "id": "49180",
+        "name": "Winston-Salem, NC",
+        "csr": "1",
+        "state_id": "5328",
+        "region_id": "5358",
+        "id_census": "49180"
+    },
+    "49340": {
+        "id": "49340",
+        "name": "Worcester, MA-CT",
+        "csr": "1",
+        "state_id": "5320",
+        "region_id": "5356",
+        "id_census": "49340"
+    },
+    "49420": {
+        "id": "49420",
+        "name": "Yakima, WA",
+        "csr": "1",
+        "state_id": "5348",
+        "region_id": "5357",
+        "id_census": "49420"
+    },
+    "49620": {
+        "id": "49620",
+        "name": "York-Hanover, PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "49620"
+    },
+    "49660": {
+        "id": "49660",
+        "name": "Youngstown-Warren-Boardman, OH-PA",
+        "csr": "1",
+        "state_id": "5339",
+        "region_id": "5354",
+        "id_census": "49660"
+    },
+    "49700": {
+        "id": "49700",
+        "name": "Yuba City, CA",
+        "csr": "1",
+        "state_id": "5305",
+        "region_id": "5357",
+        "id_census": "49700"
+    },
+    "49740": {
+        "id": "49740",
+        "name": "Yuma, AZ",
+        "csr": "1",
+        "state_id": "5304",
+        "region_id": "5355",
+        "id_census": "49740"
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Location - Dataset Selector</title>
+    <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/globalCtrl.js"></script>
+    <link href="css/global.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body data-ng-app="mainCtrl">
+    <div class="container" data-ng-controller="iglobalCtrl">
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Select State/Locations</h3>
+                <ul class="heightController">
+                    <li data-ng-repeat="state in states">
+                        <div>
+                            <input type="checkbox" ng-click="selectAllLocations(state)" ng-model="state.isChecked" />{{state.name}}
+                        </div>
+                        <ul class="location-list">
+                            <li data-ng-repeat="location in state.locations">
+                                <div>
+                                    <input type="checkbox" ng-model="location.isChecked" />{{location.name}}</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <h3>Charts</h3>
+                <p>Here Charts will come</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 ">
+                <h3>Select DataSets</h3>
+                <ul class="heightController">
+                    <li data-ng-repeat="dataset in datasetData">
+                        <input type="checkbox" ng-model="dataset.isChecked" />{{dataset.name}}
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="col-md-6">
+                    <h3>Selected Locations <span></span></h3>
+                    <div class="heightController">
+	                    <div data-ng-repeat="state in states">
+	                        <ul class="location-list">
+	                            <li data-ng-repeat="location in state.locations | filter:{ isChecked: true }">
+	                                <div>{{state.name}} - {{location.name}}</div>
+	                            </li>
+	                        </ul>
+	                    </div>                    	
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <h3>Selected DataSets</h3>
+                    <ul class="heightController">
+                        <li data-ng-repeat="dataset in datasetData | filter:{ isChecked: true }">
+                            {{dataset.name}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

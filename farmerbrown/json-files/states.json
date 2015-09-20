@@ -1,0 +1,410 @@
+{
+    "5301": {
+        "id": "5301",
+        "name": "AK",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "41"
+    },
+    "5302": {
+        "id": "5302",
+        "name": "AL",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "23"
+    },
+    "5303": {
+        "id": "5303",
+        "name": "AR",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "44"
+    },
+    "5304": {
+        "id": "5304",
+        "name": "AZ",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "56"
+    },
+    "5305": {
+        "id": "5305",
+        "name": "CA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "14"
+    },
+    "5306": {
+        "id": "5306",
+        "name": "CO",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "27"
+    },
+    "5307": {
+        "id": "5307",
+        "name": "CT",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "11"
+    },
+    "5308": {
+        "id": "5308",
+        "name": "DC",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "54"
+    },
+    "5309": {
+        "id": "5309",
+        "name": "DE",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "12"
+    },
+    "5310": {
+        "id": "5310",
+        "name": "FL",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "2"
+    },
+    "5311": {
+        "id": "5311",
+        "name": "GA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "22"
+    },
+    "5312": {
+        "id": "5312",
+        "name": "HI",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "32"
+    },
+    "5313": {
+        "id": "5313",
+        "name": "IA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "55"
+    },
+    "5314": {
+        "id": "5314",
+        "name": "ID",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "7"
+    },
+    "5315": {
+        "id": "5315",
+        "name": "IL",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "3"
+    },
+    "5316": {
+        "id": "5316",
+        "name": "IN",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "49"
+    },
+    "5317": {
+        "id": "5317",
+        "name": "KS",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "48"
+    },
+    "5318": {
+        "id": "5318",
+        "name": "KY",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "34"
+    },
+    "5319": {
+        "id": "5319",
+        "name": "LA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "21"
+    },
+    "5320": {
+        "id": "5320",
+        "name": "MA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "52"
+    },
+    "5321": {
+        "id": "5321",
+        "name": "MD",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "5"
+    },
+    "5322": {
+        "id": "5322",
+        "name": "ME",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "38"
+    },
+    "5323": {
+        "id": "5323",
+        "name": "MI",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "43"
+    },
+    "5324": {
+        "id": "5324",
+        "name": "MN",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "4"
+    },
+    "5325": {
+        "id": "5325",
+        "name": "MO",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "46"
+    },
+    "5326": {
+        "id": "5326",
+        "name": "MS",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "45"
+    },
+    "5327": {
+        "id": "5327",
+        "name": "MT",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "47"
+    },
+    "5328": {
+        "id": "5328",
+        "name": "NC",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "9"
+    },
+    "5329": {
+        "id": "5329",
+        "name": "ND",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "33"
+    },
+    "5330": {
+        "id": "5330",
+        "name": "NE",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "18"
+    },
+    "5331": {
+        "id": "5331",
+        "name": "NH",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "8"
+    },
+    "5332": {
+        "id": "5332",
+        "name": "NJ",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "15"
+    },
+    "5333": {
+        "id": "5333",
+        "name": "NM",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "13"
+    },
+    "5334": {
+        "id": "5334",
+        "name": "NV",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "40"
+    },
+    "5335": {
+        "id": "5335",
+        "name": "NY",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "39"
+    },
+    "5336": {
+        "id": "5336",
+        "name": "OH",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "25"
+    },
+    "5337": {
+        "id": "5337",
+        "name": "OK",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "29"
+    },
+    "5338": {
+        "id": "5338",
+        "name": "OR",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "17"
+    },
+    "5339": {
+        "id": "5339",
+        "name": "PA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "19"
+    },
+    "5340": {
+        "id": "5340",
+        "name": "RI",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "6"
+    },
+    "5341": {
+        "id": "5341",
+        "name": "SC",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "28"
+    },
+    "5342": {
+        "id": "5342",
+        "name": "SD",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "51"
+    },
+    "5343": {
+        "id": "5343",
+        "name": "TN",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "30"
+    },
+    "5344": {
+        "id": "5344",
+        "name": "TX",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "26"
+    },
+    "5345": {
+        "id": "5345",
+        "name": "UT",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "24"
+    },
+    "5346": {
+        "id": "5346",
+        "name": "VA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "53"
+    },
+    "5347": {
+        "id": "5347",
+        "name": "VT",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "10"
+    },
+    "5348": {
+        "id": "5348",
+        "name": "WA",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "20"
+    },
+    "5349": {
+        "id": "5349",
+        "name": "WI",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "16"
+    },
+    "5350": {
+        "id": "5350",
+        "name": "WV",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "1"
+    },
+    "5351": {
+        "id": "5351",
+        "name": "WY",
+        "csr": "2",
+        "state_id": "0",
+        "region_id": "0",
+        "id_census": "31"
+    }
+}
