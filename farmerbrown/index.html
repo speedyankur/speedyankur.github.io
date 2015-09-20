@@ -6,7 +6,9 @@
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/angular.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/jquery.stickysectionheaders.js"></script>
     <script type="text/javascript" src="js/globalCtrl.js"></script>
+    
     <link href="css/global.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -16,19 +18,21 @@
         <div class="row">
             <div class="col-md-4">
                 <h3>Select State/Locations</h3>
-                <ul class="heightController">
-                    <li data-ng-repeat="state in states">
-                        <div>
-                            <input type="checkbox" ng-click="selectAllLocations(state)" ng-model="state.isChecked" />{{state.name}}
-                        </div>
-                        <ul class="location-list">
-                            <li data-ng-repeat="location in state.locations">
-                                <div>
-                                    <input type="checkbox" ng-model="location.isChecked" />{{location.name}}</div>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+                <div id="sticky-list">
+	                <ul class="heightController">
+	                    <li data-ng-repeat="state in states">
+	                    	<strong>
+	                    		<input type="checkbox" ng-click="selectAllLocations(state)" ng-model="state.isChecked" />{{state.name}}
+	                    	</strong>
+	                        <ul class="location-list">
+	                            <li data-ng-repeat="location in state.locations">
+	                                <div>
+	                                    <input type="checkbox" ng-model="location.isChecked" />{{location.name}}</div>
+	                            </li>
+	                        </ul>
+	                    </li>
+	                </ul>                	
+                </div>
             </div>
             <div class="col-md-8">
                 <h3>Charts</h3>

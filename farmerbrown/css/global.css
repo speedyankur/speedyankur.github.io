@@ -1,4 +1,40 @@
-.heightController{
-	height: 250px;
-	overflow-y: auto;
+.heightController {
+    height: 250px;
+    overflow-y: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* The main container */
+
+#sticky-list {
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* The main list */
+
+#sticky-list > ul {
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* Section headers, defined through "headlineSelector" */
+
+#sticky-list > ul > li strong {
+    display: block;
+}
+
+
+/* Section headers when "sticky", defined through "stickyClass" */
+
+#sticky-list > ul > li.sticky strong {
+    position: absolute;
+    top: 0;
 }

@@ -1,5 +1,5 @@
 var mainCtrl = angular.module('mainCtrl', []);
-mainCtrl.controller('iglobalCtrl', function($scope, $http) {
+mainCtrl.controller('iglobalCtrl', function($scope, $http, $timeout) {
     $scope.states = [];    
     $http.get('json-files/states.json').success(function(data) {
         var states = [];
@@ -19,6 +19,12 @@ mainCtrl.controller('iglobalCtrl', function($scope, $http) {
                 stateIndex++;
             }
             $scope.states = tempStates;
+            $timeout(function(){
+              $('#sticky-list').stickySectionHeaders({
+                stickyClass     : 'sticky',
+                headlineSelector: 'strong'
+              });
+            },1000)
         });
     });
     $scope.selectAllLocations = function(state){
