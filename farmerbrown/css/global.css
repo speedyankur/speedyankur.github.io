@@ -7,6 +7,12 @@ ul {
     list-style: none;
 }
 
+div.search-field{
+    margin: 5px 0 5px 40px;
+}
+div.search-field input{
+    width: 320px;
+}
 
 /* The main container */
 
@@ -29,6 +35,10 @@ ul {
 
 #sticky-list > ul > li strong {
     display: block;
+    background-color: #fff;
+    padding: 5px 10px;
+    width: 320px !important;
+    border: 1px solid #ccc;
 }
 
 
@@ -37,4 +47,5 @@ ul {
 #sticky-list > ul > li.sticky strong {
     position: absolute;
     top: 0;
+    background-color: #fff
 }
