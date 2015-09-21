@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jquery.stickysectionheaders.js"></script>
     <script type="text/javascript" src="js/globalCtrl.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
     <link href="css/global.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -47,6 +48,21 @@
                 <ul class="heightController">
                     <li data-ng-repeat="dataset in datasetData">
                         <input type="checkbox" ng-model="dataset.isChecked" />{{dataset.name}}
+                        <ul >
+                            <li data-ng-repeat="child1 in dataset.children ">                                
+                                <input type="checkbox" ng-model="child1.isChecked" />{{child1.name}} 
+                                <ul >
+                                    <li data-ng-repeat="child2 in child1.children ">
+                                        <input type="checkbox" ng-model="child2.isChecked" />{{child2.name}}
+                                        <ul >
+                                            <li data-ng-repeat="child3 in child2.children ">
+                                                <input type="checkbox" ng-model="child3.isChecked" />{{child3.name}}                                                 
+                                            </li>
+                                        </ul>                                         
+                                    </li>
+                                </ul>                                
+                            </li>
+                        </ul>                        
                     </li>
                 </ul>
             </div>
@@ -68,10 +84,25 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Selected DataSets <span>({{(datasetData | filter:{ isChecked: true }).length}})</span> </h3>
+                    <h3>Selected DataSets </h3>
                     <ul class="heightController">
-                        <li data-ng-repeat="dataset in datasetData | filter:{ isChecked: true }">
-                            {{dataset.name}}
+                        <li data-ng-repeat="dataset in datasetData">
+                            <strong ng-show="(dataset.children | filter:{ isChecked: true }).length >0 || dataset.isChecked">{{dataset.name}}</strong>
+                            <ul >
+                                <li data-ng-repeat="child1 in dataset.children | filter:{ isChecked: true }">                                
+                                    <strong ng-show="(child1.children | filter:{ isChecked: true }).length >0 || child1.isChecked">{{child1.name}} </strong>
+                                    <ul >
+                                        <li data-ng-repeat="child2 in child1.children | filter:{ isChecked: true }">
+                                            <strong ng-show="(child2.children | filter:{ isChecked: true }).length >0 || child2.isChecked"> {{child2.name}}</strong>
+                                            <ul >
+                                                <li data-ng-repeat="child3 in child2.children | filter:{ isChecked: true }">
+                                                    <strong ng-show="(child3.children | filter:{ isChecked: true }).length >0 || child3.isChecked">{{child3.name}}</strong>
+                                                </li>
+                                            </ul>                                         
+                                        </li>
+                                    </ul>                                
+                                </li>
+                            </ul>                        
                         </li>
                     </ul>
                 </div>

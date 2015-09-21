@@ -34,12 +34,32 @@ mainCtrl.controller('iglobalCtrl', function($scope, $http, $timeout) {
     }
     $scope.datasetData = [];
     $http.get('json-files/dataset.json').success(function(data) {
-        var tempDataSets = []
-        for (var keyDataset in data) {
-          tempDataSets.push(data[keyDataset])
-
+        var nodes = [];
+        for (var key in data) {
+            nodes.push(data[key]);   
         }
-        $scope.datasetData = tempDataSets;
+        var unflatten = function( array, parent, tree ){
+           
+            tree = typeof tree !== 'undefined' ? tree : [];
+            parent = typeof parent !== 'undefined' ? parent : { id: 0 };
+                
+            var children = _.filter( array, function(child){ 
+                return parseInt(child.superset_id) == parent.id; 
+            });
+            
+            if( !_.isEmpty( children )  ){
+                if( parent.id == "0" ){
+                   tree = children;   
+                }else{
+                   parent['children'] = children
+                }
+                _.each( children, function( child ){ unflatten( array, child ) } );                    
+            }
+            
+            return tree;
+        }
+
+        $scope.datasetData = unflatten( nodes );   
     });
 
 });
