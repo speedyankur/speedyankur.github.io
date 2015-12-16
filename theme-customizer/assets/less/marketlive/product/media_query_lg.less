@@ -1,0 +1,47 @@
+/*! media_query_lg.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-lg-mixin-product (@a) when (@a = true), (@a = LG_screenWidth) {
+
+
+
+
+  /** Product Carousel **/
+
+  .ml-carousel{
+    margin:0 25px 10px 30px;
+    clear: both;
+  }
+
+
+
+  /** Recently Viewed **/
+  .ml-recentlyviewed-carousel-view-item .ml-thumb-image  img  {
+    width:115px;
+    height:115px;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+
+
+  /** Cross sells **/
+
+
+   .ml-crosssells-carousel-view-item  .ml-thumb-image img{
+    width:225px;
+    height:225px;
+    margin-left: 15px;
+    margin-right:15px;
+  }
+
+  /** Recovery Products **/
+
+  .ml-recoveryproducts-carousel-view-item  .ml-thumb-image  img{
+    width:225px;
+    height:225px;
+    margin-right:13px;
+    margin-left: 12px;
+  }
+
+
+
+}

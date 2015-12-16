@@ -1,0 +1,609 @@
+/*! myaccount.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+/* My Account styles */
+.ml-pulldown-container .ml-pulldown-arrow {
+    border-left: @ml-myaccount-pulldown-arrow solid transparent;
+    border-right: @ml-myaccount-pulldown-arrow solid transparent;
+    border-bottom: @ml-myaccount-pulldown-arrow solid @ml-myaccount-pulldown-background;
+    height: 0px;
+    width: 0px;
+    text-align: center;
+    right: 48%;
+    position: absolute;
+    top: -@ml-myaccount-pulldown-arrow;
+}
+
+.ml-myaccount-box-shadow {
+    border: 1px solid @ml-gray;
+    -moz-box-shadow: 3px 3px 0 0 @ml-gray;
+    -webkit-box-shadow: 3px 3px 0 0 @ml-gray;
+    box-shadow: 3px 3px 0 0 @ml-gray;
+    padding: @ml-myaccount-container-padding;
+}
+
+/***********************************************************************************************************************
+* Account Left Nav
+***********************************************************************************************************************/
+
+.ml-layout-section-account {
+    .ml-navleft-body {
+        .breadcrumb {
+            margin-bottom: 0 !important;
+        }
+    }
+
+    .ml-leftNav-container {
+        ul, ul li {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            position: relative;
+        }
+
+        ul li a:link, ul li a:active,
+        ul li a:visited, ul li a:hover {
+            display: block;
+            font-size: @ml-navbar-font-size;
+            color: @ml-gray-dark;
+            text-decoration: none;
+        }
+
+        ul li.active a {
+            color: @ml-navbar-active-link-color;
+            text-decoration: none;
+            outline: none;
+        }
+
+        h2, h2 a:link,
+        h2 a:active, h2 a:visited {
+            font-size: @ml-myaccount-heading-font-size;
+            font-weight: bold;
+            color: @ml-gray-dark;
+            display: block;
+        }
+
+        h2 a:hover {
+            font-size: @ml-myaccount-heading-font-size;
+            font-weight: bold;
+            color: @ml-gray-dark;
+            text-decoration: none;
+        }
+    }
+    .alert {
+        margin-bottom: 0px;
+	margin-top: @ml-padding-default;
+    }
+}
+
+.ml-myaccount-box-header {
+    font-size: @ml-myaccount-heading-font-size;
+    color: @ml-gray-dark;
+    position: relative;
+    padding: 0 0 @ml-padding-default 0;
+}
+
+.ml-myaccount-box-subheader {
+    color: @ml-link-hover-color;
+    position: relative;
+    font-weight: bold;
+}
+
+.ml-myaccount-contact-info-left-box {
+    width: 36.5%;
+    padding: 0px;
+    float: left;
+    text-align: right;
+    overflow: hidden;
+}
+
+.ml-myaccount-contact-info-right-box {
+    width: 63.5%;
+    padding: 0 0 0 @ml-myaccount-leftnav-link-padding;
+    float: left;
+}
+
+.ml-account-box-spacer {
+    .clearfix;
+}
+
+.ml-myaccount-header-link {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.ml-myaccount-header-link a {
+    text-decoration: underline;
+    font-size: @ml-font-size-base;
+    color: @ml-gray-dark;
+    font-weight: normal;
+}
+
+.ml-myaccount-box-shadow table.table {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.ml-myaccount-box-shadow table.table tr td, .ml-myaccount-box-shadow table.table th {
+    padding: 8px 8px 8px 0;
+}
+
+.ml-myaccount-box-shadow table.table th {
+    white-space: nowrap;
+    border: none;
+    color: @ml-link-hover-color;
+}
+
+.ml-myaccount-box-shadow table.table tr td {
+    border: none;
+}
+
+.ml-myaccount-box-shadow table.table tr td a {
+    text-decoration: underline;
+}
+
+.ml-myaccount-box-shadow table.table tbody {
+    border: 0px;
+}
+
+.ml-myaccount-sub-header {
+    font-size: @ml-myaccount-welcome-message-font-size;
+    color: @ml-gray-dark;
+    padding: @ml-padding-default 0 @ml-myaccount-form-padding 0;
+    font-weight: bold;
+    text-align: left !important;
+}
+
+/***********************************************************************************************************************
+* Account Info
+***********************************************************************************************************************/
+.ml-myaccount-accountinfo {
+    padding: @ml-padding-default 0 0 0 !important;
+}
+
+.ml-myaccount-accountinfo .input-group {
+    margin: 0 0 @ml-myaccount-form-padding 0;
+}
+
+.ml-myaccount-accountinfo .input-group input {
+    border-radius: 0 4px 4px 0 !important;
+}
+
+.ml-myaccount-accountinfo .input-group span.formrequired {
+    position: absolute;
+    right: -@ml-myaccount-form-padding;
+    top: @ml-myaccount-form-padding;
+}
+
+.formrequired {
+    color: @ml-myaccount-formrequired-text-color;
+}
+
+.ml-myaccount-myinfo-container .form-group:after, .ml-myaccount-myinfo-container .form-group:before {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.ml-myaccount-button-container a.cancel {
+    padding: @ml-myaccount-form-padding;
+    color: @ml-gray-dark;
+    text-decoration: underline;
+    margin-left: 3px;
+}
+
+#ml-no-tables .table-bordered tr td {
+    vertical-align: text-top;
+}
+
+#ml-no-tables table.table-bordered td a {
+    text-decoration: underline;
+    color: @ml-navbar-active-link-color;
+}
+
+.ml-myaccount-addressbook-container .ml-myaccount-myinfo-container {
+    width: 100% !important;
+    .ml-myaccount-zip-code-message {
+        span {
+            font-size: @ml-catalog-request-zip-code-font-size;
+	    display: block;
+        }
+    }
+}
+
+.ml-myaccount-addressbook-container .ml-myaccount-myinfo-container .ml-myaccount-button-container {
+    padding: 0px;
+    text-align: right !important;
+    width: 100% !important;
+}
+
+.ml-myaccount-fileaddress-container .ml-myaccount-sub-header {
+    font-weight: normal !important;
+    padding: @ml-padding-default;
+}
+
+.ml-myaccount-fileaddress-container .ml-myaccount-box-shadow {
+    padding: 0;
+    ul.pagination {
+        margin-left: @ml-padding-default;
+    }
+}
+
+.ml-myaccount-myaddress-addressbox {
+    padding: @ml-padding-default;
+}
+
+.ml-myaccount-myaddress-addressbox {
+    width: 100%;
+    display: table;
+}
+
+.ml-myaccount-myaddress-addressbox:nth-child(even) {
+    background: @ml-myaccount-myaddress-addressbox-background;
+}
+
+.ml-myaccount-myaddress-addressbox .address {
+    max-width: 80%;
+    display: table-cell;
+}
+
+.ml-myaccount-myaddress-addressbox .links {
+    width: 20%;
+    text-align: right;
+    display: table-cell;
+    padding-left: @ml-padding-default;
+    a {
+        color: @ml-gray-dark;
+        text-decoration: underline;
+    }
+}
+
+.ml-myaccount-fileaddress-container .ml-myaccount-myaddress-addressbox button {
+    width: 100%;
+}
+
+.ml-context-button {
+    height: 28px;
+    line-height: 28px;
+    background: @ml-gray-lighter;
+    border: 1px solid @ml-gray-light;
+    border-radius: 3px;
+    text-align: center;
+    font-size: @ml-secondary-button-font-size;
+    padding: 0px @ml-myaccount-form-padding;
+}
+
+#ml-no-tables .table-bordered thead tr th:nth-child(3), #ml-no-tables .table-bordered thead tr th:nth-child(4) {
+    white-space: nowrap;
+}
+
+
+/***********************************************************************************************************************
+* Account Order History
+***********************************************************************************************************************/
+.ml-myaccount-order-history-container .row {
+    margin-left: 0px;
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+.ml-myaccount-order-history-container .row div {
+    padding-left: 0px;
+    padding-right: @ml-padding-xs;
+}
+
+.ml-myaccount-order-history-container div.shipment-tracking {
+    display: block;
+    font-weight: normal;
+    padding-right: 0px;
+    font-size: @ml-font-size-base;
+    text-transform: none;
+}
+
+.ml-myaccount-item-history thead th {
+    font-size: @ml-font-size-table-header;
+    text-transform: lowercase;
+}
+
+.ml-myaccount-item-history td:nth-child(4) {
+    white-space: nowrap;
+}
+
+.ml-myaccount-order-history-container .row div.col-xs-12 {
+    padding-right: 0px;
+}
+
+.ml-was-price {
+    text-decoration: line-through;
+    color: @ml-price-was-color;
+}
+
+/***********************************************************************************************************************
+* Password Recovery
+***********************************************************************************************************************/
+
+.ml-password-recovery-header {
+    color: @ml-gray-dark;
+    font-size: @ml-secondary-heading-font-size;
+    font-weight: bold;
+    padding: @ml-padding-default 0 @ml-form-padding 0;
+    margin-bottom : @ml-padding-default;
+    border-bottom: @ml-gray 1px solid ;
+}
+
+.ml-myaccount-wishlist-listSaved{
+  width: 100% !important;
+}
+
+.ml-myaccount-wishlist-right-container .ml-myaccount-sub-header {
+  font-weight: normal !important;
+  padding: @ml-padding-default;
+}
+
+.ml-myaccount-wishlist-right-container .ml-myaccount-box-shadow {
+  padding: 0;
+  ul.pagination {
+    margin-left: @ml-padding-default;
+  }
+}
+
+.ml-myaccount-wishlist-addbox{
+  padding: 0 @ml-padding-default @ml-padding-default @ml-padding-default;
+  width: 100%;
+  .form-group {
+    margin-bottom: (@ml-spacer-default);
+  }
+  .form-group:after, .form-group:before {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+.ml-myaccount-wishlist-listSaved {
+    .ml-myaccount-wishlist-addbox {
+        background: @ml-wishlist-edit-background-color;
+	padding-top: @ml-padding-default;
+    }
+}
+
+.ml-myaccount-wishlist-list {
+  padding: @ml-padding-default 0px;
+  width: 100%;
+  display: table;
+  border-bottom: 1px solid @ml-gray;
+}
+
+.ml-myaccount-wishlist-nolist {
+  padding: @ml-padding-default 0px;
+  width: 100%;
+}
+
+.ml-myaccount-wishlist-list .ml-myaccount-wishlist-listDetail {
+  max-width: 73%;
+  display: table-cell;
+  padding-right: @ml-padding-default;
+}
+
+.ml-myaccount-wishlist-list .ml-myaccount-wishlist-link {
+  width: 27%;
+  text-align: right;
+  display: table-cell;
+  a {
+    color: @ml-gray-dark;
+    text-decoration: underline;
+  }
+}
+
+.ml-myaccount-wishlist-listName{
+  color: @ml-myaccount-wishlist-listName-text-color;
+  a {
+    text-decoration: underline;
+  }
+}
+
+.ml-myaccount-wishlist-listOptions{
+  color: @ml-myaccount-wishlist-listOptions-text-color;
+}
+
+.ml-myaccount-wishlist-add-options .btn-group{
+  white-space: normal !important;
+  display: block;
+}
+
+.ml-myaccount-wishlist-add-options {
+	width: 100%
+}
+
+.ml-myaccount-wishlist-addbox  .ml-context-button{
+  width: 100%
+}
+
+
+.ml-myaccount-toggle-switch-button{
+  background: @ml-myaccount-toggle-switch-button-background;
+  border: 1px solid @ml-myaccount-toggle-switch-button-border-color;
+  font-size: @ml-myaccount-toggle-switch-button-font-size;
+  font-weight: bold;
+  color: @ml-myaccount-toggle-switch-button-text-color;
+  line-height: 30px;
+  height: 30px;
+  width: 50% !important;
+  padding: 0;
+
+  &.active {
+    background: @ml-myaccount-toggle-switch-button-active-background;
+    color: @ml-myaccount-toggle-switch-button-active-text-color;
+  }
+
+}
+
+.ml-create-new-wishlist-button {
+	margin-top:15px;
+}
+
+/** Wish list **/
+.ml-myaccount-wishlist-left-container img {
+    max-width: 100%;
+}
+.ml-myaccount-wishlist-right-container {
+    .ml-myaccount-box-shadow + .ml-myaccount-box-shadow {
+        margin-top: (@ml-spacer-default/3*4);
+	padding: 0 @ml-padding-default @ml-padding-default @ml-padding-default;
+	    .ml-myaccount-sub-header {
+            padding-left: 0px;
+	    padding-right: 0px;
+        }
+	.form-control, .ml-tertiary-button {
+	    width: 100%;
+	}
+    }
+    .ml-myaccount-wishlist-product-name {
+        padding-top: @ml-padding-default;
+	padding-bottom: (@ml-spacer-default/5);
+    }
+    .ml-myaccount-wishlist-find-list {
+        margin-top: (@ml-spacer-default/3*2);
+    }
+}
+.ml-myaccount-wishlist-find-list-view {
+    .ml-myaccount-wishlist-find-list {
+        margin-top: (@ml-spacer-default/3*2);
+    }
+    .ml-myaccount-wishlist-find-view-list {
+        padding: @ml-padding-default 0px;
+    }
+}
+.ml-myaccount-wishlist-left-container {
+    .ml-myaccount-wishlist-find-view-list {
+        div:first-child {
+	    padding-bottom: (@ml-spacer-default - 3);
+	}
+        .ml-myaccount-wishlist-find-view-list-name {
+	    padding: (@ml-spacer-default/3+3) 0;
+	    border-bottom: 1px solid @ml-gray;
+	    a {
+	        text-decoration: underline;
+	    }
+	}
+    }
+}
+.ml-myaccount-wishlist-find-list-msg {
+    margin-bottom: @ml-padding-default;
+}
+.ml-myaccount-wishlist-button-wrapper {
+    padding-top: @ml-padding-default;
+    clear: both;
+    text-align: right;
+}
+.ml-myaccount-wishlist-view {
+    .ml-myaccount-wishlist-view-empty-msg {
+        padding: (@ml-spacer-default/3*2) 0px;
+	font-weight: bold;
+    }
+    .ml-myaccount-wishlist-view-head {
+	padding: (@ml-spacer-default/3*5) 0px (@ml-spacer-default/5*2) 0px;
+	font-size: @ml-secondary-button-font-size;
+	font-weight: bold;
+	border-bottom: 1px solid @ml-gray;
+	margin-bottom: (@ml-spacer-default/3*2);
+    }
+    .ml-myaccount-wishlist-view-row {
+        border-bottom: 1px solid @ml-gray;
+	margin-bottom: (@ml-spacer-default/3*2);
+	padding-bottom: (@ml-spacer-default/3*2);
+
+	.ml-myaccount-wishlist-view-thumb img {
+	    width: (@ml-spacer-default*4+6);
+	    height: (@ml-spacer-default*4+6);
+	}
+        .ml-myaccount-wishlist-view-detail {
+	    .ml-myaccount-wishlist-view-product-name {
+	        font-weight: bold;
+		a {
+	            color: @ml-gray-dark;
+		    &:hover {
+		        text-decoration: none;
+		    }
+	        }
+	    }
+	}
+	.ml-myaccount-wishlist-view-qty, .ml-myaccount-wishlist-view-purchased, .ml-myaccount-wishlist-view-qty-purchased {
+	    a {
+	        color: @ml-gray-dark;
+		text-decoration: underline;
+		&:hover {
+		    text-decoration: underline;
+		}
+	    }
+	    .ml-myaccount-wishlist-view-qty-error {
+	        color: @ml-error-color;
+	    }
+	    .ml-product-qty-text {
+	        margin: (@ml-spacer-default/3) 0;
+	    }
+	}
+	.ml-myaccount-wishlist-view-purchased-qty {
+	    margin-top: (@ml-spacer-default - 6);
+	}
+    }
+    .ml-myaccount-wishlist-view-detail {
+        .ml-myaccount-wishlist-view-price-break {
+	    padding-left: (@ml-spacer-default/3+3);
+	    #priceBreaksLink_1_Content {
+	    padding-top: @ml-padding-default;
+	    padding-bottom: @ml-padding-default;
+	    }
+	}
+	.ml-myaccount-wishlist-view-product-code, .ml-myaccount-wishlist-view-product-kit {
+	    padding-bottom: @ml-padding-default;
+	}
+    }
+}
+.ml-myaccount-wishlist-send-list-wrapper {
+    .ml-myaccount-wishlist-send-list-container {
+        .ml-myaccount-wishlist-send-list-head {
+	    font-weight: bold;
+	    padding-top: @ml-padding-default;
+	}
+    }
+    .ml-myaccount-wishlist-send-list-add-more {
+        padding-top: (@ml-spacer-default/3*2);
+	padding-bottom: @ml-padding-default;
+	.ml-tertiary-button {
+	    margin-left: (@ml-spacer-default/3*2);
+	}
+    }
+    .form-control {
+        margin-top: (@ml-spacer-default/5-1);
+	margin-bottom: (@ml-spacer-default/3*2);
+    }
+    .ml-numeric-spinner-wrapper {
+        .form-control {
+        margin-top: 0px;
+	margin-bottom: 0px;
+        }
+    }
+}
+
+.ml-myaccount-wishlist-thank-you-wrapper {
+    text-align: center;
+    .ml-myaccount-wishlist-thank-you-msg {
+        margin-bottom: (@ml-spacer-default/3*2);
+    }
+    .ml-tertiary-button {
+	margin-top: (@ml-spacer-default/3*2);
+    }
+    .ml-myaccount-wishlist-thank-you-head {
+        font-weight: bold;
+	margin-bottom: (@ml-spacer-default/3*2);
+    }
+    a {
+        color: @ml-gray-dark;
+	text-decoration: none;
+	&:hover {
+	    text-decoration: none;
+	}
+    }
+}.ml-myaccount-wishlist-friend-search {
+    margin-bottom: @ml-padding-default !important;
+}

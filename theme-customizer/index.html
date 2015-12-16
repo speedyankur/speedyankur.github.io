@@ -1,0 +1,16 @@
+<!doctype html><html ng-app="themeMaker"><head><meta charset="utf-8"><title>themeMaker</title><meta name="description" content=""><meta name="viewport" content="width=device-width"><link rel="stylesheet" href="styles/vendor-9ed2c7df47.css"><link rel="stylesheet" href="styles/app-1070d2b1f8.css"><link rel="stylesheet/less" type="text/css" href="assets/less/main.less"><script>
+    less = {
+        env: "development"
+    };
+    </script><style type="text/css">
+        .sidebar,.preview{
+          padding: 0;
+          margin: 0;
+          height: calc(100vh - 60px);
+          overflow-y: auto;
+          overflow-x: hidden;
+          background: #fff;
+        }
+    </style></head><body><!--[if lt IE 10]>
+ <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+ <![endif]--><div class="container-fluid"><div><navbar></navbar></div><div class="row"><div class="col-xs-9"><div ui-view="" class="preview"></div></div><div class="col-xs-3 sidebar"><less-variable-listing></less-variable-listing></div></div></div><script src="scripts/vendor-95506385a6.js"></script><script src="scripts/app-8cbc5a0615.js"></script></body></html>

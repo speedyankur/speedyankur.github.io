@@ -1,0 +1,222 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-checkout (@a) when (@a = true), (@a = SM_screenWidth) {
+
+    .make-column(@num) {
+        .make-sm-column(@num);
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ml-layout-section-checkout .modal-dialog {
+        width: 500px;
+    }
+
+    .ml-accordion-annotations .ml-accordion-basket{
+        .ml-accordion-basket-items {
+            display: block;
+        }
+        .ml-accordion-view-basket {
+            display: none;
+        }
+
+    }
+
+    .ml-checkout-billing  .form-group, .ml-checkout-address-add-container .form-group {
+        .control-label {
+            .make-column(4);
+            text-align: right;
+            line-height: 2.5;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .control-label-content {
+            .make-column(6);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .control-label-content-sm {
+            .make-column(4);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .control-label-content-xs {
+            .make-column(2);
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+    .ml-shipping-container{
+        .ml-shipto-select{
+            .form-group{
+                float:left;
+                clear:none;
+            }
+        }
+        .ml-shipping-method-type{
+            .ml-ship-method-name, .ml-ship-method-description, .ml-item-price-wrapper{
+                float:left;
+            }
+        }
+        .ml-shippable-items{
+            .ml-shippable-item {
+                .ml-shippable-item-thumb-img-col {
+                    .make-column(2);
+                }
+                .ml-shippable-item-thumb-txt-col {
+                    .make-column(3);
+                    padding-left: @ml-padding-vertical-default;
+                    padding-top: 0px;
+                    padding-bottom: 0px;
+                }
+
+                .ml-shippable-item-kit-col {
+                    padding-left: 0;
+                }
+            }
+            .ml-shippable-item-select-col {
+                padding-top:0px;
+            }
+        }
+        .ml-shipping-methods{
+            .ml-shipping-method-type .control-label{
+                width:auto;
+                .ml-ship-method-description, .ml-item-price-wrapper{
+                    padding-left: 0px;
+                }
+            }
+        }
+        .ml-shipping-shhipments{
+            .make-column(5);
+            padding-left: @ml-padding-default;
+            padding-right: 0px;
+        }
+        .ml-shipping-delivery-gift{
+            .make-column(7);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+    }
+
+    .ml-checkout-address-add-container .form-group {
+        .control-label {
+            .make-column(4);
+            text-align:right;
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+        .control-label-content {
+            .make-column(8);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+    }
+    /** START: Payment section **/
+    .ml-payment-creditCard {
+        .make-column(4);
+        padding-left: @ml-padding-default;
+        padding-right: @ml-padding-default;
+	padding-bottom: 0px;
+    }
+     .ml-payment-payPal {
+        .make-column(3.6);
+	padding: (@ml-spacer-default/3*2) @ml-padding-default 0px @ml-padding-default !important;
+    }
+    .ml-payment-visaCheckout {
+        .make-column(4.4);
+	padding: (@ml-spacer-default/3*2) (@ml-spacer-default/3) 0px @ml-padding-default !important;
+    }
+
+    .ml-payment-form-label {
+        .make-column(3);
+        clear: left;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .ml-payment-form-content {
+        .make-column(7);
+        padding-left: 10px;
+        padding-right: 10px;
+
+        .ml-payment-card-cvv2 {
+            .make-column(4);
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+        .ml-payment-card-month, .ml-payment-card-year {
+            .make-column(6);
+            padding-left: 0px;
+            padding-right: 10px;
+        }
+        .ml-payment-credit-cards {
+            .make-column(9);
+        }
+
+        .ml-payment-card-month{
+            padding-bottom: 0px;
+        }
+    }
+
+    .ml-payment-gc-text, .ml-payment-coupon-text {
+        .make-column(4);
+        padding-right: @ml-padding-default;
+        margin: 0px;
+    }
+
+    .ml-payment-gc-apply, .ml-payment-source-code-apply{
+        .make-column(8);
+        margin: 0px;
+	div {
+	    float: left;
+	}
+    }
+
+    /** END: Payment section **/
+
+    /** START: Review section **/
+    .ml-checkout-review-container {
+        .ml-checkout-review-note {
+            .make-column(12);
+            padding: 15px;
+        }
+        .ml-checkout-review-button {
+            .make-sm-column-offset(8);
+            float: right;
+            padding: 15px;
+        }
+    }
+    /** END: Review section **/
+
+    /** START: Thank You section **/
+    .ml-checkout-thankYou-kicker {
+        .make-column(4);
+    }
+    /** END: Thank You section **/
+
+    /** START: Account Set up Thank You section **/
+    .ml-checkout-accountSetUp {
+        .make-column(12);
+
+        .ml-checkout-accountSetUp-form {
+            .make-column(4);
+        }
+    }
+    /** END: Account Set up Thank You section **/
+
+    /** START: Thank You section **/
+    .ml-checkout-thankYou-wrapper, .ml-checkout-accountSetUp-wrapper {
+        #printModal {
+            .modal-dialog {
+                width: 750px;
+            }
+        }
+        .ml-checkout-thankYou-receipt{
+            display:inline-block;
+        }
+    }
+}

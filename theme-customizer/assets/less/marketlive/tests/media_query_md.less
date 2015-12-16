@@ -1,0 +1,25 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-testing (@a) when (@a = true), (@a = MD_screenWidth) {
+    .make-column(@num) {
+        .make-md-column(@num);
+    }
+
+    .ml-test-body {
+        .ml-test-active-mq:after {
+            content: "@{screen-md}";
+        }
+    }
+
+    #ml-product-carousel-container{
+         /*background-color: pink; */
+         display: block ;
+         padding-left: 55px ;
+         padding-right: 55px;
+       }
+
+    .ml-product-carousel-view-item{
+      margin-right:10px;
+    }
+
+}

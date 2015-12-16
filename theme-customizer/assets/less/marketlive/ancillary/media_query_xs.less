@@ -1,0 +1,204 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-ancillary (@a) when (@a = true), (@a = XS_screenWidth) {
+
+   .make-column(@num) {
+        .make-xs-column(@num);
+    }
+   
+    /** Email Signup **/
+   .ml-email-signup-wrapper {
+    .ml-email-signup-content-container {
+        .make-column(12);
+	    padding-left: 0px;
+	.col-md-5, .col-sm-5, .col-xs-12, .col-md-2, .col-sm-2 {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    padding-bottom: (@ml-spacer-default+5);
+	    label {
+	        display: block;
+	    }
+	}
+	.ml-email-signup-middle-name {
+	    display: none;
+	}
+	.ml-email-signup-button {
+	    .ml-primary-button;
+	    color: @ml-email-signup-button-text-color;
+	    width: 100%;
+	    padding: 0px (@ml-spacer-default*2+6);
+	    margin-bottom: @ml-padding-default;
+	    display: inline-block;
+	}
+    }
+    .ml-email-unsubscribe-content-container {
+        .make-column(12);
+	padding-left: 0px;
+	.col-md-5, .col-sm-5, .col-xs-12, .col-md-2, .col-sm-2, .col-sm-3 {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    padding-bottom: (@ml-spacer-default+5);
+	}
+	.col-md-12, .col-sm-12 {
+	    padding-bottom: 0px;
+	    label {
+	        display: block;
+	    }
+	}
+	.ml-email-signup-button {
+	    .ml-primary-button;
+	    color: @ml-email-signup-button-text-color;
+	    width: 100%;
+	    padding: 0px (@ml-spacer-default*2+6);
+	    margin-bottom: @ml-padding-default;
+	    display: inline-block;
+	}
+    }
+    .ml-email-signup-image-container {
+	display: none;
+    }
+    .ml-email-signup-unsubscribe-link a {
+        color: @ml-gray-dark;
+	text-decoration: underline;
+	&:hover {
+	    text-decoration: underline;
+	}
+    }
+}
+
+    .ml-catalog-request-continue-button {
+        .ml-tertiary-button {
+	    line-height: (@ml-spacer-default*2+6);
+	    height: (@ml-spacer-default*2+6);
+	}
+	}
+    
+/** Catalog Request **/
+.ml-catalog-request-wrapper {
+
+    .ml-catalog-request-content-container {
+        .make-column(12);
+        padding-left: 0px;
+	padding-right: 0px;
+	.form-group {
+	    .make-row();
+	    padding-bottom: 0;
+	    margin-left: 0px;
+	    margin-right: 0px;
+	    .control-label {
+	        .make-column(12);
+		padding-left: 0px;
+		padding-top: (@ml-spacer-default/3+2);
+		text-align: left;
+	    }
+	    .ml-catalog-request-middle-name input {
+	        width: 100%;
+	    }
+	    .ml-catalog-request-zip-code input {
+	        width: 30%;
+		float: left;
+		margin-right: (@ml-spacer-default - 5);
+	    }
+	    .ml-catalog-request-zip-code {
+		span {
+		    margin-top: (@ml-spacer-default/3+2);
+		    display: inline-block;
+		}
+	    }
+	    .control-label-content {
+	        .make-column(12);
+	    padding-right: 0px;
+		padding-left: 0px;
+	    }
+	}
+	.ml-catalog-request-submit-button {
+	    text-align: left;
+	    button {
+		width: 100%;
+	    }
+	}
+    } 
+    .ml-catalog-request-image-container {
+        display: none;
+    }
+}
+
+/** Customer Services **/
+.ml-layout-section-ancillary {
+    .ml-navleft-body {
+        .pull-right();
+        .make-column(12);
+        padding: 0px;
+    }
+    .ml-leftNav-container {
+        .pull-left();
+        .make-column(12);
+        padding-left: 0px;
+	padding-right: 0px;
+        padding-bottom: @ml-padding-default;
+
+        ul li a {
+            padding: (@ml-spacer-default - 5) 0;
+            border-top: 1px solid @ml-gray;
+	    font-weight: bold;
+        }
+
+        ul li:last-child a {
+            padding: (@ml-spacer-default - 5) 0;
+            border-bottom: 1px solid @ml-gray;
+	    font-weight: bold;
+        }
+
+        ul li a span {
+            display: block;
+        }
+
+        h3 {
+            margin-top: @ml-padding-default;
+            margin-bottom: @ml-padding-default;
+        }
+    }
+}
+
+.ml-customer-service-contact-form {
+    #csfirstName, #cslastName {
+        display: none;
+    }
+    .make-column(12);
+    padding-left: 0px;
+    padding-right: 0px;
+    .form-group {
+        padding-bottom: (@ml-spacer-default/3);
+	.clearfix();
+	.control-label {
+	    .make-column(12);
+	     padding-left: 0px;
+	     padding-top: (@ml-spacer-default/3+2);
+	     text-align: left;
+	}
+	.control-label-content {
+	    .make-column(12);
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+    }
+    .ml-customer-service-contact-button-wrapper {
+        .ml-text-right();
+	padding-top: (@ml-spacer-default - 5);
+	.ml-primary-button {
+	    width: 100%;
+	}
+    }
+}
+.ml-customer-service-contact-fillslot {
+    .make-column(12);
+    padding: (@ml-spacer-default - 5);
+    margin: (@ml-spacer-default*2) 0 @ml-padding-default 0;;
+}
+
+/** Sitemap **/
+.ml-sitemap-wrapper {
+    display: none;
+}
+
+}

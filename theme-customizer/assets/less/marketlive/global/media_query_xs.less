@@ -1,0 +1,295 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-global (@a) when (@a = true), (@a = XS_screenWidth) {
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    #mlMediaQueryDetect {
+        display: none;
+
+        .ml-media-query-detect-xs { display:inline; }
+        .ml-media-query-detect-sm { display:none; }
+        .ml-media-query-detect-md { display:none; }
+        .ml-media-query-detect-lg { display:none; }
+    }
+
+	/*******************************************************************************************************************
+    * Responsive Tables
+    *******************************************************************************************************************/
+    #ml-no-tables {
+        padding: 0 0 (@ml-spacer-default+@ml-border-radius-base) 0;
+    }
+
+    #ml-no-tables table {
+        width: 100%;
+    }
+
+    #ml-no-tables .table-bordered thead tr th, #ml-no-tables .table-bordered tbody tr td {
+        border-bottom: 0px solid @ml-gray;
+    }
+
+    #ml-no-tables .table-bordered {
+        border: 0px;
+    }
+
+    #ml-no-tables .table-bordered thead tr th {
+        background: none;
+    }
+
+    .ml-order-sku {
+        color: @ml-sku-color;
+    }
+
+    .table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+        background: none;
+    }
+
+    #ml-no-tables .table-striped > tbody > tr > td:last-child {
+        background: none;
+        border-bottom: 1px solid @ml-gray;
+    }
+
+    .table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+        border: 0px;
+        padding-top: @ml-myaccount-leftnav-link-padding;
+        padding-bottom: @ml-myaccount-leftnav-link-padding;
+    }
+
+    #ml-no-tables td {
+        width: 100%;
+        float: left;
+        display: block;
+        text-align: left;
+        position: relative;
+    }
+
+    #ml-no-tables td:before {
+        content: attr(data-title);
+    }
+
+    /*******************************************************************************************************************
+    * Carousel
+    *******************************************************************************************************************/
+
+    .ml-widget-carousel .ml-thumb-image a img {
+        width: @ml-widget-carousel-thumb-image-width;
+    }
+
+    /*******************************************************************************************************************
+    * Product/Topic Thumb nails
+    *******************************************************************************************************************/
+
+    .ml-thumb-desc-short, .ml-thumb-desc-long {
+        font-size: @ml-thumb-font-size-xs;
+    }
+
+    /*******************************************************************************************************************
+    * Pricing
+    *******************************************************************************************************************/
+    .ml-item-price-was, .ml-item-price {
+        font-size: @ml-thumb-font-size-xs;
+    }
+
+    /*******************************************************************************************************************
+    * Rating
+    *******************************************************************************************************************/
+    .ml-rating .ml-snippet-review-count {
+        font-size: @ml-thumb-font-size-xs;
+    }
+
+    /*******************************************************************************************************************
+    * Swatches
+    *******************************************************************************************************************/
+    .ml-thumb-swatches {
+        display: none;
+    }
+
+    /*******************************************************************************************************************
+    * Common Kicker - Basket/Thank You
+    *******************************************************************************************************************/
+    .ml-common-kickers-wrapper {
+        display: none;
+    }
+
+    /*******************************************************************************************************************
+     * Buttons
+     *******************************************************************************************************************/
+    .ml-button-submit-primary {
+        .ml-primary-button;
+        text-align: center;
+        padding: 0px (@ml-spacer-default*2);
+        height: (@ml-myaccount-form-padding*4);
+        line-height: (@ml-myaccount-form-padding*4);
+    }
+    .ml-button-save-primary {
+        .ml-primary-button;
+        text-align: center;
+        padding: 0px (@ml-spacer-default*2);
+        height: (@ml-myaccount-form-padding*4);
+        line-height: (@ml-myaccount-form-padding*4);
+    }
+    div.ml-product-qve-button {
+        display: none;
+    }    
+
+    .ml-product-unavailable-dialogue-container {
+       top: 20% !important; 
+       left: 50% !important;
+       border: 5px solid @ml-gray !important;
+       width: 90% !important;
+       margin-left: -45% !important;
+       padding: @ml-padding-default !important;
+       max-height: 225px;
+       overflow: auto;
+           .errorclose {
+               margin: @ml-padding-default 0;
+           } 
+    }
+
+    /*******************************************************************************************************************
+    * Error Pages
+    *******************************************************************************************************************/
+    .ml-error-page-container {
+        .make-column(12);
+
+        .ml-error-page-left-container {
+            .make-column(12);
+            padding: @ml-padding-default 0 0 0;
+        }
+
+        .ml-error-page-right-container {
+            .make-column(12);
+            padding: 0;
+            float: left !important;
+        }
+    }
+    .ml-error-page-cookie-disabled {
+        .ml-error-page-left-container {
+            display: none;
+        }
+    }
+
+
+    /*******************************************************************************************************************
+    * Borderfree Modal
+    *******************************************************************************************************************/
+    
+    #countryListLookUpModal .modal-dialog {
+        width: @countryListLookUpModal-modal-width-xs;
+	height: auto;
+    }
+
+    #countryListLookUpModal .modal-header {
+        padding: @ml-bf-padding-default @ml-bf-padding-default 0 @ml-bf-padding-default;
+    }
+    
+    .ml-bf-modal-heading {
+        font-size: @ml-bf-primary-heading-font-size-xs;
+        font-weight: bold;
+        border-bottom: 1px solid @ml-bf-border-color;
+    }
+    
+    #countryListLookUpModal .modal-body {
+        max-height: auto;
+		overflow: none;
+		padding-right: @ml-bf-padding-default;
+		margin-right: 0px;
+    }
+    
+    #countryListLookUpModal .modal-dialog button {
+        padding: 0 ((@ml-bf-padding-default-vertical*4)-4);
+        width: 100%;
+    }
+
+
+    /** welcome mat modal window **/
+    .ml-bf-flag-container-row {
+        margin-top: @ml-bf-padding-default;
+            .flag-wrapper {
+	        .make-column(2);
+            padding: 0;
+	        img {
+		    width: @ml-bf-flag-wrapper-width;
+         	    height: @ml-bf-flag-wrapper-height;
+		}
+	}
+	        .now-shopping-text {
+	        .make-column(10);
+         	 padding-left: 0;
+		    font-size: @ml-bf-secondary-heading-font-size;
+         	 font-weight: bold;
+         	 margin: 0 0 @ml-bf-padding-default-vertical 0;
+		}
+    }
+    .ml-bf-now-shopping-wrapper {
+        margin-top: (@ml-bf-padding-default-vertical*2);
+            .left-container  {
+	        .make-column(1);
+		display: none;
+		}
+            .right-container {
+	        .make-column(12);
+		padding-left: 0;
+		padding-right: 0;
+        }
+    }
+    .ml-bf-shopping-button-wrapper {
+        margin: (@ml-bf-padding-default-vertical*2) 0 ((@ml-bf-padding-default-vertical*2)-5) 0;
+	text-align: left;
+	    button {
+	        width: 100%;
+	    }
+    }
+    .ml-bf-welcomemat-footer-not-ship {
+        text-align: left;
+    }
+    .ml-bf-welcomemat-footer-message {
+        text-align: left;
+	margin-top: @ml-bf-padding-default-small;
+    }
+
+
+    /**CountryList look up modal**/
+
+    .ml-bf-country-wrapper {
+        padding: @ml-bf-padding-default-vertical 0;
+	    .ml-bf-left-wrapper {
+		.make-column(12);
+		padding: 0;
+		    img { 
+		        max-width: 100%;
+		    }
+	    }
+	    .ml-bf-right-wrapper {
+		.make-column(12);
+		padding: 0;
+	    }
+    }
+
+    .ml-bf-ship-message {
+        display: none;
+    }
+
+    .ml-bf-or-text {
+        margin: @ml-bf-padding-default-vertical 0;
+        text-align: center;
+    }
+
+    .ml-bf-choose-country-text {
+        display: none;
+    }
+
+    .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        background: none;
+        border: @ml-bf-border-color solid 1px; 
+        color: @ml-bf-default-text-color;
+    }
+   
+    .ml-bf-more-info-text {
+	text-align: left;
+	font-weight: bold;
+	font-size: @ml-bf-choose-country-font-size;
+    }
+
+}

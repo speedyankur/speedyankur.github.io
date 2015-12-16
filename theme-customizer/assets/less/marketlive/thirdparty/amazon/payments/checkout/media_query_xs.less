@@ -1,0 +1,35 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-amazon-payments-checkout (@a) when (@a = true), (@a = XS_screenWidth) {
+
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    .ml-accordion-checkout-amazon {
+        .ml-shipping-delivery-gift{
+            .make-column(12);
+            padding-left: 0;
+        }
+
+        .ml-shipping-container {
+            .ml-shipping-method-type {
+                .ml-ship-method-name, .ml-ship-method-description, .ml-item-price-wrapper {
+                    float: left;
+                }
+                .ml-ship-method-name {
+                    width:90%;
+                }
+            }
+
+            .ml-shipping-methods{
+                .ml-shipping-method-type .control-label{
+                    width:auto;
+                    .ml-ship-method-description, .ml-item-price-wrapper{
+                        padding-left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}

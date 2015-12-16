@@ -1,0 +1,459 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-navigation (@a) when (@a = true), (@a = XS_screenWidth) {
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    /*******************************************************************************************************************
+    * Header
+    *******************************************************************************************************************/
+    .ml-header-wrapper {
+        height: @ml-header-height-xs;
+    }
+
+    .ml-header-content-wrapper {
+        .make-xs-column(12, 10px);
+        height: @ml-header-height-xs;
+    }
+
+    .ml-header-wrapper.ml-header-toggle-search, .ml-header-content-wrapper.ml-header-toggle-search{
+        height: @ml-header-height-xs+@ml-header-height-toggle-search-input;
+    }
+
+    .ml-header-logo-wrapper {
+        .ml-absolute-position(15px; auto; auto; 0); /* top, right, bottom, left */
+    }
+
+    .ml-header-search-wrapper {
+        width: 100%;
+        .ml-absolute-position(auto; auto; 10px; 0); /* top, right, bottom, left */
+    }
+
+    .ml-header-links-wrapper {
+        .ml-absolute-position(60px; auto; auto; 0); /* top, right, bottom, left */
+    }
+
+    .ml-header-global-cart-wrapper {
+        .ml-absolute-position(10px; 2px; auto; auto); /* top, right, bottom, left */
+        .ml-button-gradient;
+        border: 1px solid @ml-header-global-cart-border-color;
+        border-radius: @ml-border-radius-base;
+        padding: 0 5px;
+    }
+
+    .ml-header-global-cart-label {
+        display: none;
+    }
+
+    .ml-header-phone {
+        display: none;
+    }
+
+    .ml-mini-header .ml-header-phone {
+        display: inline-block;
+    }
+
+    .ml-header-language, .ml-header-language-basic {
+        display: none;
+    }
+
+    .ml-header-bf-ship-to  {
+        display: none;
+    }
+
+    /** My Account pulldown page **/
+    .ml-myaccount-pulldown {
+        ul {
+            width: @ml-myaccount-pulldown-width-xs;
+
+            li {
+                padding: 0;
+
+                a {
+                    padding: 6px @ml-padding-default;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+    }
+    /** End My Account pulldown page **/
+
+    /** Category Nav **/
+    .ml-navbar {
+        min-height: inherit;
+        margin-bottom: 0px;
+        border: 0px;
+
+        .navbar-collapse {
+            padding-right: @navbar-padding-horizontal;
+            padding-left: @navbar-padding-horizontal;
+        }
+    }
+
+    .nav.navbar-nav.ml-navbar-nav {
+        li {
+            border-bottom: 1px solid @ml-navbar-separator-color;
+
+            &:first-child {
+                border-top: 1px solid @ml-navbar-separator-color;
+            }
+
+            a {
+                float: none;
+                padding-left: 15px;
+            }
+
+            &.ml-navbar-separator {
+                display: none;
+            }
+        }
+    }
+
+    .ml-navbar-secondary {
+
+        .nav.navbar-nav.ml-navbar-nav {
+            li {
+                &.exclude {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    header nav {
+        padding: 0px;
+    }
+
+    /** End Category Nav **/
+
+    /*******************************************************************************************************************
+    * Menu Nav (AKA DHTML Menus)
+    *******************************************************************************************************************/
+    .nav.navbar-nav.ml-navbar-nav.ml-navbar-menu {
+        li.ml-sibling-group-root {
+            a {
+                padding-left:15px;
+                float:none;
+            }
+        }
+
+        > li {
+            &:hover {
+                > .ml-category-nav-arrow {
+                    display:none;
+                }
+
+                > ul {
+                    top: -999em;
+                }
+            }
+
+            > ul {
+                max-width: (@ml-xs-screen-width - @ml-grid-gutter-width);
+                display:none;
+            }
+
+            &.ml-sibling-group-root {
+                > ul {
+                    width: (@ml-xs-screen-width - @ml-grid-gutter-width);
+                }
+            }
+        }
+    }
+
+    /*******************************************************************************************************************
+    * Lite Registration
+    *******************************************************************************************************************/
+    .ml-lite-registration-dialog {
+        width: @ml-lite-registration-dialog-width-xs;
+    }
+
+    #mlLiteRegistrationDialog .modal-dialog {
+        width: auto;
+    }
+
+    /*******************************************************************************************************************
+    * Footer
+    *******************************************************************************************************************/
+    .ml-footer-global-container {
+        display: none;
+    }
+
+    .ml-footer-signup-wrapper {
+        border-left: 0px;
+    }
+
+    .ml-footer {
+        font-size: @ml-footer-font-size;
+    }
+
+    .ml-footer-links-section-mini.ml-footer-mini-off{
+        display:none;
+    }
+    .ml-footer-links-section.ml-footer-mini-off{
+        display:block;
+    }
+    .ml-footer-links-section-mini.ml-footer-mini-on{
+        display:block;
+    }
+    .ml-footer-links-section.ml-footer-mini-on{
+        display:none;
+    }
+
+    .ml-footer-mini {
+        display: block;
+    }
+
+    .ml-footer-signup-wrapper {
+        .make-column(12);
+    }
+
+    .ml-footer-links-wrapper {
+        .make-column(12);
+    }
+
+    .ml-footer-links-section {
+        .make-column(6);
+    }
+    /** End footer configure **/
+
+    /** Start mini footer configure **/
+    .ml-footer-links a {
+        font-size: @ml-footer-links-font-size-xs;
+        line-height: @ml-footer-links-line-height;
+    }
+    .ml-footer-links-wrapper {
+        padding-left: 0px;
+    }
+    /** End mini footer configure **/
+
+    /** Start Abbreviated MINI-FOOTER: Uncomment to show abbreviated mini-footer footer content section based on
+     content section code MINI-FOOTER **/
+
+        .ml-footer-links-section{
+            display:none;
+        }
+        .ml-footer-links-section-mini{
+            display:block;
+        }
+        .ml-footer-links-section-mini{
+        .make-column(12);
+        padding-top:10px;
+        }
+        .ml-footer-links-section-mini .footerItem{
+        float:left;
+        padding-right:5px;
+        }
+        .ml-footer-links-section-mini .footerItem:before {
+            padding-right:5px;
+        }
+        .ml-footer-links-section-mini div:first-child:before {
+            padding-left:0px;
+            padding-right:0px;
+        }
+        .ml-footer-links-section-mini .footerItem {
+            float:left;
+        }
+        .ml-footer-links-section-mini div + div:before{
+            content: "|";
+        }
+
+    /** End Abbreviated MINI-FOOTER: Uncomment to show abbreviated mini-footer footer content section based on
+     content section code MINI-FOOTER **/
+
+    /** Start additional Mini footer **/
+    .ml-footer-mini-wrapper {
+        .make-row();
+        padding-left: @ml-padding-default;
+    }
+
+    .ml-footer-mini {
+        .make-column(12);
+    }
+
+    .ml-footer-phone-number {
+        font-size: @ml-footer-phone-number-xs-font-size;
+        font-weight: bold;
+        color: @ml-footer-phone-number-text-color;
+        padding-top: 10px;
+    }
+
+    .ml-footer-phone-number a{
+        text-decoration: none;
+        color: @ml-footer-phone-number-text-color;
+    }
+
+    .footer-item {
+        font-size: @ml-footer-item-font-size-xs;
+    }
+    /** End additional Mini footer **/
+
+    /** footer bottom **/
+    .ml-footer-copyright {
+        .make-column(12);
+    }
+
+    .ml-footer-security {
+        .make-column(12);
+    }
+
+    .ml-footer-copyright {
+        text-align: left;
+    }
+
+    .ml-footer-security {
+        padding-top: 10px;
+    }
+
+    /*******************************************************************************************************************
+    * Left Nav
+    *******************************************************************************************************************/
+    .ml-navleft {
+        display: none;
+    }
+
+    .ml-navleft-bg {
+        background: none;
+    }
+
+    .ml-navleft-body {
+        .make-column(12);
+        padding: 0;
+    }
+
+    .ml-navleft-body .breadcrumb {
+        margin-bottom: 0px;
+    }
+
+    /*******************************************************************************************************************
+    * Faceted Nav
+    *******************************************************************************************************************/
+    #facetedNavMqTest {
+        float: none;
+    }
+
+    .ml-faceted-nav-left-control {
+        display: block;
+
+        li:last-child .ml-header {
+            border-bottom: 1px solid @ml-nav-facet-filter-border-color;
+        }
+    }
+    #facetedNavContainer {
+        background: @ml-navleft-background;
+    }
+
+    .ml-facet-expand-target {
+        display: none;
+    }
+
+    .ml-faceted-nav-container {
+        .make-column(12);
+        display: block;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ml-faceted-nav-left {
+        &.ml-nav-facet-expanded {
+            padding-left: 0px;
+        }
+
+        .ml-header {
+            .ml-nav-facet-border-top;
+            border-bottom: 0px;
+
+            .ml-toggle-selection, .ml-nav-facet-reset {
+                top: 2px;
+                font-size: @ml-font-size-nav-facet-icon+4;
+            }
+        }
+
+        .ml-refine-by {
+            border-bottom: 0px;
+            padding: 0px;
+            line-height: auto;
+	    margin-bottom: 0px;
+        }
+
+        .ml-boolean-filter .ml-facet-value {
+            border-bottom: 0px;
+        }
+
+        .ml-boolean-filter {
+            margin-bottom: 0px;
+        }
+
+        .ml-scrollable-filter {
+            border: 1px solid @ml-nav-facet-filter-border-color;
+        }
+
+        .ml-nav-facet-clear-link {
+            display: none;
+        }
+
+        .ml-nav-facet-clearall {
+            font-size: @ml-font-size-nav-facet-header-clear+2;
+            right: 30px;
+            margin-top: (@ml-spacer-default/5);
+
+            .ml-nav-facet-removeall-sign.ml-icon-remove-circle {
+                font-size: @ml-nav-facet-removeall-sign-font-size-xs;
+            }
+        }
+
+        .ml-nav-facet-selections {
+            font-size: @ml-font-size-facet-selections-xs;
+            color: @ml-text-color;
+            padding-bottom: 0;
+            line-height:0;
+        }
+    }
+
+    .ml-faceted-nav-left li .ml-header {
+        padding:5px 0;
+    }
+
+    .ml-faceted-nav-container.ml-nav-facet-expanded {
+        z-index: 1001;
+        background: transparent;
+    }
+    .ml-facted-nav-send-buttons {
+        display: block;
+    }
+
+    .ml-facted-nav-cancel {
+        height: 34px;
+        width: 25%;
+        display: inline;
+    }
+
+    .ml-facted-nav-apply {
+        .ml-secondary-button;
+        height: 34px;
+        display: inline;
+        width: 75%;
+    }
+
+    .ml-nav-facet-plus, .ml-nav-facet-minus {
+        display: block;
+        top: -.80em;
+    }
+
+    .ml-nav-facet-expand-all-toggle-space {
+        display: inline-block;
+    }
+    /** end faceted nav **/
+
+    /********* Global Cart start *********/
+    .ml-globalcart-container {
+        .globalCartLayer {
+            display: none;
+        }
+    }
+    /********* Global Cart end *********/
+}

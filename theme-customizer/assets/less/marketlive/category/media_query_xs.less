@@ -1,0 +1,148 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-category (@a) when (@a = true), (@a = XS_screenWidth) {
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    .ml-dir-header-category-wrapper.ml-directory-no-products{
+        display:none;
+    }
+
+    /** start gateway page **/
+    .gateway_leftnav_02-1 {
+        .make-column(12);
+        padding-bottom: 10px;
+    }
+
+    .gateway_leftnav_02-2 {
+        .make-column(12);
+        padding-bottom: 10px;
+    }
+
+    .gateway_leftnav_02-3, .gateway_leftnav_02-4, .gateway_leftnav_02-5 {
+        display: none;
+    }
+    /** end gateway page **/
+
+    /** start gateway_leftnav 06 page **/
+    .gateway_leftnav_singleslot-1 {
+        .make-column(12);
+        padding-bottom: @ml-padding-default;
+    }
+    /** end gateway_leftnav 06 page **/
+
+    /** start gateway_leftnav 01 page **/
+    .gateway_leftnav_01-1 {
+        .make-column(12);
+    }
+
+    .gateway_leftnav_01-2, .gateway_leftnav_01-3, .gateway_leftnav_01-4 {
+        display: none;
+    }
+    /** end gateway_leftnav 01 page **/
+
+    /** start gateway_leftnav 03 page **/
+    .gateway_leftnav_03-1, .gateway_leftnav_03-2, .gateway_leftnav_03-3 {
+        display: block;
+        .make-column(12);
+        padding: 0px;
+    }
+
+    .gateway_leftnav_03-1, .gateway_leftnav_03-2 {
+        padding-bottom: @ml-padding-default;
+	}
+
+    .gateway_leftnav_03-4, .gateway_leftnav_03-5, .gateway_leftnav_03-6 {
+        display: none;
+    }
+    /** end gateway_leftnav 03 page **/
+
+    /** start gateway_leftnav 04 page **/
+    .gateway_leftnav_04-1 {
+        .make-column(12);
+        padding: 0 0 @ml-padding-default 0;
+    }
+
+    .gateway_leftnav_04-2, .gateway_leftnav_04-3 {
+        .make-column(6);
+        padding: 0px;
+    }
+
+    .gateway_leftnav_04-4, .gateway_leftnav_04-5 {
+        display: none;
+        float: none;
+    }
+    /** end gateway_leftnav 04 page **/
+
+    /** start gateway_leftnav 05 page **/
+    .gateway_leftnav_05-1 {
+        .make-column(12);
+    }
+
+    .gateway_leftnav_05-2, .gateway_leftnav_05-3, .gateway_leftnav_05-4, .gateway_leftnav_05-5,
+    .gateway_leftnav_05-6, .gateway_leftnav_05-7, .gateway_leftnav_05-8, .gateway_leftnav_05-9,
+    .gateway_leftnav_05-10, .gateway_leftnav_05-11, .gateway_leftnav_05-12, .gateway_leftnav_05-13 {
+        display: none;
+    }
+
+    /** end gateway_leftnav 05 page **/
+
+    /** start gateway_topnav 05 page **/
+    .gateway_topnav_05-1 {
+        .make-column(12);
+    }
+    .gateway_topnav_05-slot-wrapper-1 {
+        .make-column(12);
+	padding-left: 0px;
+	padding-right: 0px;
+    }
+    .gateway_topnav_05-2, .gateway_topnav_05-3, .gateway_topnav_05-4, .gateway_topnav_05-5, .gateway_topnav_05-6, .gateway_topnav_05-7, .gateway_topnav_05-8, .gateway_topnav_05-9, .gateway_topnav_05-10, .gateway_topnav_05-11, .gateway_topnav_05-12, .gateway_topnav_05-13, .gateway_topnav_05-14, .gateway_topnav_05-15, .gateway_topnav_05-16, .gateway_topnav_05-17 {
+        .make-column(6);
+    }
+    /** end gateway_topnav 05 page **/
+
+    .ml-dir-header-category-dropdown {
+        display: inline-block;
+    }
+
+    .ml-dir-header-category-sort {
+        display: block;
+    }
+
+    .ml-dir-header-category {
+        .make-column(12);
+    }
+
+    /** start directory_leftnav_04-1 **/
+    .directory_leftnav_04-1 {
+        padding-bottom: @ml-padding-default;
+        display: none;
+    }
+
+    .directory_leftnav_04-2 {
+        display: none;
+    }
+    /** end directory_leftnav_04-1 *** **/
+
+    /** Collection Directory **/
+    .ml-collection-directory-fillslot-wrapper, .collectiondir_leftnav_01-3 {
+        display: none;
+    }
+    .ml-collection-directory-wrapper {
+        margin: 0;
+     }
+    .ml-collection-directory-button-add-basket {
+        .ml-primary-button;
+        text-align: right;
+        padding: 0 (@ml-spacer-default*3);
+        height: 50px;
+        line-height: 50px;
+        margin-top: 15px;
+    }
+    .ml-collection-directory-content {
+        #priceBreaksLink_1_Content {
+	    padding-bottom: @ml-padding-default;
+	}
+    }
+}

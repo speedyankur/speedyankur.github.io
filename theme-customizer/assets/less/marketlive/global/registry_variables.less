@@ -1,0 +1,20 @@
+/* Media Queries ******************************************************************************************************/
+@ml-xs-screen-enabled: true;
+@ml-sm-screen-enabled: true;
+@ml-md-screen-enabled: true;
+@ml-lg-screen-enabled: true;
+
+@ml-xs-screen-width: 480px;
+@ml-sm-screen-width: 768px;
+@ml-md-screen-width: 992px;
+@ml-lg-screen-width: 992px; //1200px;
+
+@ml-default-screen-width: XS_screenWidth;
+
+@ml-xs-media-query: ~"screen and (max-width: @{screen-xs-max})";
+@ml-sm-media-query: ~"screen and (min-width: @{screen-tablet})";
+@ml-md-media-query: ~"screen and (min-width: @{screen-desktop})";
+@ml-lg-media-query: ~"screen and (min-width: @{screen-lg-desktop})";
+
+/* Paths and URLs *****************************************************************************************************/
+@ml-image-prefix: "/images/";

@@ -1,0 +1,188 @@
+/*! testing.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
+}
+
+.ml-test-body {
+    .ml-test-mq-xs:after {
+        content: "@{screen-xs}";
+    }
+    .ml-test-mq-xs-enabled:after {
+        content: "@{ml-xs-screen-enabled}";
+    }
+
+    .ml-test-mq-sm:after {
+        content: "@{screen-sm}";
+    }
+    .ml-test-mq-sm-enabled:after {
+        content: "@{ml-sm-screen-enabled}";
+    }
+
+    .ml-test-mq-md:after {
+        content: "@{screen-md}";
+    }
+    .ml-test-mq-md-enabled:after {
+        content: "@{ml-md-screen-enabled}";
+    }
+
+    .ml-test-mq-lg:after {
+        content: "@{screen-lg}";
+    }
+    .ml-test-mq-lg-enabled:after {
+        content: "@{ml-lg-screen-enabled}";
+    }
+
+    .ml-test-mq-default {
+        display: inline-block;
+        margin-top: 15px;
+    }
+    .ml-test-mq-default:after {
+        content: "@{ml-default-screen-width}";
+    }
+
+    .ml-test-device-width-group iframe {
+        border: 1px solid #808080;
+    }
+
+    /* Wrapper for page content to push down footer */
+    #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by its height */
+        margin: 0 auto -60px;
+        /* Pad bottom by footer height */
+        padding: 0 0 60px;
+    }
+
+    #wrap > .container {
+        padding: 60px 15px 0;
+    }
+
+    /* Set the fixed height of the footer here */
+    #footer {
+        height: 60px;
+        background-color: #f5f5f5;
+        #ml-copyright {
+            .container;
+            p {
+                .text-muted;
+                .pull-right;
+            }
+        }
+    }
+}
+
+.ml-logo {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+}
+
+.ml-logo-dot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: #c0c0c0;
+    width: 100%;
+    height: 100%;
+}
+
+.ml-logo-bar {
+    position: absolute;
+    top: 31%;
+    width: 18%;
+    height: 39%;
+    background-color: #FFFFFF;
+}
+
+.ml-logo-bar1 {
+    left: 17%;
+}
+
+.ml-logo-bar2 {
+    left: 42%;
+}
+
+.ml-logo-bar3 {
+    left: 67%;
+}
+
+.ml-logo-bar-cap {
+    width: 100%;
+    height: 35%;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    position: absolute;
+}
+
+.ml-logo-bar-top {
+    top: -20%
+}
+
+.ml-logo-bar-bottom {
+    bottom: -20%
+}
+
+.ml-navbar-brand {
+    position: relative;
+    width: 200px;
+    padding-top: 4px !important;
+    padding-bottom: 0px !important;
+}
+
+.ml-navbar-brand a {
+    margin: 0px !important;
+    padding-left: 0px !important;
+}
+
+.ml-logo-container {
+    display: inline-block;
+}
+
+.ml-logo-text-container {
+    position: absolute;
+    top: 3px;
+    left: 48px;
+    width: 200px;
+}
+
+.ml-logo-text-container a {
+    padding-top: 7px !important;
+}
+
+.ml-navbar-logo .ml-logo-bar1, .ml-navbar-logo .ml-logo-bar2, .ml-navbar-logo .ml-logo-bar3 {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.ml-logo-bar1:hover, .ml-logo-bar2:hover, .ml-logo-bar3:hover {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+#ml-product-carousel-container{
+  margin-bottom: 25px;
+}
+
+#ml-product-carousel-container img{
+  border-color: transparent;border-style: solid;border-width: 1px;
+}
+
+#ml-product-carousel-container img :hover{
+  border-color: grey;border-style: solid;border-width: 1px;
+}
+
+#ml-product-carousel-container .ml-product-carousel-view-item.selected img{
+  border-color: black;border-style: solid;border-width: 2px;
+}
+
+
+
+
+

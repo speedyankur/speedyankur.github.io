@@ -1,0 +1,87 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-grid-view (@a) when (@a = true), (@a = SM_screenWidth) {
+    .make-column(@num) {
+        .make-sm-column(@num);
+    }
+
+    .ml-grid-view {
+        padding-top: 0px;
+
+        .ml-grid-view-item {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        
+        .ml-grid-view-items {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .ml-grid-view-toggle-container {
+        .make-column(2);
+        padding-top: 0;
+    }
+
+    .ml-grid-view-multi-column .ml-grid-view-item {
+        .make-column(4);
+
+        .ml-grid-item-image {
+            padding: 0px 0px 0px 0px;
+        }
+    }
+
+    .ml-grid-view-multi-column {
+        // nth:child(xn+1), where x is no. of columns to be displayed
+        .ml-grid-view-item:nth-child(2n+1), .ml-grid-view-item:nth-child(4n+1){
+            clear: none;
+        }
+        .ml-grid-view-item:nth-child(3n+1){
+            clear: left;
+        }
+    }
+
+
+    .ml-grid-view-single-column .ml-grid-view-item {
+        .ml-grid-item-image {
+            .make-column(3);
+            padding: 0;
+        }
+
+        .ml-grid-item-info {
+ 		.make-column(9);
+ 		clear:none;
+       }
+
+        .ml-grid-item-info .ml-thumb-desc-long {
+            display: block;
+        }
+
+	.ml-thumb-desc-long {
+		padding-bottom:10px;
+	}
+	
+	.ml-thumb-swatch {
+		border:0;
+	}
+
+	.ml-thumb-image, .ml-thumb-image-container {
+		margin-bottom:10px; 
+	}
+	
+	.ml-thumb-name {
+		padding-top:0; 	
+	}
+	
+    }
+
+}
+
+
+
+
+
+
+
+

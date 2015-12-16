@@ -1,0 +1,47 @@
+/*! grid_view.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-grid-view-items {
+    .make-row();
+}
+
+.ml-grid-view-footer {
+    .make-row();
+}
+
+.ml-grid-view-toggle-container .btn {
+    font-size: @ml-font-size-button-icon;
+    padding: 4px 8px;
+}
+
+.ml-grid-view-toggle-container .btn-default:hover, .ml-grid-view-toggle-container .btn-default:focus,
+.ml-grid-view-toggle-container .btn-default:active, .ml-grid-view-toggle-container .btn-default.active {
+    color: @ml-primary-button-text-color;
+    background-color: @ml-dir-toggle-view-btn-selected-background-color;
+    border-color: @ml-dir-toggle-view-btn-border-color;
+}
+
+.ml-grid-view-toggle-container .btn-default {
+    color: inherit;
+    background-color: @ml-dir-toggle-view-btn-background-color;
+    border-color: @ml-dir-toggle-view-btn-border-color;
+}
+
+.ml-grid-view-item {
+    padding-bottom: @ml-dir-item-padding-default;
+}
+
+.ml-grid-view-sort-label, .ml-grid-view-sort-dropdown {
+    float: left;
+    display: inline-block;
+}
+
+.ml-grid-view-sort-label {
+    font-size: @ml-dir-font-default;
+    line-height: unit((@input-height-base / @ml-dir-font-default));
+    font-weight: bold;
+    padding-right: 5px;
+}
+
+.ml-grid-view-single-column .ml-thumb-info {
+    clear: none;
+}

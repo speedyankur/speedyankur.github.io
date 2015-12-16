@@ -1,0 +1,602 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-account (@a) when (@a = true), (@a = MD_screenWidth) {
+    .make-column(@num) {
+        .make-md-column(@num);
+    }
+
+    /** My Account section **/
+    .ml-myaccount-body-container {
+        padding-right: 0px;
+        display: block;
+    }
+
+    .ml-myaccount-left-container {
+        .make-column(7);
+        padding-left: 0px;
+        padding-bottom: 0px;
+    }
+
+    .ml-myaccount-right-container {
+        .make-column(5);
+        padding-right: 0px;
+    }
+
+    .ml-layout-section-account {
+        .ml-navleft-body {
+            .make-column(9);
+            padding-right: 0px;
+            background: @ml-myaccount-body-background;
+            min-height: @ml-myaccount-body-min-height;
+
+            .ml-myaccount-button-container {
+                .make-column(12);
+                text-align: left;
+            }
+
+            .ml-myaccount-button-container .space-column {
+                .make-column(3);
+            }
+        }
+
+        .ml-leftNav-container {
+            .make-column(3);
+            padding-left: 0px;
+            padding-bottom: 0;
+
+            ul li a, ul li:last-child a {
+                padding: 2px 0 3px 0;
+                border: none;
+                font-weight: normal;
+            }
+
+            ul li a span {
+                display: none;
+            }
+
+            h2 {
+                text-indent: 0;
+                visibility: visible;
+                margin-top: @ml-myaccount-padding-top-xs;
+                margin-bottom: (@ml-myaccount-padding-top-xs/2);
+            }
+        }
+    }
+
+    .ml-myaccount-welcome-msg {
+        font-size: @ml-myaccount-welcome-message-font-size;
+        color: @ml-gray-dark;
+        padding: 0 0 @ml-padding-default 0;
+    }
+
+    .ml-myaccount-myinfo-container {
+        .make-column(10);
+        padding: @ml-padding-default 0 0 0;
+        .ml-myaccount-address-form-middle-name input {
+	    width: (@ml-spacer-default*3);
+	}
+    }
+
+    .ml-myaccount-myinfo-container .form-group {
+        margin-bottom: @ml-myaccount-form-padding;
+    }  
+
+    .ml-myaccount-myinfo-container .form-group .control-label {
+        .make-column(4);
+        font-weight: normal;
+        text-align: right;
+        padding: 6px @ml-myaccount-form-padding 0 0;
+    }
+
+    .ml-myaccount-myinfo-container .form-group .pobox {
+        display: block;
+    }
+
+    .ml-myaccount-myinfo-container .form-group .control-label-content {
+        .make-column(8);
+        padding: 0;
+        input[type=text].form-control {
+            color: @ml-gray-dark;
+        }
+    }
+
+    .ml-myaccount-addressbook-container .form-group .control-label-content select {
+        width: 100% !important;
+    }
+
+    .ml-myaccount-addressbook-container .ml-myaccount-myinfo-container .ml-myaccount-button-container {
+        padding: @ml-myaccount-form-padding @ml-padding-default !important;
+    }
+
+    .ml-myaccount-addressbook-container .form-group .control-label, .ml-myaccount-addressbook-container .form-group .control-label-content {
+        .make-column(6);
+    }
+
+    .ml-myaccount-addressbook-container .form-group .control-label-content {
+        padding-left: 0;
+    }
+
+    .ml-myaccount-myaddress-addressbox .links {
+        p {
+            margin-bottom: 0px;
+        }
+    }
+    /** End My Account section **/
+
+    #ml-no-tables .ml-myaccount-order-history tr td span {
+        display: block;
+        font-weight: normal;
+        position: relative;
+        left: auto;
+    }
+
+    #ml-no-tables .ml-myaccount-order-history td {
+        font-weight: bold;
+        padding-left: @ml-myaccount-form-padding-xs;
+    }
+
+    .ml-myaccount-pagination-container {
+        .make-column(12);
+        text-align: right;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .ml-myaccount-pagination-container ul.pagination {
+        margin: @ml-padding-default 0;
+    }
+
+    .ml-myaccount-order-history-container {
+        border: 1px solid @ml-gray;
+        -moz-box-shadow: @ml-border-radius-base @ml-border-radius-base 0 0 @ml-gray;
+        -webkit-box-shadow: @ml-border-radius-base @ml-border-radius-base 0 0 @ml-gray;
+        box-shadow: @ml-border-radius-base @ml-border-radius-base 0 0 @ml-gray;
+        padding: @ml-padding-xs @ml-padding-default;
+        margin: 0 0 (@ml-padding-default+@ml-border-radius-base) 0;
+    }
+
+    .ml-myaccount-order-history-container .row div span {
+        display: table-cell;
+        position: relative;
+        left: 0px;
+        font-weight: normal;
+    }
+
+    #ml-no-tables .ml-myaccount-item-history td:before {
+        left: 0px;
+        top: none;
+    }
+
+    #ml-no-tables .ml-myaccount-item-history td:first-child, #ml-no-tables .ml-myaccount-item-history th:first-child {
+        padding-left: 0;
+    }
+
+    #ml-no-tables .ml-myaccount-item-history td:nth-child(2) {
+        text-align: center;
+    }
+
+    #ml-no-tables .ml-myaccount-item-history td:nth-child(n+2) {
+        padding-left: @ml-myaccount-form-padding-xs;
+    }
+
+    #ml-no-tables .ml-myaccount-order-history td {
+        border-bottom: none !important;
+    }
+
+
+    /** Password Recovery **/
+    .ml-password-recovery-container {
+        .make-column(12);
+        padding: @ml-padding-default 0 0 0;
+     }
+
+    .ml-password-recovery-left-container {
+        .make-column(5);
+	padding: 0;
+    }
+    
+    .ml-password-recovery-right-container {
+        .make-column(7);
+        padding: 0;
+        text-align: left;
+	    button {
+	        width: auto;
+	    }
+    }
+    
+    .ml-password-recovery-left-container .form-group {
+        padding-left: 0px;
+    }
+
+    .ml-password-recovery-left-container .form-group .control-label {
+        .make-column(1);
+        padding: @ml-form-padding 0 0 0;
+    }
+
+    .ml-password-recovery-left-container .form-group .control-label-content {
+        .make-column(11); 
+    }
+   
+    .ml-password-recovery-hint-container {
+        .make-column(12);
+        padding: @ml-padding-vertical-default 0 0 0;
+            .ml-password-recovery-hint-question {
+	        padding: @ml-form-padding 0;
+	    }
+	    .ml-password-recovery-input-container {
+	       .make-column(5);
+	        padding-left: 0;
+	    }
+	    .ml-password-recovery-button-container {
+	       .make-column(7);
+	       padding: 0;
+	       text-align: left;
+	           button {
+	             width: auto;
+	         }
+	    }
+    }
+
+    .ml-password-recovery-reset-container {
+        .make-column(7);
+        padding: 0px;
+	    .form-group {
+	        margin-bottom: @ml-padding-vertical-default;
+		.clearfix();
+	    }
+	    .control-label {
+	        .make-column(5);
+		text-align: right;
+		padding: @ml-form-padding 0 0 @ml-padding-default;
+	    }
+	    .form-group .control-label-content {
+	        .make-column(7);
+		padding: 0 0 0 @ml-padding-default;
+	    }
+	    .ml-password-recovery-reset-mail-address-container {
+	        margin: @ml-padding-default 0 @ml-form-padding 0;
+		.clearfix();
+		    label {
+			.make-column(5);
+			text-align: right;
+			padding-right: 0px;
+		    }
+		    .label-content {
+			.make-column(7);
+		    }
+	    }
+    }
+    .ml-password-recovery-reset-button-container {
+        padding: @ml-form-padding 0 0 0;
+        clear: both;
+            button {
+	        width: auto;
+	    }
+    }
+
+    /** Password Recovery Error Page**/
+    /*.ml-password-recovery-error-page-container {
+        .make-column(12);
+	    padding: @ml-padding-default 0 0 0;
+    }
+    .ml-password-recovery-error-page-left-container {
+        display: block;
+	    .make-column(6);
+	    padding:0 @ml-padding-default 0 0;
+	    .mlfsimg {
+	        max-width: 100%;
+	    }
+    }
+    .ml-password-recovery-error-page-right-container {
+        .make-column(6);
+	    padding:0 0 0 @ml-padding-default;
+    }*/
+
+  .ml-myaccount-wishlist-left-container {
+    .make-column(7);
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
+
+  .ml-myaccount-wishlist-right-container {
+    .make-column(5);
+    padding-right: 0px;
+  }
+  .ml-myaccount-toggle-switch-button {
+  	width:50% !important;
+}
+  
+  .btn-group > .btn:first-child {
+  	border-top-right-radius: 0 !important;
+  	border-bottom-left-radius: 3px !important;
+  	border-bottom-right-radius: 0 !important;
+  }
+  
+  .btn-group > .btn:last-child {
+  	border-top-left-radius: 0 !important;
+  	border-top-right-radius: 3px !important;
+  	border-bottom-left-radius: 0 !important;
+  	border-top-width:1px;
+  }
+
+/** Wish list **/
+.ml-myaccount-wishlist-button-wrapper {
+    .ml-myaccount-wishlist-button-add-list {
+        .make-column(10.1);
+	padding-left: 0px;
+	padding-right: @ml-padding-default;
+	.ml-tertiary-button {
+	    width: auto;
+	    line-height: (@ml-spacer-default*2-2);
+	    height: (@ml-spacer-default*2-2);
+	}
+    }
+    .ml-myaccount-wishlist-button-create-list {
+        .make-column(1.9);
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	.ml-tertiary-button {
+	    width: auto;
+	    line-height: (@ml-spacer-default*2-2);
+	    height: (@ml-spacer-default*2-2);
+	}
+    }
+}
+	
+.ml-myaccount-wishlist-view {
+    select.form-select {
+        width: 46%;
+    }
+    .ml-myaccount-wishlist-view-head {
+        display: block;
+    }
+    .ml-myaccount-wishlist-view-row {
+        .make-column(12);
+	padding-left: 0px;
+	padding-right: 0px;
+	.ml-myaccount-wishlist-view-thumb {
+	    .make-column(1.1);
+	    padding: 0px;
+	    img {
+	        max-width: 100%;
+	    }
+	}
+	.ml-myaccount-wishlist-view-detail {
+	    .make-column(7.5);
+	    padding: 0 @ml-padding-default;
+	}
+	.ml-myaccount-wishlist-view-qty {
+	    text-align: center;
+	    .make-column(1.7);
+	    padding-right: 0px;
+	    padding-left: 0px;
+	    margin-left: 0px;
+	}
+	.ml-myaccount-wishlist-view-qty-purchased {
+	    text-align: center;
+	    .make-column(3.4);
+	    padding-right: 0px;
+	    padding-left: 0px;
+	    margin-left: 0px;
+	}
+	.ml-myaccount-wishlist-view-purchased {
+	    text-align: center;
+	    .make-column(1.7);
+	    padding-right: 0px;
+	    padding-left: 0px;
+	}
+    }
+    .ml-myaccount-wishlist-button-wrapper {
+        padding: @ml-padding-default 0px (@ml-spacer-default/3*2);
+	text-align: right;
+	.ml-myaccount-wishlist-button-save {
+	    .make-column(8.3);
+	    padding-left: 0px;
+	    padding-right: (@ml-spacer-default/3+2);
+	    .ml-tertiary-button {
+	        width: auto;
+	        line-height: (@ml-spacer-default*2-2);
+	        height: (@ml-spacer-default*2-2);
+	    }
+	}
+	.ml-myaccount-wishlist-button-send-list {
+	    .make-column(1.5);
+	    padding-left: 0px;
+	    padding-right: (@ml-spacer-default/3*2);
+	    a {
+	        text-decoration: none;
+		color: @ml-gray-dark;
+		&:hover {
+		    text-decoration: none;
+		}
+	    }
+	    .ml-tertiary-button {
+	        width: auto;
+	        line-height: (@ml-spacer-default*2-2);
+	        height: (@ml-spacer-default*2-2);
+	    }
+	}
+	.ml-myaccount-wishlist-button-continue {
+	    .make-column(2.2);
+	    padding: 0px;
+	    a {
+	        text-decoration: none;
+		color: @ml-gray-dark;
+		&:hover {
+		    text-decoration: none;
+		}
+	    }
+	    .ml-tertiary-button {
+	        width: auto;
+	        line-height: (@ml-spacer-default*2-2);
+	        height: (@ml-spacer-default*2-2);
+	    }
+	}
+	.ml-myaccount-wishlist-button-find-list {
+	    .make-column(7.4);
+	    .pull-right();
+	    padding-left: (@ml-spacer-default/3*2);
+	    padding-right: 0px;
+	    margin-top: (@ml-spacer-default/5+1);
+	    a {
+	        text-decoration: none;
+		color: @ml-gray-dark;
+		&:hover {
+		    text-decoration: none;
+		}
+	    }
+	    .ml-tertiary-button {
+	        width: auto;
+	        line-height: (@ml-spacer-default*2-2);
+	        height: (@ml-spacer-default*2-2);
+	    }
+	}
+	.ml-myaccount-wishlist-button-find-continue {
+	    .make-column(2.4);
+	    .pull-right();
+	    padding-left: (@ml-spacer-default/3*2);
+	    padding-right: 0px;
+	    margin-top: (@ml-spacer-default/5+1);
+	    a {
+	        text-decoration: none;
+		color: @ml-gray-dark;
+		&:hover {
+		    text-decoration: none;
+		}
+	    }
+	    .ml-tertiary-button {
+	        width: auto;
+	        line-height: (@ml-spacer-default*2-2);
+	        height: (@ml-spacer-default*2-2);
+	    }
+	}
+	.ml-myaccount-wishlist-button-add-basket {
+	    .make-column(2.2);
+	    .pull-right();
+	    padding: 0px 0px 0px (@ml-spacer-default/3*2);
+	    a {
+	        text-decoration: none;
+		color: @ml-gray-dark;
+		&:hover {
+		    text-decoration: none;
+		}
+	    }
+	    .ml-primary-button {
+	        width: auto;
+		padding: 0px (@ml-spacer-default+3);
+	    }
+	}
+    }
+}
+	
+.ml-myaccount-wishlist-send-list-wrapper {
+    .ml-myaccount-wishlist-send-list-container {
+        .clearfix();
+	.ml-myaccount-wishlist-send-list {
+	    .make-column(4);
+	    padding-left: 0px;
+	    padding-right: @ml-padding-default;
+	}
+	.ml-myaccount-wishlist-send-list-remove-button {
+	    padding-top: (@ml-spacer-default/3*4+2);
+	    padding-bottom: 0px;
+	    float: left;
+	    a {
+	        text-decoration: none;
+		color: @ml-gray-dark;
+		&:hover {
+		    text-decoration: none;
+		}
+	    }
+	}
+    }
+    .ml-myaccount-wishlist-send-list-textarea {
+        .make-column(7.7);
+	padding: 0px;
+	.ml-myaccount-wishlist-send-list-button {
+	    text-align: right;
+	    .ml-primary-button {
+	        width: auto;
+	    }
+	}
+    }
+}
+	
+.ml-myaccount-wishlist-find-list-view {
+    .ml-myaccount-box-shadow {
+        padding: 0 @ml-padding-default @ml-padding-default @ml-padding-default;
+	.ml-myaccount-sub-header {
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+	.form.control, .ml-tertiary-button {
+	    width: 100%;
+    }
+    }
+}
+	
+.ml-myaccount-wishlist-thank-you-wrapper {
+    .ml-tertiary-button {
+        width: auto;
+	line-height: (@ml-spacer-default*2-2);
+	height: (@ml-spacer-default*2-2);
+    }
+}
+	
+.ml-myaccount-wishlist-edit-view {
+    .control-label span {
+        display: block;
+	clear: both;
+	color: @ml-myaccount-wishlist-listOptions-text-color;
+	padding-top: (@ml-spacer-default/5);
+    }
+    .form-control {
+        .make-column(9);
+	margin-right: @ml-padding-default;
+    }
+    .ml-myaccount-wishlist-link {
+        float: right;
+	margin-top: (@ml-spacer-default/3+3);
+	a {
+	    color: @ml-gray-dark;
+	    text-decoration: underline;
+	    &:hover {
+	        text-decoration: underline;
+	    }
+	}
+    }
+    .ml-myaccount-wishlist-edit-button-wrapper {
+        .clearfix();
+	text-align: right;
+        .ml-myaccount-wishlist-edit-button-cancel {
+	.make-column(7.9);
+	padding-left: 0px;
+	padding-right: @ml-padding-default;
+	    a {
+	        color: @ml-gray-dark;
+	        text-decoration: underline;
+		padding: (@ml-spacer-default/3+3);
+		display: inline-block;
+	        &:hover {
+	            text-decoration: underline;
+	        }
+	    }
+	}
+	.ml-myaccount-wishlist-edit-button-save {
+	    .make-column(4.1);
+	    text-align: right;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    .ml-primary-button {
+	        padding: 0px (@ml-spacer-default/3*4);
+	    }
+	}
+    }
+}
+.ml-myaccount-wishlist-create-new {
+    .make-column(6);
+    padding: 0px;
+}
+	
+}

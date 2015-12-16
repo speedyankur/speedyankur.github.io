@@ -1,0 +1,62 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-order (@a) when (@a = true), (@a = SM_screenWidth) {
+    .make-column(@num) {
+        .make-sm-column(@num);
+    }
+
+    /*******************************************************************************************************************
+    * Order Details
+    *******************************************************************************************************************/
+    .ml-order-detail-left-container, .ml-order-detail-right-container {
+        margin-bottom: 0;
+    }
+
+    .ml-order-detail-left-container {
+        .make-column(6);
+        padding-left: 0px;
+        padding-bottom: @ml-myaccount-container-padding;
+    }
+
+    .ml-order-detail-right-container {
+        .make-column(6);
+        padding-right: 0px;
+        padding-bottom: @ml-myaccount-container-padding;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content thead tr th,
+    #ml-no-tables .ml-order-detail-order-content tbody tr td,
+    #ml-no-tables .ml-order-detail-order-content tbody tr td:last-child {
+        border-bottom: 0px;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tbody tr td {
+        padding-left: 0px;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tbody tr td:last-child,
+    #ml-no-tables .ml-order-detail-order-content tbody tr th:last-child {
+        padding-right: 0px;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tbody tr td:nth-child(2) {
+        text-align: center;
+        padding-left: @ml-myaccount-form-padding-xs;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tr td:last-child,
+    #ml-no-tables .ml-order-detail-order-content thead tr th:nth-child(2),
+    #ml-no-tables .ml-order-detail-order-content tr th:nth-child(n+3),
+    #ml-no-tables .ml-order-detail-order-content tr td:nth-child(n+3) {
+        text-align: right;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content td span.small-header {
+        display: none;
+    }
+
+    .ml-common-kickers-wrapper {
+        display: block;
+    }
+
+}

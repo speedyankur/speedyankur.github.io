@@ -1,0 +1,199 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-home (@a) when (@a = true), (@a = SM_screenWidth) {
+    .make-column(@num) {
+        .make-sm-column(@num);
+    }
+
+    /** start home page home_topnav_06**/
+    /** 1 row; slot-1: 12 columns; slot-2 to slot-7: 4 columns each; slot-4: clear left float; **/
+    .home_topnav_06-1 {
+        .make-column(12);
+    }
+
+    .home_topnav_06-2, .home_topnav_06-3 {
+        .make-column(4);
+        padding: @ml-home-page-padding-default;
+        text-align: left;
+    }
+
+    .home_topnav_06-7 {
+        clear: none;
+        padding-top: @ml-home-page-padding-default;
+    }
+
+    .home_topnav_06-4 {
+        clear: left;
+    }
+
+    .home_topnav_06-7, .home_topnav_06-4, .home_topnav_06-5 {
+        .make-column(4);
+        display: block;
+    }
+
+    .home_topnav_06-6 {
+        .make-column(4);
+        display: block;
+    }
+
+    .home_topnav_06-8 {
+        .make-column(12);
+        display: block;
+        padding-top: @ml-home-page-padding-default;
+    }
+    /** end home page home_topnav_06**/
+
+    /** start home page home_topnav_04**/
+    /** 1 row; slot-1 to 2: 12 columns; slot-3 to 5: 4 columns each; **/
+    .home_topnav_04-1 {
+        .make-column(12);
+    }
+
+    .home_topnav_04-2 {
+        .make-column(12);
+        padding-top: 0px;
+    }
+
+    .home_topnav_04-3, .home_topnav_04-4, .home_topnav_04-5 {
+        .make-column(4);
+        padding: 0px @ml-padding-default;
+        width: auto;
+        float: none;
+        display: block;
+    }
+    /** end home page home_topnav_04**/
+
+    /** start home page home_topnav_08**/
+    /** 1 row; slot-1: 12 columns **/
+    .home_topnav_singleslot-1 {
+        .make-column(12);
+        padding-bottom: @ml-padding-default;
+    }
+    /** end home page home_topnav_08**/
+
+    /** start home page home_topnav_02**/
+    /** 1 row; slot-1: 12 columns; slot-wrapper: 2 columns 7 columns; slot-3 to 6: 5 columns each; slot-7: 12 columns;**/
+    .home_topnav_02-slot-wrapper-1 {
+        .make-column(5);
+    }
+
+    .home_topnav_02-1 {
+        .make-column(12);
+    }
+
+    .home_topnav_02-2 {
+        .make-column(7);
+    }
+
+    .home_topnav_02-3, .home_topnav_02-4, .home_topnav_02-5, .home_topnav_02-6 {
+        width: auto;
+        float: none;
+        display: block;
+    }
+
+    .home_topnav_02-7 {
+        .make-column(12);
+        display: block;
+    }
+    /** end home page home_topnav_02**/
+
+    /** start home page home_topnav_03**/
+    /** 1 row; slot-1 to 4: 3 columns; slot-5 to 6: 6 columns each; **/
+    .home_topnav_03-1, .home_topnav_03-2 {
+        .make-column(3);
+    }
+
+    .home_topnav_03-3, .home_topnav_03-4 {
+        .make-column(3);
+        display: block;
+    }
+
+    .home_topnav_03-5, .home_topnav_03-6 {
+        .make-column(6);
+        display: block;
+    }
+    /** end home page home_topnav_03**/
+
+    /** start home page home_topnav_05**/
+    /** 1 row; slot-1: 6 columns; slot-2 to 9: 3 column each; slot-10: 12 columns; **/
+    .home_topnav_05-slot-wrapper-1, .home_topnav_05-slot-wrapper-2 {
+        .make-column(3);
+    }
+
+    .home_topnav_05-1 {
+        .make-column(6);
+		padding-bottom: @ml-padding-default;        
+    }
+
+    .home_topnav_05-2, .home_topnav_05-4, .home_topnav_05-6, .home_topnav_05-8 {
+        display: block;
+        width: auto;
+        float: none;
+		padding-bottom: @ml-padding-default;        
+    }
+
+    .home_topnav_05-3, .home_topnav_05-5, .home_topnav_05-7, .home_topnav_05-9 {
+        display: block;
+        width: auto;
+        float: none;
+		padding-bottom: @ml-padding-default;        
+    }
+
+    .home_topnav_05-10 {
+        .make-column(12);
+        display: block;
+    }
+    /** end home page home_topnav_05**/
+
+    /** start home page home_topnav_01**/
+    /** 1 row; slot-1: 7 columns; slot-2 to 3: 5 column each; slot-4 to 7: 3 columns; **/
+    .home_topnav_01-slot-wrapper-1 {
+        .make-column(5);
+    }
+
+    .home_topnav_01-1 {
+        .make-column(7);
+    }
+
+    .home_topnav_01-2, .home_topnav_01-3 {
+        display: block;
+        width: auto;
+        float: none;
+        padding: 0px 0px @ml-home-page-padding-default 0px;
+    }
+
+    .home_topnav_01-4, .home_topnav_01-5, .home_topnav_01-6, .home_topnav_01-7 {
+        .make-column(3);
+        display: block;
+        width: auto;
+    }
+    /** end home page home_topnav_01**/
+
+    /** start home page home_topnav_07**/
+    /** 1 row; slot-1: 7 columns; slot-2 to 3: 5 column each; slot-4 to 7: 3 columns; **/
+    .home_topnav_07-slot-wrapper-1 {
+        .make-column(5);
+    }
+
+    .home_topnav_07-1 {
+        .make-column(7);
+    }
+
+    .home_topnav_07-2, .home_topnav_07-3 {
+        display: block;
+        width: auto;
+		padding-bottom: @ml-padding-default;
+	}
+
+    .home_topnav_07-4, .home_topnav_07-5, .home_topnav_07-6, .home_topnav_07-7, .home_topnav_07-8, .home_topnav_07-9 {
+    	padding-bottom: @ml-padding-default;
+    }
+    
+    .home_topnav_07-4, .home_topnav_07-5, .home_topnav_07-6, .home_topnav_07-7,
+    .home_topnav_07-8, .home_topnav_07-9, .home_topnav_07-10, .home_topnav_07-11, .home_topnav_07-12 {
+        .make-column(4);
+        display: block;
+        width: auto;
+    }
+    /** end home page home_topnav_07**/
+}

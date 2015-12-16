@@ -1,0 +1,88 @@
+/*! product_search.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+/** start product search page **/
+.ml-product-search-category-wrapper {
+    .make-row();
+    border-bottom: 1px solid @ml-gray;
+    margin: 0px;
+}
+
+.ml-product-search-header-page-wrapper {
+    .make-row();
+    padding: 10px 0px;
+}
+
+.ml-product-search-category-sort {
+    width: 100%;
+}
+
+.ml-product-search-category-sort .ml-grid-view-sort-dropdown select.form-control {
+    padding: 6px 2px 6px 5px;
+}
+
+.ml-product-nosearch-form-button-wrapper, .ml-product-nosearch-form-field {
+    float: left;
+}
+
+.ml-category-header h1 {
+    font-size: @ml-category-header-font-size;
+    font-weight: bold;
+    margin: 0px;
+}
+
+.ml-category-header-nosearch h1 {
+    font-size: @ml-category-header-nosearch-font-size;
+    font-weight: bold;
+    margin: 0px;
+    padding: @ml-padding-default 0 0 0;
+}
+
+.ml-product-search-header-sorty-wrapper {
+	margin-bottom:10px;
+}
+
+/** begin Recently Viewed Products - Carousel **/
+
+.ml-product-nosearch-recently-viewed {
+    width: 100%;
+}
+
+.ml-search-sub-headers {
+    overflow: hidden;
+    text-align: center;
+}
+
+.ml-search-sub-headers h2 {
+    color: @ml-product-sub-headers-text-color;
+    font: normal @ml-product-sub-headers-font-size @ml-product-sub-headers-font-family;
+    text-align: center;
+    padding: @ml-padding-default;
+    margin: 0px;
+    display: inline-block;
+}
+
+.ml-search-sub-headers h2 span.ml-search-border-right {
+    margin-left: (@ml-spacer-default/3*4);
+}
+
+#ml-recentlyviewed-carousel-view-items{
+  margin-bottom: 25px;
+}
+
+#ml-recentlyviewed-carousel-view-items img :hover{
+  outline: 1px solid @ml-carousel-view-items-hover-outline-color;
+  outline-offset: 1px;
+}
+
+#ml-recentlyviewed-carousel-view-items .ml-product-carousel-view-item.selected img{
+  outline: 1px solid @ml-gray-darker;
+  outline-offset: 1px;
+}
+
+#ml-crosssells-carousel-view-items img:hover {
+  outline: 1px solid @ml-carousel-view-items-hover-outline-color;
+  outline-offset: 1px;
+}
+
+/** end Recently Viewed Products - Carousel **/
+/** end product search page **/

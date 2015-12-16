@@ -1,0 +1,256 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-basket (@a) when (@a = true), (@a = MD_screenWidth) {
+  .make-column(@num){
+    .make-md-column(@num);
+      padding-left: 0px;
+      padding-right: 0px;
+  }
+
+    .ml-basket-container {
+        .ml-basket-top-msg {
+            .make-column(10);
+        }
+        .ml-basket-button-checkout-top {
+            .make-column(2);
+        }
+        .ml-basket-row {
+            .ml-basket-item-qty-title {
+                display: none;
+                width: 0;
+    }
+            .ml-basket-item-qty-value {
+                width: 100%;
+            }
+            .ml-basket-remove-update-padding {
+                display: none;
+                width: 0;
+            }
+        }
+    }
+    .ml-layout-section-basket{
+        .ml-basket-top-msg {
+            .make-column(9);
+        }
+        .ml-basket-button-checkout-top {
+            .make-column(3);
+        }
+    }
+    /** Start Basket **/
+    .ml-leftNav-wrapper .ml-basket-info-container .ml-basket-totals{
+        .ml-basket-total-label {
+            .make-column(9);
+        }
+        .ml-basket-total-value {
+            .make-column(3);
+        }
+    }
+
+    .ml-basket-items-container {
+        .make-column(12);
+
+        .ml-basket-item-details-container {
+            .make-column(12);
+        }
+        .ml-basket-item-thumb {
+            .make-column(1);
+        }
+        .ml-basket-item-product {
+            .make-column(5);
+        }
+        .ml-basket-item-row-wrapper{
+            .make-column(6);
+        }
+        .ml-basket-remove-update-wrapper{
+            .make-column(12);
+        }
+        .ml-basket-remove-update-container{
+            .make-column(4);
+        }
+        .ml-basket-remove-update-wrapper-placeholder{
+            .make-column(8);
+        }
+        .ml-basket-item-qty {
+            .make-column(4);
+        }
+        .ml-basket-item-totals-container {
+            .make-column(8);
+
+            .ml-basket-item-price {
+                .make-column(4);
+            }
+            .ml-basket-item-discount {
+                .make-column(4);
+            }
+            .ml-basket-item-total {
+                .make-column(4);
+            }
+        }
+        .ml-basket-item-messages-placeholder{
+            .make-column(1);
+        }
+        .ml-basket-item-messages{
+            .make-column(11);
+        }
+
+        .ml-basket-item-discount-hide .ml-basket-item-totals-container {
+            .ml-basket-item-price {
+                .make-md-column-push(4);
+            }
+            .ml-basket-item-discount {
+                .make-md-column-pull(4);
+            }
+        }
+
+        .ml-basket-item-thumb-hide{
+            .ml-basket-item-thumb {
+                .make-column(0);
+            }
+            .ml-basket-item-product {
+                .make-column(6);
+            }
+            .ml-basket-item-row-wrapper{
+                .make-column(6);
+            }
+            .ml-basket-item-qty {
+                .make-column(4);
+            }
+            .ml-basket-item-totals-container {
+                .make-column(8);
+            }
+
+            .ml-basket-item-messages-placeholder{
+                .make-column(0);
+            }
+            .ml-basket-item-messages{
+                .make-column(12);
+            }
+        }
+    }
+
+    .ml-basket-item-details .ml-basket-item-value {
+        float: left;
+        width: 40%;
+    }
+
+    .ml-basket-info-container {
+        .ml-basket-additional {
+            .make-column(6);
+        }
+        .ml-basket-totals {
+            .make-column(6);
+        }
+        .ml-basket-additional {
+            .ml-basket-input-source {
+            }
+            .ml-basket-input-shipping {
+            }
+        }
+        .ml-basket-totals {
+            .ml-basket-total-label {
+                .make-column(9);
+            }
+            .ml-basket-total-value {
+                .make-column(3);
+            }
+        }
+    }
+
+    .ml-basket-buttons.ml-basket-button-save-cart-hide{
+        .ml-basket-button-placeholder {
+            .make-column(7);
+        }
+        .ml-basket-button-continue-shopping {
+            .make-column(2);
+        }
+        .ml-basket-button-checkout {
+            .make-column(3);
+        }
+        .ml-basket-button-alternatives-separator {
+            .make-column(5);
+            margin: 10px 0;
+        }
+    }
+
+    .ml-basket-buttons {
+        .ml-basket-button-placeholder {
+            .make-column(5);
+        }
+        .ml-basket-button-continue-shopping {
+            .make-column(2);
+        }
+        .ml-basket-button-save {
+            .make-column(2);
+        }
+        .ml-basket-button-checkout {
+            .make-column(3);
+        }
+        .ml-basket-button-checkout-paypal {
+            .make-column(12);
+        }
+
+        .ml-basket-button-alternatives-separator {
+            .make-column(7);
+            margin: 10px 0;
+        }
+
+        .ml-basket-button-alternatives {
+            .make-column(12);
+            text-align: right;
+
+            .ml-basket-button-alternatives-items {
+                text-align: right;
+                position: relative;
+                display: inline-block;
+
+                .ml-basket-button-alternatives-item {
+                    float: left;
+                    margin-top: @ml-padding-vertical-default;
+                    margin-left: @ml-padding-default;
+                }
+            }
+        }
+    }
+
+    .ml-basket-empty{
+        .ml-basket-empty-button-placeholder{
+            .make-column(4.5);
+        }
+        .ml-basket-empty-continue-shopping{
+            .make-column(3);
+        }
+        .ml-basket-empty-button-placeholder{
+            .make-column(4.5);
+        }
+    }
+
+    .basketDetailDefault;
+
+    /** End Basket **/
+
+    .ml-product-up-sells {
+        .make-column(3);
+    }
+
+    /*  Up Sells Carousel */
+
+    .ml-carousel{
+      margin:0 25px 10px 30px;
+      clear: both;
+    }
+
+    .ml-upsells-carousel-view-item .ml-thumb-image img{
+      width:225px;
+      height:225px;
+      margin-left:15px;
+      margin-right:15px
+
+    }
+
+    .ml-basket-empty-msg {
+    	padding-top:50px;
+    }
+    
+    
+
+}

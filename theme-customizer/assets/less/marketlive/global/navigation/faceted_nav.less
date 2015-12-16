@@ -1,0 +1,613 @@
+/*! faceted_nav.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+/*** Start Faceted Left Nav ***/
+.ml-faceted-nav-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.ml-faceted-nav-left-bg {
+    background-color: @ml-nav-facet-filter-color;
+    border-right: 1px solid @ml-nav-facet-filter-border-color;
+}
+
+.ml-facet-target-show {
+    display: block;
+}
+
+.ml-nav-facet-plus {
+    .ml-nav-expand-all-toggle();
+}
+
+.ml-nav-facet-minus {
+    .ml-nav-expand-all-toggle();
+}
+
+.ml-nav-expand-all-toggle {
+    font-size: @ml-nav-expand-all-toggle-font-size;
+    float: right;
+    top: -1.70em;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+.ml-nav-facet-expand-all-toggle.ml-icon-lib {
+    line-height: inherit;
+}
+
+.ml-nav-facet-expand-all-toggle-space {
+    float: right;
+    top: -1.70em;
+    position: relative;
+    width: 20px;
+}
+
+.ml-facted-nav-cancel {
+    padding-right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ml-facted-nav-apply {
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.ml-facted-nav-send-buttons {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: @ml-faceted-nav-left-padding;
+    border-top: 1px solid @ml-facted-nav-send-buttons-border-color;
+}
+
+.ml-faceted-nav-left-control {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ml-nav-facet-border-top {
+    border-top: 1px solid @ml-nav-facet-filter-border-color;
+}
+
+.ml-nav-facet-border-bottom {
+    border-bottom: 1px solid @ml-nav-facet-filter-border-color;
+}
+
+.ml-faceted-nav-left {
+
+    a {
+        color: @ml-nav-facet-default-color;
+    }
+
+    ul, li {
+        font-size: @ml-faceted-font-default;
+        color: @ml-nav-facet-default-color;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        line-height: 2;
+    }
+
+    .ml-header {
+        font-size: @ml-faceted-font-default;
+        color: @ml-nav-facet-default-color !important;
+        font-weight: bold;
+        text-transform: lowercase;
+        margin: 0;
+        padding: 0;
+        padding-right: 0px;
+        .ml-nav-facet-border-bottom;
+
+        &.ml-image {
+            padding-left: 0px;
+        }
+
+        .ml-clear.ml-disabled .ml-nav-facet-remove-sign, .ml-clear.ml-disabled .ml-nav-facet-reset {
+            color: @ml-nav-facet-disabled-color;
+            cursor: default;
+        }
+
+        .ml-nav-facet-reset {
+            padding-left: 5px;
+        }
+
+        .ml-nav-facet-reset, .ml-facet-toggle-selection {
+            cursor: pointer;
+        }
+
+        .ml-clear {
+            float: right;
+            text-align: right;
+            padding-left: 5px;
+        }
+
+        .ml-nav-facet-clear-link {
+            color: @ml-nav-facet-default-color;
+            font-weight: normal;
+            font-size: (@ml-faceted-font-default - 2);
+            text-decoration: none;
+            cursor: pointer;
+            text-transform: none;
+        }
+
+        .ml-clear.ml-disabled {
+            cursor: default;
+        }
+
+        .ml-clear.ml-disabled .ml-nav-facet-clear-link {
+            color: @ml-nav-facet-clear-disabled-color;
+            text-decoration: none;
+            cursor: default;
+        }
+
+        .ml-clear-container {
+            cursor: pointer;
+        }
+
+        .ml-clear-container, .ml-toggle-selection-container {
+            float: right;
+        }
+    }
+
+    li ul {
+        margin-top: 2px;
+        margin-bottom: 20px;
+    }
+
+    li li {
+        font-size: @ml-faceted-font-default;
+        font-weight: normal;
+        line-height: 2.0;
+        float: none;
+        color: @ml-nav-facet-default-color;
+    }
+
+    .ml-more, .ml-less {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .ml-refine-by {
+        font-size: @ml-nav-facet-refine-by-font-size;
+        color: @ml-nav-facet-default-color;
+        font-weight: bold;
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        .ml-nav-facet-border-bottom;
+    }
+
+    .ml-refine-by .ml-no-refinements {
+        font-size: @ml-nav-facet-no-refinements-font-size;
+        color: @ml-nav-facet-default-color;
+        font-weight: normal;
+        margin-left: 0px;
+        line-height: 1.0;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+
+    .ml-facet-value {
+        text-decoration: none;
+    }
+
+    .ml-facet-value .ml-image {
+        padding-right: 0px;
+    }
+
+    .ml-facet-value .ml-count {
+        font-size: @ml-faceted-font-default;
+        color: @ml-nav-facet-default-color;
+    }
+
+    .ml-facet-value.ml-selected .ml-count {
+        color: @ml-nav-facet-selected-color;
+    }
+
+    .ml-facet-value.ml-disabled .ml-count {
+        color: @ml-nav-facet-disabled-color;
+    }
+
+    .ml-clear-float {
+        clear: both;
+    }
+
+    .ml-scrollable-filter {
+        height: 200px;
+        overflow: auto;
+        margin-bottom: 20px;
+        padding-left: 5px;
+    }
+
+    .ml-nav-facet-selections {
+        font-size: @ml-font-size-nav-facet-header-clear;
+        color: @ml-text-color;
+        padding-bottom: 10px;
+    }
+
+    .ml-nav-facet-selected {
+        padding: (@ml-spacer-default/3) (@ml-spacer-default/3) (@ml-spacer-default/3) 0px;
+        white-space: nowrap;
+	display: inline-block;
+    }
+
+    .ml-facet-value.ml-selected {
+        cursor: default;
+    }
+
+    .ml-facet-value.ml-selected.ml-hover {
+        cursor: default;
+        text-decoration: underline;
+    }
+
+    .ml-nav-facet-clearall {
+        font-size: @ml-font-size-nav-facet-header-clear;
+        color: @ml-text-color;
+        top: 14px;
+        right: 0px;
+        position: absolute;
+        font-weight: normal;
+        padding-left: 5px;
+    }
+
+    .ml-nav-facet-clearall .ml-nav-facet-removeall-sign {
+        display: inline-block;
+        padding-left: 5px;
+    }
+
+    .ml-nav-facet-remove-sign.ml-icon-remove-circle {
+        font-size: 14px !important;
+        padding-right: 2px;
+    }
+
+    .ml-toggle-selection-container .ml-toggle-selection.ml-disabled {
+        .ml-icon-unchecked;
+        color: @ml-nav-facet-clear-disabled-color;
+    }
+
+    .ml-toggle-selection-container .ml-toggle-selection {
+        .ml-icon-check;
+    }
+
+    .ml-nav-facet-expand-toggle {
+        cursor: default;
+    }
+
+    /**** Boolean Filter ****/
+    .ml-boolean-filter {
+        .ml-facet-value {
+            cursor: pointer;
+            font-size: @ml-faceted-font-default;
+            color: @ml-nav-facet-default-color;
+            font-weight: bold;
+            text-transform: lowercase;
+        }
+
+        .ml-facet-value.ml-image {
+            padding-left: 0px;
+        }
+
+        .ml-facet-value.ml-image .ml-image-float {
+            margin-top: 2px;
+        }
+
+        .ml-facet-value.ml-image .ml-count, .ml-facet-value .ml-count {
+            font-size: @ml-faceted-font-default;
+            font-weight: normal;
+        }
+
+        .ml-facet-value.ml-hover {
+            text-decoration: underline;
+        }
+
+        .ml-facet-value.ml-disabled {
+            cursor: auto;
+            color: @ml-nav-facet-disabled-color;
+        }
+
+        .ml-facet-value .ml-clear-float {
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+    }
+
+    /**** Single Select Filter ****/
+    .ml-scrollable-filter.ml-list-filter-scroll-override {
+        height: 200px;
+    }
+
+    .ml-list-filter {
+        padding-left: @ml-faceted-nav-left-padding;
+
+        .ml-facet-value {
+            cursor: pointer;
+            padding-right: 5px;
+            font-size: @ml-faceted-font-default;
+            font-weight: normal;
+            line-height: 2.0;
+            float: none;
+            color: @ml-nav-facet-default-color;
+        }
+
+        .ml-facet-value.ml-selected {
+            color: @ml-nav-facet-selected-color;
+        }
+
+        .ml-facet-value.ml-hover {
+            text-decoration: underline;
+        }
+
+        .ml-facet-value.ml-disabled {
+            cursor: auto;
+            color: @ml-nav-facet-disabled-color;
+        }
+    }
+
+    .ml-list-filter.ml-rating-list-filter .ml-facet-value.ml-hover {
+        text-decoration: none;
+    }
+
+    .ml-rating-list-filter {
+        margin: 5px 0 20px 0;
+
+        .ml-facet-value {
+            margin: 2px 0;
+        }
+
+        .ml-facet-value .ml-image {
+            vertical-align: text-bottom;
+        }
+
+        .ml-facet-value.ml-hover .ml-count {
+            text-decoration: underline;
+        }
+    }
+
+    /**** Checkbox List Filter ****/
+    .ml-scrollable-filter.ml-checkbox-list-filter-scroll-override {
+        height: 200px;
+    }
+
+    .ml-checkbox-list-filter {
+        padding-left: @ml-faceted-nav-left-padding;
+
+        .ml-facet-value {
+            cursor: pointer;
+        }
+
+        .ml-facet-value.ml-disabled {
+            cursor: auto;
+        }
+
+        .ml-facet-value .ml-checkbox {
+            width: 13px;
+            height: 13px;
+            border: 1px solid @ml-nav-facet-disabled-color;
+            float: left;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 2px;
+            margin-top: 5px;
+            margin-right: 4px;
+            overflow: hidden;
+        }
+
+        .ml-facet-value.ml-selected .ml-checkbox {
+            background-color: @ml-nav-facet-selected-color;
+        }
+
+        .ml-facet-value.ml-disabled .ml-checkbox {
+            border-color: @ml-nav-facet-filter-border-color;
+        }
+
+        .ml-facet-value .ml-label {
+            font-size: @ml-faceted-font-default;
+            color: @ml-nav-facet-default-color;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .ml-facet-value.ml-hover .ml-label {
+            text-decoration: underline;
+        }
+
+        .ml-facet-value.ml-selected .ml-label {
+            color: @ml-nav-facet-selected-color;
+        }
+
+        .ml-facet-value.ml-disabled .ml-label {
+            color: @ml-nav-facet-disabled-color;
+        }
+    }
+
+    /**** RadioButton List Filter ****/
+    .ml-scrollable-filter.ml-radiobutton-list-filter-scroll-override {
+        height: 200px;
+    }
+
+    .ml-radiobutton-list-filter {
+        padding-left: @ml-faceted-nav-left-padding;
+
+        .ml-facet-value {
+            cursor: pointer;
+        }
+
+        .ml-facet-value.ml-disabled {
+            cursor: auto;
+        }
+
+        .ml-facet-value .ml-checkbox {
+            @width-radio: 9px;
+            width: @width-radio;
+            height: @width-radio;
+            border: 1px solid @ml-nav-facet-disabled-color;
+            float: left;
+            -moz-border-radius: 2px;
+            -webkit-border-radius: 2px;
+            border-radius: 4px;
+            margin-top: (@width-radio/2 + 4);
+            margin-right: 4px;
+            overflow: hidden;
+        }
+
+        .ml-facet-value.ml-selected .ml-checkbox {
+            background-color: @ml-nav-facet-selected-color;
+        }
+
+        .ml-facet-value.ml-disabled .ml-checkbox {
+            border-color: @ml-nav-facet-filter-border-color;
+        }
+
+        .ml-facet-value .ml-label {
+            font-size: @ml-faceted-font-default;
+            color: @ml-nav-facet-default-color;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .ml-facet-value.ml-hover .ml-label {
+            text-decoration: underline;
+        }
+
+        .ml-facet-value.ml-selected .ml-label {
+            color: @ml-nav-facet-selected-color;
+        }
+
+        .ml-facet-value.ml-disabled .ml-label {
+            color: @ml-nav-facet-disabled-color;
+        }
+    }
+
+    /**** Image Grid Filter ****/
+    .ml-scrollable-filter.ml-image-grid-filter-scroll-override {
+        height: 65px;
+    }
+
+    .ml-scrollable-filter.ml-image-grid-filter-scroll-override .ml-image-grid-filter {
+        margin-bottom: 0px;
+    }
+
+    .ml-image-grid-filter {
+        padding-left: @ml-faceted-nav-left-padding;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+        .ml-facet-value {
+            float: left;
+            margin-right: 4px;
+            margin-bottom: 4px;
+            cursor: pointer;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .ml-facet-value.ml-disabled {
+            cursor: auto;
+        }
+
+        .ml-facet-value.ml-selected {
+            /* used to track selected img facet values, maybe also be used to style them  */
+        }
+    }
+    .ml-scrollable-filter.ml-image-list-filter-scroll-override {
+        height: 65px;
+    }
+
+    .ml-image-list-filter {
+        padding-left: @ml-faceted-nav-left-padding;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+        .ml-facet-value {
+            margin-right: 4px;
+            margin-bottom: 4px;
+            cursor: pointer;
+            -moz-user-select: none;
+            -khtml-user-select: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .ml-facet-value .ml-image {
+            vertical-align: middle;
+        }
+
+        .ml-facet-value .ml-disabled {
+            cursor: auto;
+        }
+
+        .ml-facet-value .ml-selected {
+            /* used to track selected img facet values, maybe also be used to style them  */
+        }
+    }
+
+    /**** Text Grid Filter ****/
+    .ml-scrollable-filter.ml-text-grid-filter-scroll-override {
+        height: 55px;
+    }
+
+    .scrollableFilter.textGridFilterScrollOverride .ml-text-grid-filter {
+        margin-bottom: 0px;
+    }
+
+    .ml-text-grid-filter {
+        padding-left: @ml-faceted-nav-left-padding;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: (@ml-faceted-font-default - 1);
+
+        .ml-facet-value {
+            float: left;
+            font-size: (@ml-faceted-font-default - 1);
+            color: @ml-nav-facet-default-color;
+            text-align: center;
+            min-width: 20px;
+            line-height: 1.0;
+            border: 2px solid @ml-nav-facet-filter-border-color;
+            -moz-border-radius: 4px;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+            background: @ml-nav-facet-filter-color; /* for non-gradient browsers */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#cccccc'); /* IE */
+            background: -webkit-gradient(linear, left top, left bottom, from(@ml-nav-facet-text-gradient-start-color), to(@ml-nav-facet-text-gradient-end-color)); /* Webkit */
+            background: -moz-linear-gradient(top,  @ml-nav-facet-text-gradient-start-color,  @ml-nav-facet-text-gradient-end-color); /* Firefox 3.6+ */
+            margin-right: 10px;
+            margin-bottom: 5px;
+            padding: 3px;
+            cursor: pointer;
+        }
+
+        .ml-facet-value.ml-disabled {
+            background: none;
+            filter: none;
+            background-color: @ml-facet-value-disabled-background-color;
+            cursor: auto;
+            border-color: @ml-facet-value-disabled-border-color;
+            color: @ml-nav-facet-disabled-color;
+        }
+
+        .ml-facet-value.ml-selected {
+            color: @ml-nav-facet-filter-color;
+            border-color: @ml-facet-value-selected-border-color;
+            background: @ml-nav-facet-disabled-color; /* for non-gradient browsers */
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=@ml-nav-facet-text-gradient-start-color-selected-start, endColorstr=@ml-nav-facet-text-gradient-start-color-selected-end); /* IE */
+            background: -webkit-gradient(linear, left top, left bottom, from(@ml-nav-facet-text-gradient-start-color-selected-start), to(@ml-nav-facet-text-gradient-start-color-selected-end)); /* Webkit */
+            background: -moz-linear-gradient(top,  @ml-nav-facet-text-gradient-start-color-selected-start,  @ml-nav-facet-text-gradient-start-color-selected-end); /* Firefox 3.6+ */
+        }
+
+        .ml-facet-value.ml-hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+/*** End Faceted Left Nav ***/

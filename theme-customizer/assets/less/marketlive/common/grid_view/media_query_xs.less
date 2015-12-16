@@ -1,0 +1,70 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-grid-view (@a) when (@a = true), (@a = XS_screenWidth) {
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    .ml-grid-view {
+        .ml-grid-view-item {
+            padding-left: 6px;
+            padding-right: 6px;
+        }
+
+        .ml-grid-view-items {
+            padding-left: (@ml-dir-item-padding-default - 6px);
+            padding-right: (@ml-dir-item-padding-default - 6px);
+        }
+    }
+
+    .ml-grid-view-toggle-container {
+        .make-column(3);
+        padding-right: 0px;
+    }
+
+    .ml-grid-view-multi-column .ml-grid-view-item {
+        .make-column(6);
+        padding: 0px 9px 9px 9px;
+
+        .ml-grid-item-info .ml-thumb-desc-long {
+            display: none;
+        }
+	.ml-grid-item-image {
+            padding: 0;
+        }
+    }
+
+    .ml-grid-view-multi-column {
+        // nth:child(xn+1), where x is no. of columns to be displayed
+        .ml-grid-view-item:nth-child(3n+1), .ml-grid-view-item:nth-child(4n+1){
+            clear: none;
+        }
+        .ml-grid-view-item:nth-child(2n+1){
+            clear: left;
+        }
+    }
+
+    .ml-grid-view-single-column .ml-grid-view-item {
+
+        .ml-grid-item-image {
+            .make-column(6);
+            padding: 0px 9px 9px 9px;
+        }
+
+        .ml-grid-item-info {
+            .make-column(6);
+            padding: 0px 9px 9px 9px;
+        }
+
+        .ml-grid-item-info .ml-thumb-desc-long {
+            display: none;
+        }
+    }
+
+    .ml-grid-view-single-column {
+        // To display the items properly use nth selector to clear the float. e.g. nth:child(n+1)
+        .ml-grid-view-item:nth-child(n+1){
+            clear: left;
+        }
+    }
+}

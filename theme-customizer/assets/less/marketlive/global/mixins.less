@@ -1,0 +1,120 @@
+/*! mixins.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-absolute-position(@top:0; @right:0; @bottom:0; @left:0;) {
+    position: absolute;
+    top: @top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+
+.ml-bg-gradient {
+    background: #00d2ff; /* Old browsers */
+    background: -moz-linear-gradient(left, #00d2ff 0%, #00d2ff 13%, #00cffe 15%, #01baf8 21%, #0384e7 36%, #0472e2 43%, #0472e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #00d2ff), color-stop(13%, #00d2ff), color-stop(15%, #00cffe), color-stop(21%, #01baf8), color-stop(36%, #0384e7), color-stop(43%, #0472e2), color-stop(100%, #0472e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, #00d2ff 0%, #00d2ff 13%, #00cffe 15%, #01baf8 21%, #0384e7 36%, #0472e2 43%, #0472e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #00d2ff 0%, #00d2ff 13%, #00cffe 15%, #01baf8 21%, #0384e7 36%, #0472e2 43%, #0472e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #00d2ff 0%, #00d2ff 13%, #00cffe 15%, #01baf8 21%, #0384e7 36%, #0472e2 43%, #0472e2 100%); /* IE10+ */
+    background: linear-gradient(to right, #00d2ff 0%, #00d2ff 13%, #00cffe 15%, #01baf8 21%, #0384e7 36%, #0472e2 43%, #0472e2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00d2ff', endColorstr='#0472e2', GradientType=1); /* IE6-9 */
+}
+
+.ml-button-gradient {
+    background: #00d2ff; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #00d2ff 0%, #0472e2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #00d2ff), color-stop(100%, #0472e2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #00d2ff 0%, #0472e2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #00d2ff 0%, #0472e2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #00d2ff 0%, #0472e2 100%); /* IE10+ */
+    background: linear-gradient(135deg, #00d2ff 0%, #0472e2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00d2ff', endColorstr='#0472e2', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}
+
+.ml-button-base {
+    height: 34px;
+    line-height: 34px;
+    font-size: @ml-button-base-font-size;
+    border: 0;
+    cursor: pointer;
+}
+
+.ml-primary-button {
+    .ml-button-base();
+    .ml-button-gradient();
+    text-align: center;
+    padding: 0px 36px;
+    color: @ml-primary-button-text-color;
+    outline: 1px solid @ml-primary-button-outline-color;
+    outline-offset: -3px;
+}
+
+.ml-primary-button:hover {
+    background: @ml-primary-button-hover-background;
+    outline: 1px solid @ml-primary-button-hover-outline-color;
+}
+
+.ml-secondary-button {
+    .ml-button-gradient();
+    border: 0;
+    border-radius: 3px;
+    text-align: center;
+    font-size: @ml-secondary-button-font-size;
+    color: @ml-secondary-button-text-color;
+}
+
+.ml-secondary-button-understated {
+    .ml-button-base();
+    padding: 0px;
+    color: @ml-text-color;
+    text-decoration: underline;
+    background: transparent;
+}
+
+.ml-button-set-primary-and-secondary-understated {
+    .clearfix();
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+
+    div {
+        .pull-left();
+        width: 20%;
+
+        input {
+            .ml-secondary-button-understated();
+        }
+    }
+
+    div:last-child {
+        width: 80%;
+
+        input {
+            .ml-primary-button();
+            width: 100%;
+        }
+    }
+}
+
+.ml-dhtml-box-shadow {
+    -webkit-box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75); /* Chrome10+,Safari5.1+ */
+    -moz-box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75); /* FF3.6+ */
+    box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75); /* W3C */
+}
+.ml-qve-box-shadow {
+    -webkit-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.75); /* Chrome10+,Safari5.1+ */
+    -moz-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.75);  /* FF3.6+ */
+    box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.75); /* W3C */
+}
+
+.ml-tertiary-button {
+    background: @ml-gray-lighter;
+    border: 1px solid @ml-gray-light;
+    color: @ml-gray-dark;
+    border-radius: @ml-border-radius-base;
+    text-align: center;
+    font-size: @ml-secondary-button-font-size;
+    line-height: 28px;
+    padding: 0 10px;
+    height: 28px;
+    display: inline-block;
+}

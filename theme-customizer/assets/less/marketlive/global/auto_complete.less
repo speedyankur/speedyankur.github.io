@@ -1,0 +1,38 @@
+/*! auto_complete.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.autocomplete {
+    background-color: @ml-autocomplete-background-color;
+    -webkit-box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75);
+    box-shadow: 0px 0px 30px rgba(50, 50, 50, 0.75);
+    font-size: @ml-autocomplete-font-size;
+    color: @ml-autocomplete-text-color;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.autocomplete-gap {
+    height: 15px;
+}
+
+.autocomplete-header {
+    font-weight: bold;
+}
+
+.autocomplete-content.selected {
+    color: @ml-autocomplete-content-selected-text-color;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.autocomplete-content{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+

@@ -1,0 +1,290 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-global (@a) when (@a = true), (@a = SM_screenWidth) {
+    .make-column(@num) {
+        .make-sm-column(@num);
+    }
+
+    #mlMediaQueryDetect {
+        display: none;
+
+        .ml-media-query-detect-xs { display:none; }
+        .ml-media-query-detect-sm { display:inline; }
+        .ml-media-query-detect-md { display:none; }
+        .ml-media-query-detect-lg { display:none; }
+    }
+
+    /*******************************************************************************************************************
+    * Responsive Tables
+    *******************************************************************************************************************/
+    #ml-no-tables {
+        padding: 0 0 @ml-padding-default 0;
+    }
+
+    #ml-no-tables table {
+        width: 100%;
+    }
+
+    #ml-no-tables .table-bordered thead tr th, #ml-no-tables .table-bordered tbody tr td {
+        border-bottom: 1px solid @ml-gray;
+    }
+
+    #ml-no-tables .table-bordered thead tr th {
+        background: none;
+        font-size: @ml-font-size-table-header;
+    }
+
+    #ml-no-tables .table-striped > tbody > tr > td:last-child {
+        background: none;
+        border-bottom: 1px solid @ml-gray;
+    }
+
+    #ml-no-tables td {
+        width: auto;
+        float: none;
+        display: table-cell;
+        text-align: left;
+        padding: auto;
+    }
+
+    #ml-no-tables tbody tr {
+        display: table-row;
+    }
+
+    #ml-no-tables table, #ml-no-tables thead, #ml-no-tables thead tr {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    #ml-no-tables td:before {
+        content: "";
+    }
+
+    /*******************************************************************************************************************
+    * Pricing
+    *******************************************************************************************************************/
+    .ml-item-price-was, .ml-item-price {
+        font-size: @ml-thumb-font-size;
+    }
+    /*******************************************************************************************************************
+    * Rating
+    *******************************************************************************************************************/
+    .ml-rating .ml-snippet-review-count {
+        font-size: @ml-thumb-font-size;
+    }
+
+    /*******************************************************************************************************************
+    * Swatches
+    *******************************************************************************************************************/
+    .ml-thumb-swatches {
+        display: block;
+    }
+
+    /*******************************************************************************************************************
+    * Carousel
+    *******************************************************************************************************************/
+
+
+    .ml-carousel-view {
+      padding-top: 0px;
+
+      .ml-caousel-view-item {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .ml-carousel-view-items {
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    .ml-widget-carousel .ml-thumb-image a img {
+        width: @ml-widget-carousel-thumb-image-width*2;
+    }
+
+    /*******************************************************************************************************************
+    * Common Kicker - Basket/Thank You
+    *******************************************************************************************************************/
+    .ml-common-kickers-wrapper {
+        display: block;
+    }
+
+    /*******************************************************************************************************************
+     * Buttons
+     *******************************************************************************************************************/
+    .ml-button-submit-primary, .ml-button-save-primary {
+        .ml-primary-button;
+        text-align: center;
+    }
+    .ml-button-save-primary {
+	padding: 0 @ml-padding-default;
+    }
+    div.ml-product-qve-button {
+        display: block;    
+    } 
+
+    .ml-product-unavailable-dialogue-container {
+        top: 20% !important; 
+        left: 50% !important;
+        border: 5px solid @ml-gray !important;
+       width: 70% !important;
+       margin-left: -35% !important;
+        padding: @ml-padding-default !important;
+        max-height: 300px;
+        overflow: auto;
+	   .errorclose {
+               margin: @ml-padding-default 0 0 0;
+           } 
+    }
+
+    /*******************************************************************************************************************
+    * Error Pages
+    *******************************************************************************************************************/
+    .ml-error-page-container {
+        .make-column(12);
+
+        .ml-error-page-left-container {
+            .make-column(6);
+            padding: 0 @ml-padding-default 0 0;
+        }
+
+        .ml-error-page-right-container {
+            .make-column(6);
+            padding: 0 0 0 @ml-padding-default;
+            float: right !important;
+        }
+    }
+    .ml-error-page-cookie-disabled {
+        .ml-error-page-left-container {
+            display: block;
+        }
+    }
+
+
+    /*******************************************************************************************************************
+    * Borderfree Modal
+    *******************************************************************************************************************/
+    
+    #countryListLookUpModal .modal-dialog {
+        width: @countryListLookUpModal-modal-width;
+	height: @countryListLookUpModal-modal-dialog-height;
+    }
+
+    #countryListLookUpModal .modal-header {
+        padding: @ml-bf-padding-default @ml-bf-padding-default @ml-bf-padding-default-vertical @ml-bf-padding-default;
+    }
+    
+    .ml-bf-modal-heading {
+        font-size: @ml-bf-primary-heading-font-size;
+        font-weight: bold;
+        border-bottom: 1px solid @ml-bf-border-color;
+    }
+
+    #countryListLookUpModal .modal-body {
+        max-height: @countryListLookUpModal-modal-body-height;
+		overflow: hidden;
+		padding-right: 0;
+		margin-right: @ml-bf-padding-default;
+    }
+    
+    #countryListLookUpModal .modal-dialog button {
+        padding: 0 ((@ml-bf-padding-default-vertical*4)-4);
+        width: auto;
+    }
+
+    
+    /** welcome mat modal window **/
+
+    .ml-bf-flag-container-row {
+        margin-top: @ml-bf-padding-default;
+            .flag-wrapper {
+            .make-column(1);
+	        padding:0 0 0 @ml-bf-padding-default-vertical;
+	        img {
+		    width: @ml-bf-flag-wrapper-width;
+         	    height: @ml-bf-flag-wrapper-height;
+		}
+	}
+	    .now-shopping-text {
+            .make-column(11);
+            padding-left: 0;
+		    font-size: @ml-bf-secondary-heading-font-size;
+		    font-weight: bold;
+		    margin: 0 0 @ml-bf-padding-default-vertical 0;
+		}
+        }
+    .ml-bf-now-shopping-wrapper {
+        margin-top: (@ml-bf-padding-default-vertical*2);
+            .left-container  {
+	        .make-column(1);
+		display: block;
+	    }
+            .right-container {
+	        .make-column(11);
+		padding-left: 0;
+		padding-right: @ml-bf-padding-default;
+	    }       
+    }
+    .ml-bf-shopping-button-wrapper {
+        margin: (@ml-bf-padding-default-vertical*4) 0 0 0;
+	text-align: left;
+	    button {
+	        width: auto;
+	    }
+    }
+    .ml-bf-welcomemat-footer-not-ship {
+        text-align: center;
+    }
+    .ml-bf-welcomemat-footer-message {
+        text-align: center;
+	margin-top: @ml-bf-padding-default-small;
+    }
+
+
+
+    /**CountryList look up modal**/
+
+    .ml-bf-country-wrapper {
+        padding: 0;
+	    .ml-bf-left-wrapper {
+	        .make-column(6);
+		padding: 0 @ml-bf-padding-default 0 0;
+		    img { 
+		        max-width: 100%;
+		    }
+	    }
+	    .ml-bf-right-wrapper {
+		.make-column(6);
+		padding: 0;
+	    }
+    }
+
+    .ml-bf-ship-message {
+        display: block;
+        margin-bottom: @ml-bf-padding-default-vertical;
+    }
+    
+    .ml-bf-or-text {
+        margin: @ml-bf-padding-default-vertical 0;
+        text-align: center;
+    }
+
+    .ml-bf-choose-country-text {
+        display: block;
+        text-align: left;
+        font-size: @ml-bf-choose-country-font-size;
+    }
+
+    .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+        background: none;
+        border: @ml-bf-border-color solid 1px; 
+        color: @ml-bf-default-text-color;
+    }
+    .ml-bf-more-info-text {
+        margin-top: @ml-bf-padding-default-vertical;
+	text-align: center;
+	font-weight: bold;
+    }
+
+}

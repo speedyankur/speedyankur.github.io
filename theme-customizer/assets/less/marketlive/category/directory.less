@@ -1,0 +1,78 @@
+/*! directory.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-dir-header-category-wrapper {
+    .make-row();
+}
+
+.ml-dir-header-page-wrapper {
+    .make-row();
+    padding: 0 0 5px 0;
+}
+
+.ml-directory {
+    word-wrap: break-word;
+}
+
+.ml-dir-header-category-dropdown {
+    float: left;
+    padding-bottom: @ml-dir-item-padding-default;
+    padding-right: 10px;
+}
+
+.ml-dir-header-category-sort {
+    float: left;
+    padding-bottom: @ml-dir-item-padding-default;
+}
+
+.ml-dir-header-category {
+    color: @ml-dir-color;
+
+    select {
+        color: @ml-dir-color;
+    }
+
+    .ml-android-form-control {
+        height:auto;
+        margin-top: 5px;
+    }
+}
+
+.ml-dir-header-category-head {
+    float: left;
+    padding-right: @ml-dir-item-padding-default;
+    padding-bottom: 5px;
+
+    h1 {
+        font-size: @ml-dir-header-category-head-font-size;
+        font-weight: bold;
+        margin-top: 5px;
+    }
+}
+.ml-dir-header-category-head, .ml-dir-header-category-head-text, .ml-dir-header-category-head-image {
+    display: inline-block;
+}
+.ml-dir-no-products-msg {
+    text-align: center;
+    padding-top: (@ml-dir-item-padding-default * 2);
+    padding-bottom: (@ml-dir-item-padding-default * 2);
+}
+
+/** product quick view within directory start **/
+.ml-product-altviewactiveborder {
+    border: 1px solid @ml-gray-dark !important;
+    cursor: pointer;
+}
+.ml-product-altviewborder {
+    border: 1px solid @ml-gray;
+    cursor: pointer;
+}
+.ml-product-optionName {
+    font-weight: normal;
+}
+/** product quick view within directory end **/
+
+.ml-thumb-info, .ml-grid-view-item {
+    iframe.fb_iframe_widget_lift {
+        z-index: 999999 !important;
+    }
+}

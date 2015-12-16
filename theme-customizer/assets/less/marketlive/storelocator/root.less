@@ -1,0 +1,33 @@
+/*! root.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+@import "storelocator.less";
+
+/** Media Queries *****************************************************************************************************/
+@import "media_query_xs.less";
+@import "media_query_sm.less";
+@import "media_query_md.less";
+@import "media_query_lg.less";
+
+@media all {
+    .ml-mq-xs-mixin-storelocator(@ml-default-screen-width);
+    .ml-mq-sm-mixin-storelocator(@ml-default-screen-width);
+    .ml-mq-md-mixin-storelocator(@ml-default-screen-width);
+    .ml-mq-lg-mixin-storelocator(@ml-default-screen-width);
+}
+
+@media @ml-xs-media-query {
+    .ml-mq-xs-mixin-storelocator(@ml-xs-screen-enabled);
+}
+
+@media @ml-sm-media-query {
+    .ml-mq-sm-mixin-storelocator(@ml-sm-screen-enabled);
+}
+
+@media @ml-md-media-query {
+    .ml-mq-md-mixin-storelocator(@ml-md-screen-enabled);
+}
+
+@media @ml-lg-media-query {
+    .ml-mq-lg-mixin-storelocator(@ml-lg-screen-enabled);
+}
+/** Media Queries End *************************************************************************************************/

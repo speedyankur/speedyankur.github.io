@@ -1,0 +1,212 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-storelocator (@a) when (@a = true), (@a = XS_screenWidth) {
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    //=========================== default page ===========================
+    .ml-storelocator-default {
+        .ml-storelocator-refine {
+            .ml-storelocator-search-wrapper {
+                .make-column(12);
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+
+                .ml-storelocator-search-box {
+                    margin: 10px 0px 0px 0px;
+                }
+            }
+            .ml-storelocator-filtersHolder {
+                .make-column(12);
+
+                width: 100%;
+                display: none;
+                margin: -20px 0px 10px 0px;
+                padding: 0px 30px;
+
+                form {
+                    padding: 0 15px 20px 15px;
+                }
+                .ml-storelocator-filter-item {
+                    width: 50%;
+                }
+            }
+            .ml-storelocator-list-holder {
+                .make-column(12);
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+            }
+
+            .ml-storelocator-map-wrapper {
+                display: none;
+
+                .make-column(12);
+                padding-left: 0;
+                padding-right: 0;
+                height: 495px;
+                width: 100%;
+
+            }
+
+            .ml-storelocator-map-list-toggle-container {
+                display: block;
+                font-size: @ml-storelocator-font-size;
+                height: 40px;
+                font-weight: bold;
+
+                .inactive {
+                    background-color: @ml-storelocator-map-list-toggle-inactive-background-color;
+                    border: 1px solid @ml-storelocator-map-list-toggle-inactive-border-color;
+                    font-size: @ml-storelocator-map-list-toggle-container-inactive-font-size-xs;
+                    font-weight: bold;
+                    color: @ml-storelocator-map-list-toggle-inactive-text-color;
+                    line-height: 30px;
+                    height: 30px;
+                    width: auto;
+                    padding: 0 15px;
+                }
+
+                .ml-storelocator-button-default {
+                    .inactive;
+                    display: inline;
+                    width: 50%;
+                    text-align: center;
+                }
+                .active {
+                    background-color: @ml-storelocator-map-list-toggle-active-background-color;
+                    color: @ml-storelocator-map-list-toggle-active-text-color;
+                }
+
+                .ml-storelocator-button-list {
+                    float: left;
+                    border-right: none;
+                }
+                .ml-storelocator-button-map {
+                    float: right;
+                }
+
+                .ml-storelocator-button-label{
+                    display: inline;
+                    padding-left: 20px;
+                }
+            }
+        }
+
+        .ml-slot-item {
+            display: none;
+        }
+
+        .ml-storelocator-map-list-toggle-container {
+            display: block;
+        }
+    }
+    //=========================== landing page ===========================
+    .ml-storelocator-landing {
+        .ml-slot-item {
+            display: none;
+        }
+    }
+
+    //=========================== store details page ===========================
+    .ml-storelocator-details {
+        .ml-storelocator-details-col-1 {
+            .make-column(12);
+        }
+        .ml-storelocator-map-wrapper {
+            display: none;
+            /*.make-column(12);*/
+        }
+        .ml-slot-item {
+            display: none;
+        }
+    }
+
+    //=========================== store info ===========================
+    .ml-storelocator-info-window-container {
+
+        .modal-dialog {
+            width: 250px;
+
+            .modal-header{
+                padding: 5px;
+            }
+            .modal-body {
+                padding: 10px;
+            }
+        }
+        .ml-storelocator-store-image {
+            display: none;
+        }
+        .ml-storelocator-store-address-wrapper{
+            font-size: @ml-font-size-small;
+
+            .ml-storelocator-store-address {
+                line-height: 15px;
+            }
+        }
+        .ml-storelocator-direction-box {
+            font-size: @ml-font-size-small;
+
+            .ml-storelocator-input-wrapper {
+                width: 100%;
+                padding: 5px 0 0 0;
+
+                input {
+                    width: 100%;
+                    height: @ml-storelocator-input-height-small;
+                }
+            }
+            .ml-storelocator-button-wrapper {
+                width: 100%;
+                padding: 5px 0;
+
+                input {
+                    width: 100%;
+                    height: @ml-storelocator-input-height-small;
+                }
+            }
+        }
+    }
+
+    .ml-storelocator-store-info-wrapper {
+        .make-column(12);
+        padding-left: 0;
+        padding-right: 0;
+
+        .ml-storelocator-info-window-container {
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+
+            .modal-dialog {
+                width: 100%;
+            }
+        }
+    }
+
+    //=========================== All store page ===========================
+    .ml-storelocator-allstores {
+
+        .ml-storelocator-left-wraper {
+            .make-column(12);
+        }
+
+        .ml-storelocator-right-wraper {
+            display: none;
+        }
+
+        .ml-storelocator-col {
+            .make-column(12);
+        }
+
+        .ml-slot-item {
+            display: none;
+        }
+    }
+
+}

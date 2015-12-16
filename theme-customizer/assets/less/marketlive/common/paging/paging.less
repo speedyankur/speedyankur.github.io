@@ -1,0 +1,72 @@
+/*! paging.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-paging-container {
+    padding-left: 0px;
+    text-align: right;
+}
+
+.ml-paging-previous:empty {
+    width: auto;
+}
+
+.ml-paging-next:empty {
+    width: auto;
+}
+
+.ml-paging-previous-next-disabled, .ml-paging-previous-next-disabled a, .ml-paging-previous-next-disabled a:hover {
+    pointer-events: none;
+    cursor: default !important;
+    background: @ml-paging-previous-next-disabled-background-color !important;
+}
+
+.pagination .ml-show-page-num-first, .pagination .ml-show-page-num-last {
+    display: none;
+}
+
+.ml-products-per-page, .ml-products-per-page-paging-enabled {
+    padding-right: 0;
+}
+
+.ml-paging-item-label-show {
+    .ml-paging-item-label {
+        display: block;
+    }
+    .ml-products-per-page-item-1 {
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+    }
+}
+
+.ml-paging-item-label-hide {
+    .ml-paging-item-label {
+        display: none;
+    }
+    .ml-products-per-page-item-1 {
+        border-bottom-left-radius: 3px;
+        border-top-left-radius: 3px;
+    }
+}
+
+.ml-paging {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .ml-paging-item-label-hide;
+}
+
+.ml-pagination-type-drop-down .ml-paging-items-paging-enabled li span.ml-pagination-drop-down {
+    padding: 0px;
+    border: none;
+    margin-left: -1px;
+}
+
+.ml-pagination-type-drop-down .ml-paging-items-paging-enabled li span select.form-control {
+    height: 31px;
+    border-radius: 0px;
+}
+
+.pagination {
+    margin:0px;
+}
+
+

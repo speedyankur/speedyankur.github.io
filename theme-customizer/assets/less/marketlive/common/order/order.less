@@ -1,0 +1,175 @@
+/*! order.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+/***********************************************************************************************************************
+* Order Details
+***********************************************************************************************************************/
+.ml-order-detail-left-container .order-headers, .ml-order-detail-right-container .order-headers {
+    font-weight: bold;
+    padding-bottom: @ml-myaccount-form-padding;
+}
+
+.ml-order-detail-sub-header {
+    font-size: @ml-myaccount-welcome-message-font-size;
+    color: @ml-gray-dark;
+    padding: @ml-padding-default 0 @ml-myaccount-form-padding 0;
+    font-weight: bold;
+    text-align: left !important;
+}
+
+.ml-order-detail-spacer {
+    padding-top: (@ml-spacer-default+@ml-myaccount-form-padding-xs);
+    display: block;
+    clear: both;
+}
+
+.ml-order-detail-shipment-header {
+    background: @ml-gray-lighter;
+    margin: 0 0 @ml-myaccount-form-padding 0;
+    padding: @ml-padding-xs 0;
+    font-weight: bold;
+    text-align: left !important;
+}
+
+#ml-no-tables .ml-order-detail-order-content tr th {
+    font-size: @ml-font-size-table-header;
+}
+
+#ml-no-tables .ml-order-detail-order-content tr th, #ml-no-tables .ml-order-detail-order-content tr td {
+    padding-top: @ml-border-radius-base;
+    padding-bottom: @ml-border-radius-base;
+}
+
+#ml-no-tables .ml-order-detail-order-content tr th:first-child {
+    padding-left: 0px;
+}
+
+#ml-no-tables .ml-order-detail-order-content tr th:nth-child(2) {
+    text-align: center;
+}
+
+#ml-no-tables .order-detail-bold-font {
+    font-weight: bold;
+}
+
+#ml-no-tables .text-right-align {
+    text-align: right !important;
+    padding-right: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#ml-no-tables .text-left-align {
+    text-align: left !important;
+    padding-left: 0px;
+}
+
+#ml-no-tables .order-detail-total-font-size {
+    font-size: (@ml-secondary-button-font-size+@ml-padding-xs);
+    font-weight: bold;
+}
+
+#ml-no-tables .order-detail-discount-message {
+    color: @ml-navbar-active-link-color;
+}
+
+#ml-no-tables .order-detail-sku-padding {
+    padding: @ml-myaccount-form-padding 0;
+}
+
+#ml-no-tables .order-detail-no-padding {
+    padding-right: 0px;
+}
+
+#ml-no-tables .ml-order-detail-order-content tr td div.col-xs-8 {
+    padding-left: 0px;
+}
+
+@media print {
+    .ml-order-detail-left-container {
+        .make-xs-column(6);
+        padding-left: 0px;
+        padding-bottom: @ml-myaccount-container-padding;
+    }
+
+    .ml-order-detail-right-container {
+        .make-xs-column(6);
+        padding-right: 0px;
+        padding-bottom: @ml-myaccount-container-padding;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content thead tr th,
+    #ml-no-tables .ml-order-detail-order-content tbody tr td,
+    #ml-no-tables .ml-order-detail-order-content tbody tr td:last-child {
+        border-bottom: 0px;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tbody tr td {
+        padding-left: 0px;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tbody tr td:last-child,
+    #ml-no-tables .ml-order-detail-order-content tbody tr th:last-child {
+        padding-right: 0px;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tbody tr td:nth-child(2) {
+        text-align: center;
+        padding-left: @ml-myaccount-form-padding-xs;
+    }
+
+    .ml-order-detail-left-container, .ml-order-detail-right-container {
+        margin-bottom: 0;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content tr td:last-child,
+    #ml-no-tables .ml-order-detail-order-content tr th:nth-child(n+3),
+    #ml-no-tables .ml-order-detail-order-content tr td:nth-child(n+3) {
+        text-align: right;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content thead tr th:nth-child(2) {
+        text-align: center;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content td span.small-header {
+        display: none !important;
+    }
+
+    .ml-common-kickers-wrapper {
+        display: block;
+    }
+
+    #ml-no-tables {
+        padding: 0 0 @ml-padding-default 0;
+        clear: both;
+    }
+
+    #ml-no-tables table {
+        width: 100%;
+    }
+
+    #ml-no-tables .table-bordered thead tr th, #ml-no-tables .table-bordered tbody tr td {
+        border-bottom: 1px solid @ml-gray;
+    }
+
+    #ml-no-tables .table-bordered thead tr th {
+        background: none;
+        font-size: @ml-font-size-table-header;
+    }
+
+    .ml-order-sku {
+        color: @ml-sku-color;
+    }
+
+    #ml-no-tables td {
+        width: auto;
+        float: none;
+        display: table-cell;
+        text-align: left;
+        padding: auto;
+    }
+
+    #ml-no-tables td:before {
+        content: "";
+    }
+}

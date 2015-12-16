@@ -1,0 +1,130 @@
+/*! menu_nav.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.nav.navbar-nav.ml-navbar-nav.ml-navbar-menu {
+    > li {
+        &:hover {
+            > ul {
+                left: 0;
+                top: @ml-navbar-menu-top-offset;
+                visibility: visible;
+                z-index: 99;
+                -webkit-transform: translate3d(0, 0, 1px); // iOS 6 fix for z-index issues
+            }
+
+            > .ml-category-nav-arrow {
+                border-width: @popover-arrow-outer-width;
+
+                &,
+                &:after {
+                    position: absolute;
+                    display: block;
+                    width: 0;
+                    height: 0;
+                    border-color: transparent;
+                    border-style: solid;
+                    border-width: @popover-arrow-width;
+                    content: "";
+                }
+            }
+
+            > .ml-category-nav-arrow {
+                left: 50%;
+                margin-left: -@popover-arrow-outer-width;
+                border-top-width: 0;
+                border-bottom-color: @popover-arrow-outer-color;
+                top: @ml-navbar-menu-arrow-top-offset;
+                z-index: 100;
+                -webkit-transform: translate3d(0, 0, 1px); // iOS 6 fix for z-index issues
+
+                &:after {
+                    content: " ";
+                    top: 1px;
+                    margin-left: -@popover-arrow-width;
+                    border-top-width: 0;
+                    border-bottom-color: @popover-arrow-color;
+                }
+            }
+        }
+
+        > ul {
+            .dropdown-menu();
+
+            display: block;
+            position: absolute;
+            visibility: hidden;
+
+            .ml-navbar-separator {
+                display: none;
+            }
+        }
+    }
+
+    li.exclude {
+        display:none;
+    }
+
+    li:hover, .ml-navbar-menu a:focus, .ml-navbar-menu a:hover, .ml-navbar-menu a:active {
+        outline: 0;
+        z-index: 99;
+        -webkit-transform: translate3d(0,0,1px); // iOS 6 fix for z-index issues
+    }
+
+    li.ml-sibling-group-root {
+        a {
+            padding-left:0px;
+            float:none;
+        }
+
+        li.ml-sibling-group-footer-snippet {
+            display: block;
+            padding-top: @ml-navbar-menu-group-padding;
+            clear: both;
+        }
+
+        > ul {
+            padding-bottom: @ml-navbar-menu-padding;
+            padding-left: @ml-navbar-menu-padding;
+
+            li.ml-sibling-group {
+                display: block;
+                float: left;
+                padding-top: @ml-navbar-menu-group-padding;
+                padding-right: @ml-navbar-menu-group-padding;
+                margin-left: 0px;
+
+                ul.ml-sibling-group-items {
+                    display: block;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+
+                    > li {
+                        &.ml-category-nav-header-snippet {
+                            display: block;
+                        }
+
+                        a {
+                            float: none;
+                            font-weight: normal;
+                        }
+                    }
+
+                    ul {
+                        display: none;
+                    }
+                }
+
+            }
+            li.ml-sibling-group-exclude {
+                padding-right: 0px !important;
+            }
+
+            > li {
+                &:nth-child(2) {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
+

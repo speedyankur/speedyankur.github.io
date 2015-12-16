@@ -1,0 +1,43 @@
+/*! swatches.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+/* *** Swatches  *** */
+.ml-thumb-swatch {
+    border-bottom: 1px solid @ml-thumb-swatch-border-bottom-color;
+    margin-top:10px;
+}
+
+.ml-thumb-swatch-selected, .ml-thumb-swatch-unselected, .ml-thumb-swatch-hover {
+    .img-responsive;
+    width: 31px;
+    height: 18px;
+}
+
+.ml-thumb-max-swatch-clearFix {
+   clear: left;
+}
+
+.ml-thumb-max-swatch {
+    float: left;
+    margin: 0 @ml-product-swatch-margin @ml-product-swatch-margin 0;
+}
+
+.ml-thumb-swatch-hidden {
+    display: none;
+}
+
+.ml-thumb-swatch-viewAll a {
+    color: @ml-thumb-swatch-text-color;
+    font-size: @ml-thumb-swatch-viewAll-font-size;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+.ml-thumb-swatch-unselected {
+    border: 1px solid @ml-product-swatch-unselected-border;
+    padding: 1px;
+    cursor: pointer;
+}
+.ml-thumb-swatch-selected, .ml-thumb-swatch-selected:hover, .ml-thumb-swatch-hover {
+    border: 1px solid @ml-product-swatch-selected-border;
+    padding: 1px;
+    cursor: pointer;
+}
+

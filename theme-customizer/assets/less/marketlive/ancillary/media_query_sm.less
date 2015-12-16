@@ -1,0 +1,204 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-ancillary (@a) when (@a = true), (@a = SM_screenWidth) {
+
+    .make-column(@num) {
+        .make-sm-column(@num);
+    }
+
+    /** Email Signup **/
+    .ml-email-signup-wrapper {
+    .ml-email-signup-content-container {
+	    .make-column(7);
+	    padding-left: 0px;
+	.col-md-5, .col-sm-5, .col-xs-12, .col-md-2, .col-sm-2 {
+	    padding-left: 0px;
+	    padding-right: @ml-padding-default;
+	    padding-bottom: (@ml-spacer-default/3*5);
+	    label {
+	        display: block;
+	    }
+	}
+	.ml-email-signup-middle-name {
+	    display: block;
+	}
+	.ml-email-signup-button {
+	    .ml-primary-button;
+	    color: @ml-email-signup-button-text-color;
+	    width: auto;
+	    padding: 0px (@ml-spacer-default*5);
+	    margin-bottom: @ml-padding-default;
+	    display: inline-block;
+	}
+    }
+    .ml-email-unsubscribe-content-container {
+        .make-column(12);
+	padding-left: 0px;
+	.col-md-5, .col-sm-5, .col-xs-12, .col-md-2, .col-sm-2, .col-sm-3 {
+	    padding-left: 0px;
+	    padding-right: @ml-padding-default;
+	    padding-bottom: (@ml-spacer-default/3*5);
+	}
+	.col-md-12, .col-sm-12 {
+	    padding-bottom: 0px;
+	    label {
+	        display: block;
+	    }
+	}
+	.ml-email-signup-button {
+	    .ml-primary-button;
+	    color: @ml-email-signup-button-text-color;
+	    width: auto;
+	    padding: 0px (@ml-spacer-default*2+6);
+	    margin-bottom: @ml-padding-default;
+	    display: inline-block;
+	}
+    }
+    .ml-email-signup-image-container {
+        .make-column(5);
+	padding-right: 0px;
+	display: block;
+	img {
+	    max-width: 100%;
+	}
+    }
+	}
+   
+    .ml-catalog-request-continue-button {
+        .ml-tertiary-button {
+	    line-height: (@ml-spacer-default*2-2);
+	    height: (@ml-spacer-default*2-2);
+	}
+    }
+
+/** Catalog Request **/
+.ml-catalog-request-wrapper {
+
+    .ml-catalog-request-content-container {
+        .make-column(7);
+        padding-left: 0px;
+	padding-right: @ml-padding-default;
+	.form-group {
+	    padding-bottom: (@ml-spacer-default/3);
+	    .clearfix();
+	    .control-label {
+	        .make-column(4.7);
+		padding-left: 0px;
+		padding-top: (@ml-spacer-default/3+2);
+		text-align: right;
+	    }
+	    .ml-catalog-request-middle-name input {
+	       width: (@ml-spacer-default*3);
+	    }
+	    .ml-catalog-request-zip-code input {
+	        width: 30%;
+		float: left;
+		margin-right: (@ml-spacer-default - 5);
+	    }
+	    .ml-catalog-request-zip-code {
+		span {
+		    margin-top: (@ml-spacer-default/3+2);
+		    display: inline-block;
+		}
+	    }
+	    .control-label-content {
+	        .make-column(7.3);
+		padding-right: 0px;
+		padding-left: 0px;
+	    }
+	}
+	.ml-catalog-request-submit-button {
+	    text-align: right;
+	    button {
+		width: auto;
+	    }
+	}
+    }
+    .ml-catalog-request-image-container {
+	    .make-column(5);
+	display: block;
+	padding-top: (@ml-spacer-default*7-2);
+	    padding-right: 0px;
+	img {
+	    max-width: 100%;
+	}
+	}
+    } 
+
+/** Customer Services **/
+.ml-layout-section-ancillary {
+    .ml-navleft-body {
+        .make-column(9);
+        padding-right: 0px;
+        min-height: @ml-myaccount-body-min-height;
+    }
+    .ml-leftNav-container {
+        .make-column(3);
+        padding-left: 0px;
+        padding-bottom: 0;
+
+        ul li a, ul li:last-child a {
+            padding: (@ml-spacer-default/5) 0;
+            border: none;
+	    font-weight: normal;
+        }
+
+        ul li a span {
+            display: none;
+        }
+
+        h3 {
+            text-indent: 0;
+            visibility: visible;
+            margin-top: (@ml-spacer-default+3);
+            margin-bottom: (@ml-spacer-default - 6);
+        }
+    }
+}
+
+.ml-customer-service-contact-form {
+    #csfirstName, #cslastName {
+        display: block;
+    }
+    .make-column(12);
+    padding-left: 0px;
+    padding-right: 0px;
+    .form-group {
+        padding-bottom: (@ml-spacer-default/3);
+	.clearfix();
+	.control-label {
+	    .make-column(3);
+	     padding-left: 0px;
+	     padding-top: (@ml-spacer-default/3+2);
+	     text-align: right;
+	}
+	.control-label-content {
+	    .make-column(9);
+	    padding-left: 0px;
+	    padding-right: 0px;
+	}
+    }
+    .ml-customer-service-contact-button-wrapper {
+        .ml-text-right();
+	padding-top: (@ml-spacer-default - 5);
+	.ml-primary-button {
+	    width: auto;
+	}
+    }
+}
+.ml-customer-service-contact-fillslot {
+    .make-column(12);
+    padding: (@ml-spacer-default - 5);
+    margin: (@ml-spacer-default*2) 0 @ml-padding-default 0;;
+}
+
+/** Sitemap **/
+.ml-sitemap-wrapper {
+    display: block;
+    .ml-sitemap-container {
+        .make-column(3);
+	padding-left: 0px;
+    }
+}
+
+}

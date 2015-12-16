@@ -1,0 +1,46 @@
+/*! media_query_xs.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-xs-mixin-order (@a) when (@a = true), (@a = XS_screenWidth) {
+    .make-column(@num) {
+        .make-xs-column(@num);
+    }
+
+    /*******************************************************************************************************************
+    * Order Details
+    *******************************************************************************************************************/
+    .ml-order-detail-left-container, .ml-order-detail-right-container {
+        margin-bottom: @ml-padding-default;
+    }
+
+    .ml-order-pull-left {
+        width: auto !important;
+    }
+
+    .ml-order-pull-right {
+        float: none !important;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content td:before {
+        content: "";
+        left: 0px;
+        top: (@ml-myaccount-form-padding/2);
+    }
+
+    #ml-no-tables .ml-order-detail-order-content td {
+        padding-left: 0px !important;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content td span.small-header {
+        display: inline-block;
+        float: left;
+        color: @ml-gray-dark;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content > tbody > tr > td:last-child {
+        border-bottom: none;
+    }
+
+    #ml-no-tables .ml-order-detail-order-content .ml-horizontal-separator {
+        margin: 0;
+    }
+}

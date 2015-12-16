@@ -1,0 +1,40 @@
+/*! media_query_lg.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-lg-mixin-basket (@a) when (@a = true), (@a = LG_screenWidth) {
+
+  .ml-carousel{
+    margin:0 25px 10px 30px;
+    clear: both;
+  }
+
+
+  /*  Up Sells Carousel */
+  #ml-upsells-carousel-view-items{
+    width: 880px;
+  }
+
+
+  .ml-upsells-carousel-view-item  .ml-thumb-image img{
+    width:225px;
+    height:225px;
+    margin-left:15px;
+    margin-right:15px
+
+  }
+
+  .ml-basket-container{
+    .ml-basket-row{
+      .ml-basket-item-qty-title{
+        display: none;
+        width: 0;
+}
+      .ml-basket-item-qty-value{
+        width: 100%;
+      }
+      .ml-basket-remove-update-padding {
+        display: none;
+        width: 0;
+      }
+    }
+  }
+}

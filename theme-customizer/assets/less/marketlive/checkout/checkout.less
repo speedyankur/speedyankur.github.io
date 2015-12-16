@@ -1,0 +1,1103 @@
+/*! checkout.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+.make-column(@num) {
+    .make-sm-column(@num);
+}
+
+.ml-layout-section-checkout{
+    .modal-dialog button.ml-button-submit-primary {
+        padding: 0px 36px;
+    }
+    .ml-checkout-sub-header {
+        font-weight: bold;
+        padding:0 5px 5px 0;
+        font-size: @ml-layout-section-checkout-sub-header-font-size;
+        text-transform: capitalize;
+    }
+    .ml-shipping-popup-button .ml-secondary-button-understated{
+        padding-right:20px;
+    }
+    .ml-accordion-step-alerts {
+        .ml-alert-buttons {
+            text-align: right;
+            margin-top: @ml-padding-vertical-default;
+        }
+    }
+}
+
+.ml-required-label {
+    color: @ml-required-label-color;
+}
+
+/** START: billing section **/
+.ml-checkout-billing, .ml-checkout-address-add {
+
+    .form-group{
+        .make-row();
+        width: 100% !important;
+	.ml-checkout-zip-code-message {
+            span {
+                font-size: @ml-catalog-request-zip-code-font-size;
+	        display: block;
+		white-space: nowrap;
+            }
+        }
+    }
+
+    .ml-billing-button {
+        padding: @ml-padding-default 0px;
+        float: right;
+    }
+
+    .ml-billing-button-clearFix {
+        clear: right;
+    }
+
+    .ml-billing-email-signup {
+        padding-top: 5px;
+    }
+
+    .ml-billing-source-code {
+        padding: 5px 0px;
+    }
+
+    .ml-billing-email-signup-header {
+        display: none;
+    }
+
+}
+/** END: billing section **/
+
+// Start Shipping
+.ml-shipping-container {
+    .ml-shipping-button{
+        float:right;
+        padding-top:20px;
+    }
+    .form-group{
+        margin-bottom: 5px;
+    }
+    label{
+        padding-top:1px;
+    }
+    .ml-shipping-subsection{
+        padding-top:@ml-padding-vertical-default;
+        .make-row();
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .ml-shipping-header {
+        clear:both;
+    }
+    .control-label-content {
+        padding-right:5px;
+    }
+    .control-label-content, .control-label{
+        float: left;
+    }
+    .ml-shipto-select{
+        .form-group{
+            padding-right:20px;
+        }
+    }
+    .ml-shipping-header{
+        .ml-shipping-header-label{
+            width:25%;
+            float:left;
+        }
+        .ml-shipping-link-wrapper{
+            width:75%;
+            float:left;
+        }
+        .ml-shipping-link{
+            padding:1px;
+
+            a {
+                .ml-secondary-button-understated();
+                font-weight: normal;
+                line-height: 1;
+            }
+        }
+    }
+    .ml-shipping-methods{
+        .ml-deliver-options-header{
+            margin-top: (@ml-spacer-default - 5);
+        }
+        .ml-shipping-method-type{
+            clear:both;
+        }
+        .ml-shipping-method-type .ml-ship-method-name{
+            padding-right:10px;
+        }
+        .ml-shipping-method-type .ml-ship-method-description{
+            padding-right:5px;
+        }
+        .ml-shipping-method-type .ml-item-price-wrapper{
+            font-weight:bold;
+
+        }
+        .ml-item-price {
+            padding-right:5px;
+        }
+        .ml-ship-method-name{
+            font-weight:bold;
+        }
+        .ml-item-price-was{
+            text-decoration:line-through;
+            font-weight:normal;
+        }
+    }
+
+    .ml-shipping-gift-options {
+        clear:both;
+
+        .ml-shipping-gift-wrap-label:before{
+            content:" - ";
+        }
+
+        &.ml-shipping-gift-options-applied {
+            .ml-shipping-gift-wrap-link, .ml-shipping-gift-options-applied-display {
+                display: block;
+            }
+
+            .ml-shipping-gift-options-enter-display {
+                display: none;
+            }
+        }
+
+        .ml-shipping-gift-wrap-link, .ml-shipping-gift-options-applied-display {
+            display: none;
+        }
+
+        .ml-shipping-gift-options-enter-display {
+            display: block;
+        }
+
+        .ml-shipping-header.ml-shipping-header-gift {
+            .ml-shipping-header-label {
+                float: left;
+                width: 75%;
+            }
+            .ml-shipping-link-wrapper {
+                float: left;
+                width: 25%;
+            }
+        }
+    }
+
+    .ml-shipping-container-bottom{
+        clear:both;
+        padding:@ml-padding-vertical-default 0px;
+    }
+
+    .ml-shippable-items-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        span:first-child {
+            font-weight: bold;
+        }
+
+        span:last-child {
+            text-decoration: underline;
+            font-weight: normal;
+            margin-left: @ml-padding-default;
+            cursor: pointer;
+        }
+    }
+
+    .ml-shippable-items {
+        position: relative;
+        width: 100%;
+        padding-left: @ml-padding-default;
+        padding-right: @ml-padding-default;
+
+        .ml-shippable-item {
+            .make-row();
+            padding-top: @ml-padding-default;
+            padding-bottom: @ml-padding-default;
+
+            &.ml-shippable-items-odd {
+                background-color: @ml-shippable-items-odd-background-color;
+            }
+
+            .ml-shippable-item-thumb-img-col {
+                .make-column(2);
+            }
+
+            .ml-shippable-item-thumb-txt-col {
+                .make-column(3);
+                padding-left: 0px;
+                font-size: @ml-font-size-small;
+
+                .item-desc {
+                    padding-bottom: @ml-padding-vertical-default;
+                    .item-name {
+                        font-weight: bold;
+                    }
+                }
+
+                .ml-item-price-wrapper {
+                    .ml-item-price-was, .ml-item-price {
+                        font-size: @ml-font-size-small;
+                        font-weight: normal;
+                    }
+                }
+
+            }
+
+            .ml-shippable-item-select-col {
+                .make-column(7);
+
+                .ml-product-kit-items {
+                    padding-bottom: @ml-padding-default;
+                }
+            }
+        }
+    }
+
+    .ml-shipment-item-detail {
+        &.personalization {
+            div:first-child {
+                font-weight: bold;
+                margin-top:5px;
+            }
+        }
+    }
+
+    .ml-message-shipment-weight-surcharge {
+        padding-top: @ml-padding-vertical-default;
+        clear: both;
+    }
+
+    .ml-shipping-shhipments {
+        .ml-shipping-shipment-item {
+            margin-bottom: @ml-padding-default;
+
+            .ml-product-personalization {
+                font-size: @ml-font-size-small;
+                padding-top: @ml-form-padding;
+                padding-left: @ml-form-padding;
+
+                .ml-product-personalization-header {
+                    font-size: @ml-font-size-small;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .ml-shipping-shipment-separator {
+        padding: 0 @ml-padding-vertical-default @ml-padding-vertical-default 0;
+    }
+
+    .ml-shipping-header-subtotal {
+        margin-top:@ml-padding-default;
+    }
+
+    .ml-checkout-shipment-subtotals {
+        position: relative;
+        width: 215px;
+
+        .ml-checkout-shipment-subtotal-item {
+            .make-row();
+
+            .ml-checkout-shipment-subtotal-label {
+                .make-xs-column(9);
+                text-align:right;
+                padding-right:0;
+            }
+
+            .ml-checkout-shipment-subtotal-value {
+                .make-xs-column(3);
+                text-align: right;
+                padding: 0;
+            }
+        }
+    }
+
+    .ml-button-submit-wrapper {
+        text-align: right;
+        padding-bottom: @ml-padding-vertical-default;
+    }
+
+    .ml-shipping-summary {
+        .make-row();
+
+        .ml-shipping-shhipments .ml-delivery-contact {
+            margin-top: @ml-padding-vertical-default;
+            margin-bottom: @ml-padding-vertical-default;
+        }
+
+        .ml-shipping-header-gift {
+            margin-top: @ml-padding-vertical-default;
+        }
+    }
+}
+// End Shipping
+
+.ml-delivery-giftopt-container {
+    .ml-shipment-sub-header {
+        font-size: @ml-accordion-checkout-subhead-standout-font-size;
+        color: @ml-accordion-checkout-subhead-standout-color;
+        margin-bottom: 10px;
+        margin-left:-@ml-padding-default;
+    }
+
+    .ml-checkout-sub-header {
+        font-size: @ml-delivery-giftopt-sub-header-font-size;
+        margin-bottom: 0;
+    }
+    .ml-delivery-contact {
+        margin: @ml-padding-default 0;
+        word-break: break-all;
+    }
+
+    .ml-shipping-header-gift {
+        margin-top:@ml-padding-default;
+    }
+
+    .ml-delivery-giftopt-summary {
+        .make-row();
+
+        margin-left: inherit;
+        margin-right: inherit;
+    }
+}
+
+// Start gift options
+.ml-gift-option-container{
+    .make-row(0);
+
+    .ml-gift-option-wrap-type{
+        float:left;
+        padding-right: 20px;
+    }
+    .ml-gift-option-text-area{
+        padding-top:10px;
+    }
+    .ml-gift-option-text-area textarea{
+        max-width:100%;
+        width:100%;
+        max-height:300px;
+        height:60px;
+    }
+    .ml-gift-option-wraps{
+        padding-top:20px;
+    }
+    .ml-gift-option-wrap-type-image img{
+        border:none;
+        width:60px;
+    }
+    .ml-gift-option-button{
+        clear:both;
+    }
+    .ml-gift-option-shipment-show{
+        display:block;
+    }
+    .ml-gift-option-shipment-hide{
+        display:none;
+    }
+    .ml-gift-option-product-wrapper, .ml-gift-option-wrap-selection{
+        float:left;
+        width:50%;
+        margin-top: 20px;
+        font-weight:bold;
+    }
+    .ml-gift-option-product, .ml-gift-option-wrap-selection{
+        padding:3px;
+    }
+    .ml-gift-option-product{
+        margin-right: 10px;
+    }
+    .ml-gift-option-selection {
+        &.ml-gift-options-none {
+            select, input {
+                display: none;
+            }
+            .ml-gift-option-error-msg {
+                display: block;
+            }
+        }
+
+        .ml-gift-option-error-msg {
+            display: none;
+        }
+    }
+    .ml-gift-option-selection-row{
+        .make-row(0);
+    }
+    .ml-gift-option-selection-product, .ml-gift-option-selection-wrapper{
+        float:left;
+        width:50%;
+        padding-top: 10px;
+    }
+    .ml-gift-option-selection-product{
+        padding-right: 10px;
+        clear:both;
+    }
+    .ml-gift-option-selection-wrapper{
+        padding-top: 10px;
+    }
+    .ml-gift-option-check-selection, .ml-gift-option-check-label{
+        float:left;
+    }
+    .ml-gift-option-check-selection{
+        padding-right:10px;
+    }
+    .ml-gift-option-button{
+        padding-top:20px;
+        float:right;
+    }
+    .ml-gift-option-error-msg{
+        color: @ml-gift-option-error-msg-text-color;
+        font-weight:bold;
+    }
+    div.ml-gift-option-selection-row:nth-child(odd){
+        //background-color: lightgray;
+    }
+    div.ml-gift-option-selection-row:last-child {
+        //background-color: lightgray;
+    }
+}
+// End gift options
+
+// Start Shipping add address
+.ml-checkout-address-add-container{
+    .ml-checkout-address-add {
+
+        padding-top:@ml-padding-default;
+
+        .form-group{
+            .make-row();
+        }
+        .ml-checkout-address-add-button{
+            text-align: right;
+        }
+    }
+
+    .ml-email-address{
+        display:none;
+    }
+}
+// End Shipping add address
+
+/** START: Payment section **/
+.ml-payment-wrapper {
+    .make-row();
+
+    .ml-payment-creditCard {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .ml-payment-creditCard-input {
+            float: left;
+            margin: 5px 0px;
+            padding: 0px 0px 0px 20px;
+        }
+
+        .ml-payment-creditCard-label{
+            padding: 7px 5px;
+            display: inline-block;
+        }
+    }
+
+    .ml-payment-payPal  {
+        padding-top: 0px;
+        padding-bottom: 10px;
+
+        .ml-payment-payPal-input {
+            float: left;
+            margin: 5px 0px;
+        }
+
+        .ml-payment-payPal-image {
+            padding: 0px 5px 0px 0px;
+            float: left;
+        }
+
+        .ml-payment-payPal-desc {
+            font-size: @ml-payment-payPal-desc-font-size;
+            color: @ml-text-color;
+            text-decoration: underline;
+            cursor: pointer;
+            display: inline-block;
+            padding-top: 10px;
+        }
+        .ml-payment-payPal-clearFix {
+            clear: left;
+        }
+    }
+   
+    .ml-payment-continue-button {
+        float: right;
+        padding: @ml-padding-default;
+    }
+
+    .ml-payment-form-label {
+        text-align: right;
+        padding-top: @ml-form-padding;
+    }
+
+    .ml-credit-card-label {
+        padding-right: 10px;
+
+        img {
+            margin: 1px;
+        }
+
+      &.ml-credit-card-selected {
+        font-weight: bold;
+
+        img {
+          margin: 0px;
+          border: 1px solid @ml-accordion-checkout-cc-selected-color;
+        }
+      }
+    }
+
+    .ml-payment-form-content {
+        padding-bottom: @ml-padding-default;
+    }
+
+    .ml-payment-credit-cards {
+        padding-top: @ml-padding-vertical-default;
+    }
+
+    .ml-payment-label-gc {
+        padding: 5px 0px;
+    }
+
+    .ml-payment-coupon-msg {
+        padding: 5px 0px;
+    }
+
+    .ml-payment-gc-details {
+        .ml-secondary-button-understated {
+            line-height: 1;
+        }
+        div:last-child {
+            margin-bottom: @ml-padding-default;
+        }
+    }
+}
+ .visa-checkout-logo {
+        img {
+	    width: (@ml-spacer-default*4);
+	    margin-left: (@ml-spacer-default/3*2);
+	    margin-bottom: (@ml-spacer-default/3);
+	}
+    }
+    .ml-shipping-shhipments {
+        .visa-checkout-logo
+	img {
+	    margin-left: 0px;
+	    margin-bottom: 0px;
+	}
+    }
+.ml-cvv2-modal .modal-content {
+    padding: 0 @ml-padding-default 0 @ml-padding-default;
+}
+
+.ml-payment-cvv2-container {
+    .make-row();
+
+    .ml-payment-cvv2-image {
+        .img-responsive;
+    }
+    .ml-payment-cvv2-intro {
+        p {
+            padding: @ml-padding-default 0px;
+        }
+    }
+
+    .ml-cvv2-card-container {
+        .ml-cvv2-card-header {
+            border-top: 1px solid @ml-gray;
+            padding-top: 10px;
+        }
+        .ml-cvv2-card-msg {
+            clear: left;
+            img{
+                float: left;
+            }
+        }
+    }
+
+    .ml-cvv2-btn-close {
+        float: right;
+    }
+}
+
+/** END: Payment section **/
+/** START: Review section **/
+.ml-checkout-review-container {
+    .make-row();
+
+    .ml-checkout-review-note {
+        font-size: @ml-accordion-checkout-subhead-standout-font-size;
+        color: @ml-accordion-checkout-subhead-standout-color;
+    }
+}
+/** END: Review section **/
+
+/** START: Thank You section **/
+.ml-checkout-thankYou-wrapper {
+
+    .ml-checkout-thankYou-subHeader {
+        font-weight: bold;
+        font-size: @ml-checkout-thankYou-subHeader-font-size;
+        margin: 20px 0 10px 0 ;
+    }
+
+    .ml-checkout-thankYou-message {
+        padding: 15px 0;
+    }
+
+    .ml-checkout-thankYou-button {
+        margin: 10px 0;
+    }
+
+    #printModal {
+        .modal-dialog {
+            width: 750px;
+        }
+    }
+    .ml-checkout-thankYou-content{
+        text-align:center;
+    }
+
+    .ml-checkout-thankYou-receipt{
+        padding-right:5px;
+    }
+}
+
+@media print {
+    .ml-checkout-print-buttons {
+       display:none;
+   }
+}
+
+.ml-checkout-print-logo{
+   text-align: left;
+}
+
+.ml-checkout-print-logo .img-responsive{
+    width: auto;
+}
+
+.ml-checkout-print-buttons {
+    text-align: right;
+}
+
+.modal-dialog .modal-header {
+    display:block;
+}
+
+.modal-header {
+    display:none;
+}
+
+.modal-dialog .ml-checkout-print .ml-icon-remove{
+    display:inline-block;
+}
+
+.ml-checkout-print .ml-icon-remove{
+    display:none;
+}
+
+.ml-checkout-print table {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    color: @text-color;
+    background-color: @body-bg;
+}
+
+/** END: Thank You section **/
+
+/** START: Account Set up - Thank You section **/
+.ml-checkout-accountSetUp-wrapper {
+    
+    padding: 0 @ml-padding-default;
+    
+    .make-row();
+
+    .ml-checkout-accountSetUp-subSection{
+        border-top: 1px solid @ml-checkout-accountSetUp-subSection-border-color;
+    }
+
+    .ml-error {
+        color: @ml-error-color;
+    }
+
+    .ml-checkout-accountSetUp-printBtn, .ml-checkout-accountSetUp-buttons {
+        
+        padding: @ml-padding-default 0;
+
+        .ml-primary-button, a.ml-primary-button:hover, a.ml-primary-button:focus {
+            display: inline-block;
+            text-decoration: none;
+            color: @ml-checkout-accountSetUp-printBtn-text-color;
+        }
+    }
+
+    .ml-checkout-accountSetUp-subHeader {
+        font-weight: bold;
+        font-size: @ml-checkout-accountSetUp-subHeader-font-size;
+        padding-top: @ml-padding-default;
+    }
+
+    .ml-checkout-accountSetUp-message {
+        padding: 10px 0px;
+    }
+
+    .ml-checkout-accountSetUp-form .input-group {
+      padding: 0 0 @ml-padding-default 0;
+    }
+
+    input.login {
+        width: @ml-accountSetup-input-login-width;
+    }
+}
+/** END: Account Set up - Thank You section **/
+
+.ml-accordion-checkout-separator {
+    @ml-sep-border-width: 1px;
+    @ml-sep-border-style: solid;
+    @ml-sep-border-color: @ml-accordion-checkout-separator-color;
+}
+
+.ml-accordion-checkout {
+    .make-row();
+
+    h1 {
+        .ml-accordion-checkout-separator();
+        display: block;
+        font-size: @ml-primary-heading-font-size;
+        font-weight: bold;
+        margin: @ml-padding-default, 0;
+        padding: 0;
+        border-bottom: @ml-sep-border-width @ml-sep-border-style @ml-sep-border-color;
+        line-height: 1.75;
+    }
+
+    h2 {
+        display: block;
+        font-size: @ml-secondary-heading-font-size;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+        > span {
+            display: inline-block;
+            padding-left: 10px;
+            padding-bottom: @ml-padding-vertical-default;
+        }
+    }
+
+    .ml-accordion-login {
+        .ml-accordion-checkout-separator();
+        margin: 0 0 @ml-padding-vertical-default 0;
+        border-bottom: @ml-sep-border-width @ml-sep-border-style @ml-sep-border-color;
+
+        .ml-accordion-login-user {
+            font-size: @ml-font-size-base;
+        }
+    }
+
+    .ml-accordion-loading {
+        visibility: hidden;
+
+        &.ml-accordion-loaded {
+            visibility: visible;
+        }
+    }
+
+    .ng-hide {
+        display: none !important;
+    }
+
+    .ml-item-price-wrapper {
+        .ml-item-price {
+            padding-right: 5px;
+        }
+        .ml-item-price-was{
+            text-decoration: line-through;
+            font-weight: normal;
+        }
+    }
+
+    .ml-step-container {
+        .make-column(8);
+        background-color: @ml-accordion-checkout-steps-background-color;
+
+        .ml-accordion-steps {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            > li {
+                .ml-accordion-checkout-separator();
+                display: block;
+                margin: 0 0 @ml-padding-vertical-default 0;
+                border-bottom: @ml-sep-border-width @ml-sep-border-style @ml-sep-border-color;
+
+                .ml-accordion-step-content {
+                    padding-left: 12px;
+                }
+
+                h2 {
+                    .ml-accordion-step-edit {
+                        display: none;
+                        font-size: @ml-font-size-base;
+                        padding-left: @ml-form-padding-2x;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+
+                &.ml-accordion-step-accessible {
+                    cursor: auto;
+
+                    &.ml-accordion-step-collapsed .ml-nav-icon-toggle, .ml-nav-icon-toggle {
+                        color: @ml-accordion-nav-icon-toggle-accessible-text-color;
+                    }
+
+                    &.ml-accordion-step-collapsed .ml-accordion-step-summary {
+                        display: block;
+                    }
+                    h2 {
+                        cursor: pointer;
+                        .ml-accordion-step-edit {
+                            display: inline;
+                            float:right;
+                        }
+                    }
+                }
+
+                &.ml-accordion-step-collapsed {
+                    .ml-nav-icon-toggle {
+                        .ml-icon-plus;
+                    }
+                }
+
+                &.ml-accordion-step-hidden {
+                    display:none;
+                }
+
+                &.ml-accordion-step-no-uc {
+                    .ml-nav-icon-toggle {
+                        display: none;
+                    }
+
+                    h2 {
+                        cursor: auto;
+                    }
+                }
+
+                .ml-nav-icon-toggle {
+                    .ml-icon-minus;
+                    padding: 0;
+                    display: inline-block;
+                    position: absolute;
+                    top: 0px;
+                    right: 5px;
+                    margin-right: 5px;
+                    font-size: @ml-accordion-nav-icon-toggle-font-size;
+                    line-height: 1.2;
+                    color: @ml-accordion-nav-icon-toggle-text-color;
+                }
+
+                .ml-accordion-step-summary {
+                    display: none;
+                    padding-left: 10px;
+                    padding-bottom: @ml-padding-vertical-default;
+                }
+            }
+        }
+    }
+
+    .ml-accordion-annotations {
+        .make-column(4);
+
+        .ml-accordion-annotations-container {
+            h2 {
+                .ml-accordion-checkout-separator();
+                border-top: @ml-sep-border-width @ml-sep-border-style @ml-sep-border-color;
+                padding-top: @ml-padding-default;
+                span {
+                    padding-left: 0;
+                }
+
+                .ml-accordion-basket-edit {
+                    color: @text-color !important;
+                    font-size: @ml-font-size-base;
+                    text-decoration: underline;
+                    float: right;
+                    line-height: 1.38461538461538;
+                    cursor: pointer;
+                }
+            }
+
+            .ml-accordion-fillslot {
+                padding-top: @ml-padding-default;
+                img {
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            .ml-accordion-basket {
+                padding-top: @ml-padding-default;
+
+                .ml-accordion-basket-items {
+                    max-height: 365px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+
+                    div.ml-accordion-basket-item:first-child {
+                        border-top: 0;
+                        margin-top: 0;
+                    }
+
+                    .ml-accordion-basket-item {
+                        .ml-accordion-checkout-separator();
+                        padding-top: @ml-padding-default;
+                        margin-top: @ml-padding-default;
+                        border-top: @ml-sep-border-width @ml-sep-border-style @ml-sep-border-color;
+
+                        .ml-accordion-basket-item-container {
+                            .make-row();
+
+                            .ml-accordion-basket-item-img {
+                                .make-xs-column(4);
+                                padding-right: 0;
+                                }
+
+                            .ml-accordion-basket-item-details {
+                                .make-xs-column(8);
+                                font-size: @ml-font-size-small;
+
+                                .item-desc {
+                                    padding-bottom: @ml-padding-vertical-default;
+                                    .item-name {
+                                        font-weight: bold;
+                                    }
+                                }
+
+                                .item-label {
+                                     float: left;
+                                     padding-right: 5px;
+                                 }
+
+                                .item-discounts {
+                                    color: @ml-accordion-checkout-item-discount-message-color;
+                                    padding-right: 5px;
+                                    .item-totalDiscount-label {
+                                        float: left;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .ml-accordion-summary {
+                padding-top: @ml-padding-default;
+
+                .ml-accordion-summary-group {
+                    .make-row();
+                    padding-top: 5px;
+                    font-size: @ml-font-size-small;
+                    line-height: 1.75;
+
+                    .ml-accordion-summary-item {
+                        text-align: right;
+
+                        &.ml-summary-message {
+                            color: @ml-accordion-checkout-summary-message-color;
+                        }
+
+                        &.ml-summary-total {
+                            font-size: @ml-accordion-checkout-summary-total-font-size;
+                            font-weight: bold;
+                        }
+
+                        .ml-accordion-summary-item-label {
+                            .make-xs-column(8);
+                            font-weight: bold;
+                        }
+
+                        .ml-accordion-summary-item-value {
+                            .make-xs-column(4);
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .modal-body {
+        h1 {
+            border: 0;
+            line-height: normal;
+            margin-top: -10px;
+            display: inline-block;
+        }
+    }
+}
+
+/** START: Product personalization **/
+.ml-product-personalization {
+    padding-top: @ml-padding-default;
+}
+.ml-product-personalization-header {
+   padding-bottom: @ml-form-padding;
+   font-size: @ml-font-size-base;
+   font-weight: bold;
+}
+
+
+#addressbooklist select {
+    clear:left;
+}
+
+.ml-bf-billing-change-country-label {
+    line-height: 34px;
+}
+.ml-bf-billing-country-name {
+    margin-left:15px;
+}
+
+.ml-shipping-duties-taxes {
+    .control-label {
+        margin-left: 0px;
+    span {
+        margin-left: (@ml-spacer-default/3);
+    }
+    .ml-shipping-gift-options-applied-display-message {
+            margin-left: (@ml-spacer-default+5);
+        }
+    }
+}
+.ml-payment-visaCheckout {
+	img {
+		height: 34px;  
+		pointer-events: none;		 		
+	}
+	.ml-payment-visaCheckout-desc {
+		text-decoration: underline;
+		color: @ml-gray-dark;
+		padding: (@ml-spacer-default/3*2) 0px;
+		cursor: pointer;
+		font-size: @ml-payment-visaCheckout-desc-font-size;
+		display: inline-block;
+	}    
+}

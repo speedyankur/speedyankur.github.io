@@ -1,0 +1,30 @@
+/*! tables.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+
+    #ml-no-tables thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #ml-no-tables td {
+        border: none;
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: left;
+    }
+
+    #ml-no-tables td:before {
+        position: absolute;
+        top: @ml-home-page-padding-xs;
+        left: @ml-home-page-padding-xs;
+        width: 45%;
+        padding-right: @ml-myaccount-form-padding;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+
+}

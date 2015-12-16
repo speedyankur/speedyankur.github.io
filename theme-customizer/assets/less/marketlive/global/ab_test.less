@@ -1,0 +1,32 @@
+/*! ab_test.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.abDiv {
+    display: inline;
+    position: relative;
+    overflow: visible;
+    zoom: 1;
+    cursor: pointer;
+    border-color: @ml-ab-test-border-color;
+    border-style: dashed;
+    border-width: 0px;
+}
+
+.abOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.abOverlayDefault {
+    background-color: @ml-ab-test-background-color;
+    filter: alpha(opacity=75);
+    opacity: 0.75;
+    -moz-opacity: 0.75;
+}
+
+.abOverlaySelected {
+    background-color: @ml-ab-test-selected-background-color;
+    filter: alpha(opacity=80);
+    opacity: 0.80;
+    -moz-opacity: 0.80;
+}

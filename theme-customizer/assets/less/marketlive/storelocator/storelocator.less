@@ -1,0 +1,477 @@
+/*! storelocator.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-storelocator-container {
+
+    padding-top: 20px;
+
+    //=========================== common ===========================
+    // block visibility
+    .ml-storelocator-store-info-template,
+    .ml-storelocator-store-info-wrapper,
+    .ml-storelocator-resultListUserErrorNotGranularEnough,
+    .ml-storelocator-resultListUserError,
+    .ml-storelocator-resultListNoData,
+    .ml-storelocator-resultListData,
+    .eslFiltersOpener,
+    .ml-storelocator-filtersHolder,
+    .eslResultsFillslot,
+    .eslNoResultsFillslot {
+        display: none;
+    }
+    .eslDisableOverlayDiv {
+        background-color: @ml-storelocator-eslDisableOverlayDiv-background-color;
+        filter: alpha(opacity=40); /* IE */
+        opacity: 0.4; /* Safari, Opera */
+        -moz-opacity: 0.40; /* FireFox */
+        z-index: 20;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    // search box
+    .ml-storelocator-search-box {
+        clear: both;
+        .clearfix();
+        background: @ml-navleft-background;
+        margin: 10px 0 20px 0;
+        padding: 20px 15px;
+    }
+    .ml-storelocator-input-wrapper {
+        float: left;
+        width: 60%;
+        padding-right: 10px;
+
+        input {
+            height: @ml-storelocator-input-height;
+        }
+    }
+    .ml-storelocator-button-wrapper {
+        float: left;
+        width: 35%;
+
+        .ml-storelocator-button-search-container {
+            float: left;
+            width: 65%;
+
+            .ml-storelocator-locate-btn {
+                width: 90%;
+            }
+        }
+        .ml-storelocator-mylocation-button-wrapper {
+            float: left;
+
+            .ml-storelocator-ui-button-text {
+                height: @ml-storelocator-input-height;
+                position: absolute;
+                left: -9999px;
+            }
+            .ml-storelocator-ui-button-mylocation {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .ml-storelocator-ui-button-image-container {
+                height: @ml-storelocator-input-height;
+                position: absolute;
+                text-align: center;
+
+                .ml-storelocator-currentlocation-image {
+                    font-family: 'FontAwesome';
+                    text-align: center;
+                    display: block;
+                    margin: 8px auto;
+                }
+            }
+            .ml-storelocator-mylocation-btn-hidden {
+                position: absolute;
+                -webkit-appearance: none;
+                cursor: pointer;
+                opacity: .1;
+                border: none;
+                text-indent: -9999px;
+                z-index: 2;
+                width: 40px;
+            }
+        }
+        input {
+            height: @ml-storelocator-input-height;
+        }
+    }
+
+    .ml-storelocator-headertext {
+        font-size: @ml-storelocator-font-size;
+        font-weight: bold;
+    }
+    .ml-storelocator-link {
+        font-size: @ml-storelocator-font-size;
+        font-weight: normal;
+
+        a {
+            text-decoration: underline;
+            color: @ml-gray-dark;
+            cursor: pointer;
+        }
+    }
+    .ml-storelocator-refine-search {
+        float: left;
+        padding-top: @ml-storelocator-searchbox-buttons-padding-top;
+        .ml-storelocator-link;
+        font-size: @ml-storelocator-link-font-size;
+    }
+    .ml-storelocator-view-all-stores {
+        float: right;
+        padding-top: @ml-storelocator-searchbox-buttons-padding-top;
+        .ml-storelocator-link;
+        font-size: @ml-storelocator-link-font-size;
+    }
+    .ml-storelocator-search-label {
+        font-size: @ml-storelocator-font-size;
+        font-weight: bold;
+    }
+    .ml-storelocator-search-input-group {
+        padding-top: 5px;
+    }
+    .ml-storelocator-header {
+        font-size: @ml-primary-heading-font-size;
+        font-weight: bold;
+    }
+
+    // map area
+    .ml-storelocator-map {
+        width: 100%;
+        height: 100%;
+    }
+    .ml-storelocator-row {
+        .row;
+        margin-left: 0px;
+        margin-right: 0px;
+
+        span.placeholder {
+            position: absolute;
+            font-size: 1em;
+            color: @ml-storelocator-placeholder-color !important;
+            font-family: @ml-storelocator-placeholder-font-family;
+            padding: 4px 3px;
+            z-index: 1;
+            cursor: text;
+        }
+
+        span.placeholder-hide-except-screenreader {
+            clip: rect(1px 1px 1px 1px);
+            padding: 0 !important;
+            border: 0 !important;
+            height: 1px !important;
+            width: 1px !important;
+            overflow: hidden;
+        }
+
+        span.placeholder-hide {
+            display: none;
+        }
+
+        label.visuallyhidden-with-placeholder {
+            height: auto !important;
+            overflow: visible !important;
+            position: absolute !important;
+            left: -999em;
+        }
+    }
+
+    //=========================== landing page ==============================
+    .ml-storelocator-landing {
+
+        .ml-storelocator-search-box {
+            .ml-storelocator-view-all-stores {
+                float: left;
+            }
+        }
+        .ml-storelocator-col-1 {
+            padding-left: 0;
+            padding-right: 15px;
+        }
+        .ml-storelocator-col-2 {
+             margin-top: 10px;
+        }
+        .ml-storelocator-col-2, .ml-storelocator-col-3, .ml-storelocator-col-4 {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .ml-slot-1, .ml-slot-2, .ml-slot-3, .ml-slot-4 {
+            .ml-slot-item;
+        }
+    }
+
+    //=========================== store details page ===========================
+    .ml-storelocator-details {
+        .ml-storelocator-details-row, .ml-storelocator-details-row2 {
+            .ml-storelocator-row;
+        }
+        .ml-storelocator-details-row2 {
+            .ml-slot-item;
+            padding-top: 45px;
+        }
+        .ml-storelocator-details-col-1 {
+            padding-left: 0px;
+        }
+        .ml-storelocator-direction-box {
+            .ml-storelocator-search-box;
+            margin-top: 0px;
+        }
+        .ml-storelocator-input-wrapper {
+            width: 65%;
+        }
+        .ml-storelocator-map-wrapper {
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+            .ml-storelocator-map-holder {
+                .ml-storelocator-map;
+            }
+        }
+        .ml-storelocator-store-address-wrapper {
+            font-size: @ml-storelocator-font-size;
+
+            .ml-storelocator-detail-img {
+                padding-bottom: 15px;
+            }
+            .ml-storelocator-store-address {
+                padding-top: 10px;
+                line-height: @ml-storelocator-line-height;
+            }
+            .ml-storelocator-hours {
+                padding-top: 15px;
+                line-height: @ml-storelocator-line-height;
+
+                .ml-storelocator-hours-details {
+                    ul {
+                        list-style: none;
+                        padding-left: 0px;
+
+                        li {
+                            line-height: @ml-storelocator-line-height;
+                        }
+                    }
+                }
+            }
+            .ml-storelocator-additional-content {
+                padding-top: 15px;
+            }
+        }
+    }
+
+    //=========================== default page, result page  ==================================
+    .ml-storelocator-default {
+
+        .ml-storelocator-refine {
+
+            .ml-storelocator-search-wrapper {
+                padding-right: 0px;
+
+                .ml-storelocator-search-box {
+                    height: 125px;
+                    margin: 10px 0px 5px 0px;
+                }
+            }
+
+            .ml-storelocator-map-wrapper {
+
+                .ml-storelocator-map-holder {
+                    .ml-storelocator-map;
+                }
+                // this will be changed dymamically by javascript to show/hide refine result form
+            }
+
+            .ml-storelocator-filtersHolder {
+                display: none;
+                background: @ml-navleft-background;
+                height: 125px;
+
+                .ml-storelocator-filter-item {
+                    float: left;
+                    font-size: @ml-storelocator-font-size;
+                }
+
+            }
+
+            .ml-storelocator-list-holder {
+
+                .resultheadingcontainer {
+                    height: 40px;
+                    position: relative;
+                }
+                h2 {
+                    font-size: @ml-storelocator-font-size;
+                    color: @ml-gray-dark;
+                    margin: 0 0 0px 0;
+                    position: absolute;
+                    bottom: 0;
+                    border-bottom: 1px solid @ml-storelocator-list-holder-item-border-color;
+                    border-top: 1px solid @ml-storelocator-list-holder-item-border-color;
+                    width: 100%;
+                    padding: 10px 0 10px 20px;
+                }
+                p {
+                    margin: 0;
+                }
+                ol {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                }
+                ol, ol h3 {
+                    margin: 0;
+                }
+                li {
+                    height: 113px;
+                    padding: 20px 20px;
+                    margin-bottom: 0px;
+                    font-family: @ml-storelocator-list-holder-item-font-family;
+                    font-size: @ml-storelocator-font-size;
+                    color: @ml-gray-dark;
+                    cursor: pointer;
+                    line-height: 20px;
+                    border-bottom: 1px solid @ml-storelocator-list-holder-item-border-color ;
+                }
+                li.hover {
+                    background: @ml-storelocator-list-holder-item-hover-background;
+                }
+                li.selected {
+                    background: @ml-storelocator-list-holder-item-selected-background;
+                }
+                li h3 {
+                    font-family: @ml-storelocator-list-holder-item-header-font-family;
+                    font-size: @ml-storelocator-font-size;
+                    font-weight: bold;
+                    color: @ml-gray-dark;
+                }
+
+                .eslAddress1, .eslAddress2, .eslAddress3, .eslPhone {
+                    display: block;
+                }
+                .ml-storelocator-resultListNavHolder {
+                    span {
+                        font-family: @ml-storelocator-resultListNavHolder-font-family;
+                        font-size: @ml-storelocator-font-size;
+                    }
+                    .ml-storelocator-resultListNavPrev {
+                        float: left;
+                    }
+                    .ml-storelocator-resultListNavNext {
+                        float: right;
+                    }
+                    a {
+                        color: @ml-storelocator-resultListNavHolder-link-text-color;
+                        text-decoration: underline;
+                    }
+                }
+
+            }
+
+        }
+        .ml-slot-item {
+            clear: both;
+            padding-top: 15px;
+        }
+
+
+    }
+
+    //=========================== all stores page ===============================
+    .ml-storelocator-allstores {
+
+        .ml-storelocator-map-holder {
+            .ml-storelocator-map;
+            height: 443px;
+        }
+
+        .ml-storelocator-left-wraper {
+            padding-left: 0px;
+        }
+
+        .ml-storelocator-col {
+            padding-left: 0px;
+        }
+
+        .ml-storelocator-country {
+            .ml-storelocator-dropbox {
+                width: 100%;
+            }
+            padding: 17px;
+            margin: 0px 0px 20px 0px;
+            height: 68px;
+            background: @ml-navleft-background;
+        }
+
+        .ml-storelocator-item-wrapper {
+
+            .ml-storelocator-stateName {
+                font-weight: bold;
+                border-bottom: 1px solid #CCCCCC;
+                border-top: 1px solid #CCCCCC;
+                padding: 15px 0px 15px 15px;
+            }
+            .ml-storelocator-store-address {
+                display: block;
+                line-height: @ml-storelocator-line-height;
+                padding: 20px 0px 20px 15px;
+
+                .ml-storelocator-headertext {
+                    a {
+                        color: @ml-gray-dark;
+                    }
+                }
+            }
+            font-size: @ml-storelocator-font-size;
+        }
+    }
+
+    //=========================== store modal ===================================
+    .ml-storelocator-info-window-container {
+
+        // equivalent to the legacy .eslInfoWindowContainer
+        position: absolute;
+        z-index: 100;
+        top: 30px;
+        left: 100px;
+
+        .modal-dialog {
+            cursor: default;
+            padding: 0;
+
+            button {
+                padding: 0;
+            }
+        }
+        .ml-storelocator-store-image {
+            float: left;
+            padding: 0;
+            margin-right: 10px;
+            margin-bottom: 0;
+            border: none;
+        }
+        .ml-storelocator-store-address-wrapper{
+
+            .ml-storelocator-store-name {
+                font-weight: bold;
+            }
+            .ml-storelocator-store-hours-info {
+                padding-top: 10px;
+                text-decoration: underline;
+            }
+        }
+        .ml-storelocator-direction-box {
+            clear: both;
+            .clearfix();
+            padding-top: 5px;
+        }
+    }
+    
+    /* fillslots */
+    .eslLandingFillslot1d, .eslLandingFillslot2d, .eslLandingFillslot3d {
+    	padding-bottom:15px; 
+    }
+    
+}

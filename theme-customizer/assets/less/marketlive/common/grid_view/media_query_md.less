@@ -1,0 +1,70 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved *****/
+
+.ml-mq-md-mixin-grid-view (@a) when (@a = true), (@a = MD_screenWidth) {
+    .make-column(@num) {
+        .make-md-column(@num);
+    }
+
+    .ml-grid-view {
+        padding-top: 0px;
+
+        .ml-grid-view-item {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .ml-grid-view-items {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+    // the button group
+    .ml-grid-view-toggle-container {
+        .make-column(2);
+        padding-top: 0;   
+    }
+     //seems to be affected by ml-grid-view-item more then anything
+    .ml-grid-view-multi-column .ml-grid-view-item {
+        .make-column(4);
+    }
+
+    //deals with wrapping
+    .ml-grid-view-multi-column {
+        // nth:child(xn+1), where x is no. of columns to be displayed
+        .ml-grid-view-item:nth-child(2n+1), .ml-grid-view-item:nth-child(3n+1){
+            clear: none;
+        }
+        .ml-grid-view-item:nth-child(3n+1){
+            clear: left;
+        }
+    }
+
+    // This is when we click the single column view (aka "grid/list") now an image takes up 3 and the text takes up 9
+    .ml-grid-view-single-column {
+
+		.ml-grid-view-item {
+			margin-bottom:10px;
+			float:left;
+			.make-column(12);
+            padding-bottom: 0;
+		}
+		
+		.ml-thumb-swatch {
+			border:0;
+		}
+		
+		.ml-thumb-desc-long {
+			padding-bottom:10px;
+		}
+
+		.ml-grid-item-image {
+			.make-column(3);
+		}
+
+		.ml-grid-item-info {
+			clear:none;
+			.make-column(9);
+		}
+		
+	}
+}

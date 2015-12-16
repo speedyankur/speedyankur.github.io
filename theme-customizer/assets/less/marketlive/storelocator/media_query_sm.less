@@ -1,0 +1,167 @@
+/*! media_query_sm.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-sm-mixin-storelocator (@a) when (@a = true), (@a = SM_screenWidth) {
+    .make-column(@num) {
+        .make-sm-column(@num);
+    }
+
+    //=========================== default page ===========================
+    .ml-storelocator-default {
+        .ml-storelocator-refine {
+            .ml-storelocator-search-wrapper {
+                .make-column(5);
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+            }
+            .ml-storelocator-filtersHolder {
+                .make-column(7);
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+                display: none;
+
+                padding: 0px 30px;
+                margin: 10px 0px 0px 0px;
+
+                form {
+                    padding: 20px 15px;
+                }
+                .ml-storelocator-filter-item {
+                    width: 30%;
+                }
+
+            }
+            .ml-storelocator-list-holder {
+                .make-column(5);
+                padding-left: 0;
+                padding-right: 0;
+                width: 100%;
+            }
+
+            .ml-storelocator-map-wrapper {
+                .make-column(7);
+                padding-left: 15px;
+                padding-right: 0;
+                height: 495px;
+                width: 100%;
+                top: -130px;
+                display: block;
+            }
+
+            .ml-storelocator-map-list-toggle-container {
+                display: none;
+            }
+
+        }
+
+        .ml-slot-item {
+            display: block;
+        }
+
+        .ml-storelocator-map-list-toggle-container {
+            display: none;
+        }
+    }
+    //=========================== landing page ===========================
+    .ml-storelocator-landing {
+        .ml-slot-item {
+            display: block;
+        }
+        .ml-storelocator-col-1 {
+            .make-column(5);
+        }
+        .ml-storelocator-col-2 {
+            .make-column(7);
+        }
+        .ml-storelocator-col-3 {
+            .make-column(12);
+        }
+        .ml-storelocator-col-4 {
+            .make-column(12);
+        }
+    }
+
+    //=========================== store modal ===========================
+    .ml-storelocator-info-window-container {
+
+        .modal-dialog {
+            width: 400px;
+
+            .modal-header{
+                padding: 10px;
+            }
+            .modal-body {
+                padding: 15px;
+            }
+        }
+        .ml-storelocator-store-image {
+            display: block;
+            width: 182px;
+            height: 182px;
+        }
+        .ml-storelocator-store-address-wrapper{
+            font-size: @ml-storelocator-font-size;
+
+            .ml-storelocator-store-address {
+                line-height: @ml-storelocator-line-height;
+            }
+        }
+        .ml-storelocator-direction-box {
+            .ml-storelocator-input-wrapper {
+                width: 60%;
+                padding-right: 6px;
+
+                input {
+                    height: @ml-storelocator-input-height;
+                }
+            }
+            .ml-storelocator-button-wrapper {
+                width: 40%;
+
+                input {
+                    height: @ml-storelocator-input-height;
+                }
+            }
+        }
+    }
+
+    //=========================== store details page ===========================
+    .ml-storelocator-details {
+        .ml-storelocator-details-col-1 {
+            .make-column(5);
+        }
+        .ml-storelocator-map-wrapper {
+            display: block;
+            .make-column(7);
+            height: 495px;
+        }
+        .ml-slot-item {
+            display: block;
+        }
+    }
+
+    //=========================== All store page ===========================
+    .ml-storelocator-allstores {
+
+        .ml-storelocator-left-wraper {
+            .make-column(5);
+        }
+
+        .ml-storelocator-right-wraper {
+            .make-column(7);
+        }
+
+        .ml-storelocator-col {
+            .make-column(4);
+        }
+
+        .ml-storelocator-right-wraper {
+            display: block;
+        }
+
+        .ml-slot-item {
+            display: block;
+        }
+    }
+}

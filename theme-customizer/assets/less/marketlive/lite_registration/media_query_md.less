@@ -1,0 +1,17 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-lite-registration (@a) when (@a = true), (@a = MD_screenWidth) {
+    .make-column(@num) {
+        .make-md-column(@num);
+    }
+
+    .ml-lite-registration {
+        div, span, a {
+            font-size: @ml-font-size-base;
+        }
+        .toggle-button {
+            padding: 8px;
+            width: floor(@ml-lite-registration-dialog-width / 2 - 2);
+        }
+    }
+}

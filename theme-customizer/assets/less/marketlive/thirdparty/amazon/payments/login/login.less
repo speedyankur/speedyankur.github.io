@@ -1,0 +1,84 @@
+/*! login.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-amazon-payments-login-wrapper {
+    .ml-amazon-payments-login-button-wrapper {
+        margin-bottom: @ml-padding-default;
+
+        .ml-amazon-payments-login-button-content {
+            text-align: center;
+        }
+
+        .ml-amazon-payments-login-alternative-wrapper {
+            position: relative;
+
+            .ml-alternative-dashed {
+                border-bottom: 1px dashed black;
+            }
+
+            .ml-alternative-or-wrapper {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+            }
+
+            .ml-alternative-content {
+                position: relative;
+                left: -50%;
+                background-color: white;
+                padding: 0 @ml-padding-default 0 @ml-padding-default;
+            }
+        }
+    }
+
+    .ml-merge-match-wrapper {
+        div {
+            margin-bottom: @ml-padding-default;
+        }
+
+        .ml-merge-match-description {
+            font-weight: bold;
+            padding: (@ml-padding-vertical-default/2);
+            border: 1px solid @ml-amazon-merge-disclaimer-border-color;
+            background: @ml-amazon-merge-match-description-background-color;
+            color: green;
+
+            .ml-merge-match-icon {
+                .ml-icon-lib;
+                .ml-icon-info-circle;
+                font-size: 3em;
+                display: block;
+                float: left;
+                margin-right: @ml-amazon-merge-match-icon-padding;
+            }
+        }
+    }
+
+    .ml-merge-disclaimer-wrapper {
+        background: @ml-amazon-merge-disclaimer-background-color;
+        border: @ml-amazon-merge-disclaimer-border-color solid 1px;
+        padding: @ml-padding-vertical-default;
+        margin-top: @ml-padding-default;
+
+        .ml-merge-disclaimer-heading {
+            font-size: @ml-amazon-merge-disclaimer-heading-font-size;
+            font-weight: bold;
+            margin: @ml-padding-vertical-default 0 0 0;
+        }
+
+        ul.ml-merge-disclaimer-list {
+            margin: (@ml-padding-vertical-default * 2) 0 0 (@ml-padding-vertical-default * 2);
+            padding: 0;
+
+            li {
+                margin: 0 0 @ml-padding-vertical-default 0;
+
+                span {
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+        }
+    }
+}
+
+

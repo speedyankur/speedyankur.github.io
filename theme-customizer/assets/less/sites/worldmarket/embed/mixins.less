@@ -1,0 +1,23 @@
+/*! mixins.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-bg-gradient {
+    background: @ml-bg-gradient-left-color; /* Old browsers */
+    background: -moz-linear-gradient(left, @ml-bg-gradient-left-color 0%, @ml-bg-gradient-right-color 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, @ml-bg-gradient-left-color), color-stop(100%, @ml-bg-gradient-right-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left, @ml-bg-gradient-left-color 0%, @ml-bg-gradient-right-color 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, @ml-bg-gradient-left-color 0%, @ml-bg-gradient-right-color 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, @ml-bg-gradient-left-color 0%, @ml-bg-gradient-right-color 100%); /* IE10+ */
+    background: linear-gradient(to right, @ml-bg-gradient-left-color 0%, @ml-bg-gradient-right-color 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@ml-bg-gradient-left-color', endColorstr='@ml-bg-gradient-right-color', GradientType=1); /* IE6-9 */
+}
+
+.ml-button-gradient {
+    background: @ml-button-gradient-left-color; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, @ml-button-gradient-left-color 0%, @ml-button-gradient-right-color  100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, @ml-button-gradient-left-color), color-stop(100%, @ml-button-gradient-right-color )); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, @ml-button-gradient-left-color 0%, @ml-button-gradient-right-color  100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, @ml-button-gradient-left-color 0%, @ml-button-gradient-right-color  100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, @ml-button-gradient-left-color 0%, @ml-button-gradient-right-color  100%); /* IE10+ */
+    background: linear-gradient(135deg, @ml-button-gradient-left-color 0%, @ml-button-gradient-right-color  100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@ml-button-gradient-left-color', endColorstr='@ml-button-gradient-right-color ', GradientType=1); /* IE6-9 fallback on horizontal gradient */
+}

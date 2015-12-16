@@ -1,0 +1,134 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-checkout (@a) when (@a = true), (@a = MD_screenWidth) {
+
+    .make-column(@num) {
+        .make-md-column(@num);
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ml-layout-section-checkout .modal-dialog {
+        width: 500px;
+    }
+
+    .ml-checkout-billing  .form-group, .ml-checkout-address-add-container .form-group {
+
+        .control-label {
+            .make-column(4);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+
+        .control-label-content {
+            .make-column(6);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+
+        .control-label-content-sm {
+            .make-column(3);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+
+        .control-label-content-xs {
+            .make-column(2);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+    }
+
+    .ml-shipping-container{
+        .ml-shipto-select{
+            .form-group{
+                float: left;
+                clear: none;
+            }
+        }
+        .ml-shipping-method-type{
+            .ml-ship-method-name, .ml-ship-method-description, .ml-item-price-wrapper{
+                float:left;
+            }
+        }
+        .ml-shippable-items{
+            .ml-shippable-item {
+                .ml-shippable-item-thumb-txt-col {
+                    padding-left: @ml-padding-default;
+                    padding-top: 0px;
+                }
+
+                .ml-shippable-item-kit-col {
+                    padding-left: @ml-padding-default;
+                }
+            }
+            .ml-shippable-item-select-col {
+                padding-top:0px;
+            }
+        }
+        .ml-shipping-methods{
+            .ml-shipping-method-type .control-label{
+                width:auto;
+                .ml-ship-method-description, .ml-item-price-wrapper{
+                    padding-left: 0px;
+                }
+            }
+        }
+        .ml-shipping-shhipments{
+            .make-column(4);
+            padding-left: @ml-padding-default;
+            padding-right: 0px;
+        }
+        .ml-shipping-delivery-gift{
+            .make-column(8);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+    }
+
+    .ml-checkout-address-add-container .form-group {
+        .control-label {
+            .make-column(4);
+            text-align:right;
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+        .control-label-content {
+            .make-column(8);
+            padding-left: @ml-padding-default;
+            padding-right: @ml-padding-default;
+        }
+    }
+
+    .ml-payment-form-content {
+        .ml-payment-card-month{
+            padding-bottom: @ml-padding-default;
+        }
+    }
+
+    .ml-payment-gc-text, .ml-payment-coupon-text {
+        .make-column(4);
+        padding-right: @ml-padding-default;
+        margin: 0px;
+    }
+
+    .ml-payment-gc-apply, .ml-payment-source-code-apply{
+        .make-column(8);
+        margin: 0px;
+	div {
+	    float: left;
+	}
+    }
+
+    /** START: Thank You section **/
+    .ml-checkout-thankYou-wrapper, .ml-checkout-accountSetUp-wrapper {
+        #printModal {
+            .modal-dialog {
+                width: 750px;
+            }
+        }
+        .ml-checkout-thankYou-receipt{
+            display:inline-block;
+        }
+    }
+}

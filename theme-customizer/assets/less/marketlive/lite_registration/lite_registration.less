@@ -1,0 +1,212 @@
+/*! lite_registration.less | (c) 2014 MarketLive, Inc. | All Rights Reserved*/
+
+/********* Lite Registration *********/
+.ml-lite-registration {
+    margin: 0px;
+    padding: 0px;
+    background: transparent !important;
+    background-color: transparent !important;
+
+    div, span, a {
+        font-size: @ml-font-size-lite-registration-xs;
+    }
+
+    .toggle-options {
+        text-align: center;
+        margin-bottom: 3px;
+    }
+
+    .toggle-option {
+        display: inline-block;
+        /* IE Fix */
+        zoom: 1;
+        *display: inline;
+
+        &.active {
+            .toggle-button {
+                background-color: @ml-lite-registration-toggle-active-background-color;
+                color: @ml-lite-registration-toggle-option-active-text-color;
+            }
+            .arrow {
+                display: block;
+            }
+        }
+
+        .arrow {
+            display: none;
+        }
+    }
+
+    .toggle-button {
+        background-color: @ml-lite-registration-toggle-background-color;
+        color: @ml-lite-registration-toggle-text-color;
+        padding: 6px;
+        width: floor(@ml-lite-registration-dialog-width / 2 - 2);
+        cursor: pointer;
+    }
+
+    .arrow-wrapper {
+        position: relative;
+        height: 7px;
+    }
+
+    .arrow {
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 7px solid @ml-lite-registration-arrow-border-color;
+        text-align: center;
+        position: absolute;
+        right: 50%;
+        margin-right: -7px;
+    }
+
+    .ml-lite-registration-wrapper {
+        position: relative;
+    }
+
+    .ml-lite-registration-underlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-wrapper {
+        background-color: @ml-lite-registration-background-color;
+        border: 1px solid @ml-lite-registration-border-color;
+
+        .ml-sociallogin {
+            padding: 20px 20px 10px 20px;
+            border-bottom: 1px solid @ml-lite-registration-border-color;
+
+            .dottedBorder {
+                border: 0;
+            }
+        }
+
+        .ml-secure {
+            padding: 15px 20px 20px 20px;
+
+            .secure-message-wrapper {
+                position: relative;
+
+                .ml-icon-lock {
+                    font-size: @ml-header-icon-font-size;
+                }
+            }
+        }
+
+        .section-description {
+            padding: 0 0 10px 0;
+        }
+
+        .section-description.alternative {
+            padding: 10px 0 10px 0;
+        }
+    }
+
+    .sub-section-wrapper {
+        padding: 20px 20px 0 20px;
+    }
+
+    .select-input {
+        height: 30px;
+        line-height: 30px;
+        width: 255px !important;
+    }
+
+    .ml-button-set {
+        .ml-button-set-primary-and-secondary-understated();
+        margin-top: 15px;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+
+    .ml-forgot-password a {
+        color: @ml-text-color;
+        text-decoration: underline;
+    }
+
+    .ml-lite-registration-signup {
+        padding-bottom: 5px;
+    }
+
+    #accountsetupfailerror, #guestSection, #guestCheckoutSection {
+        display: none;
+    }
+
+    #guestCheckoutSection {
+        .ml-lite-registration-checkout-alternatives {
+            margin-bottom: 15px;
+
+            .ml-checkout-alternatives-button-content {
+                text-align: center;
+
+                .ml-checkout-alternatives-button {
+                  margin-bottom: 20px;
+                }
+
+                .ml-checkout-alternatives-button:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+
+            .ml-checkout-alternatives-or-wrapper {
+                position: relative;
+
+                .ml-checkout-alternatives-or-separator {
+                    border-bottom: 1px dashed black;
+                }
+
+                .ml-checkout-alternatives-or-content {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                }
+
+                .ml-checkout-alternatives-or {
+                    position: relative;
+                    left: -50%;
+                    background-color: white;
+                    padding: 0 15px 0 15px;
+                }
+            }
+        }
+    }
+
+    span.placeholder {
+        position: absolute;
+        font-size: 1em;
+        color: @ml-lite-registration-placeholder-color !important;
+        font-family: @ml-lite-registration-placeholder-font-family;
+        padding: 4px 3px;
+        z-index: 1;
+        cursor: text;
+    }
+
+    span.placeholder-hide-except-screenreader {
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+    }
+
+    span.placeholder-hide {
+        display: none;
+    }
+
+    label.visuallyhidden-with-placeholder {
+        height: auto !important;
+        overflow: visible !important;
+        position: absolute !important;
+        left: -999em;
+    }
+}

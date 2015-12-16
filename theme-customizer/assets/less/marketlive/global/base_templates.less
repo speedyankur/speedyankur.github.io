@@ -1,0 +1,116 @@
+/*! base_templates.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-leftnav-wrapper {
+    .make-row();
+}
+
+.ml-slot-item {
+    word-wrap: break-word;
+}
+
+.ml-slot-item img, .ml-slot-item .ml-thumb-image img {
+    .img-responsive;
+    display: inline-block;
+    width: auto;
+}
+
+.ml-slot-item-text {
+    text-align: left;
+}
+
+.ml-slot-padding-off {
+    padding-left: @ml-padding-default;
+    padding-right: @ml-padding-default;
+    .ml-slot-item, .ml-slot-item-wrapper {
+        padding: 0px;
+    }
+}
+
+.ml-slot-item {
+    .ml-widget-carousel {
+        margin-left: @ml-widget-carousel-gutter;
+        margin-right: @ml-widget-carousel-gutter;
+
+        text-align:left;
+
+        &.slick-slider {
+            visibility: hidden;
+
+            .slick-prev, .slick-next {
+                visibility: hidden;
+            }
+
+            &.slick-initialized {
+                visibility: visible;
+
+                .slick-prev, .slick-next {
+                    visibility: visible;
+                }
+            }
+        }
+
+        .ml-widget-carousel-view-item {
+            word-break: break-all;
+            .ml-thumb-image-mini img {
+                width: @ml-widget-carousel-thumb-width;
+                height: @ml-widget-carousel-thumb-height;
+                margin-right: @ml-widget-carousel-thumb-margin;
+            }
+            .ml-thumb-info {
+                margin-right: @ml-widget-carousel-thumb-margin;
+            }
+            .ml-thumb-image img{
+                margin-right: @ml-widget-carousel-thumb-image-margin;
+                margin-left: @ml-widget-carousel-thumb-image-margin;
+            }
+        }
+    }
+
+    .ml-widget-linklist {
+        padding: @ml-widget-linklist-padding;
+
+        .list-item {
+            padding-bottom: @ml-padding-default;
+
+            &.last {
+                padding-bottom: 0;
+            }
+        }
+
+        .item-text {
+            font-size: @ml-widget-linklist-font-size;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.ml-product-content-topic-name {
+    clear: both;
+}
+
+.pagination select.form-control {
+    height: 32px;
+}
+
+.pagination li a, .pagination li span {
+    border: 1px solid @ml-pagination-item-border-color;
+    font-size: @ml-pagination-font-size;
+    background-color: @ml-pagination-link-background-color;
+    color: @ml-pagination-link-text-color;
+}
+
+.pagination .active a, .pagination .active span {
+    background-color: @ml-pagination-active-background-color;
+    font-weight: bold;
+}
+
+.pagination li span.ml-paging-item-label:hover {
+    background-color: @ml-paging-item-label-hover-background-color;
+}
+
+.pagination li span:hover {
+    background-color: @ml-pagination-item-hover-background-color;
+}

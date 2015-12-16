@@ -1,0 +1,134 @@
+/*! theme.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+/* ML BOOTSTRAP OVERRIDES/THEME ------------------------------------------------------------------------------------- */
+
+/***********************************************************************************************************************
+* variables.less
+***********************************************************************************************************************/
+@text-color: @ml-text-color;
+@font-family-sans-serif: @ml-font-family-base;
+@font-size-base: @ml-font-size-base;
+@line-height-base: @ml-line-height-base;
+@icon-font-path: "/includes/bootstrap/fonts/";
+@border-radius-base: @ml-border-radius-base;
+@input-color: @gray-dark;
+@screen-xs: @ml-xs-screen-width;
+@screen-sm: @ml-sm-screen-width;
+@screen-md: @ml-md-screen-width;
+@screen-lg: @ml-lg-screen-width;
+@navbar-height: @ml-navbar-height;
+@container-tablet: ((@ml-container-sm + @grid-gutter-width));
+@container-desktop: ((@ml-container-md + @grid-gutter-width));
+@container-large-desktop: ((@ml-container-lg + @grid-gutter-width));
+@close-font-weight: normal;
+@grid-gutter-width: @ml-grid-gutter-width;
+
+/***********************************************************************************************************************
+* breadcrumbs.less
+***********************************************************************************************************************/
+.breadcrumb {
+    padding: 8px 0px;
+    background-color: inherit;
+    > li {
+        + li:before {
+            color: @ml-text-color;
+        }
+    }
+    > .active {
+        color: @ml-text-color;
+    }
+
+    a {
+        text-decoration: none;
+        color: @ml-gray-dark;
+        &:hover {color: @ml-gray-dark;}
+    }
+}
+
+/***********************************************************************************************************************
+* forms.less
+***********************************************************************************************************************/
+.form-control {
+    color: @ml-gray-dark;
+}
+
+select.form-control {
+    font-size: @ml-font-size-base;
+}
+
+label {
+    display: inline;
+    font-weight: normal;
+}
+
+// Form groups
+.form-group {
+    margin-bottom: @ml-form-padding;
+}
+.form-select-addon {
+    border-radius: 0 @input-border-radius @input-border-radius 0;
+}
+.form-select {
+    background: @ml-form-select-background-primary; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjMwJSIgc3RvcC1jb2xvcj0iI2ZiZmJmYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2YxZWZlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlM2UxZTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, @ml-form-select-background-primary 0%, @ml-form-select-background-lighter-gray 30%, @ml-form-select-background-light-gray 80%, @ml-form-select-background-light-gray-darker 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@ml-form-select-background-primary), color-stop(30%,@ml-form-select-background-lighter-gray), color-stop(80%,@ml-form-select-background-light-gray), color-stop(100%,@ml-form-select-background-light-gray-darker)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @ml-form-select-background-primary 0%,@ml-form-select-background-lighter-gray 30%,@ml-form-select-background-light-gray 80%,@ml-form-select-background-light-gray-darker 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @ml-form-select-background-primary 0%,@ml-form-select-background-lighter-gray 30%,@ml-form-select-background-light-gray 80%,@ml-form-select-background-light-gray-darker 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @ml-form-select-background-primary 0%,@ml-form-select-background-lighter-gray 30%,@ml-form-select-background-light-gray 80%,@ml-form-select-background-light-gray-darker 100%); /* IE10+ */
+    background: linear-gradient(to bottom, @ml-form-select-background-primary 0%,@ml-form-select-background-lighter-gray 30%,@ml-form-select-background-light-gray 80%,@ml-form-select-background-light-gray-darker 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@ml-form-select-background-primary', endColorstr='@ml-form-select-background-light-gray-darker',GradientType=0 ); /* IE6-8 */ 
+    width: 100%;
+    height: @input-height-base; // Make inputs/select at least the height of their button counterpart (base line-height + padding + border)
+    padding: @padding-base-vertical @padding-base-horizontal;
+    font-size: @font-size-base;
+    line-height: @line-height-base;
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
+}
+/***********************************************************************************************************************
+* navbar.less
+***********************************************************************************************************************/
+.navbar-nav {
+    // Uncollapse the nav
+    @media (min-width: @grid-float-breakpoint) {
+        > li {
+            > a {
+                padding-top: ((@navbar-height - @ml-navbar-line-height-computed) / 2);
+                padding-bottom: ((@navbar-height - @ml-navbar-line-height-computed) / 2);
+            }
+        }
+    }
+}
+
+/***********************************************************************************************************************
+* dropdowns.less
+***********************************************************************************************************************/
+.dropdown-menu:after {
+    content: '';
+    display: inline-block;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid @ml-dropdown-menu-border-color;
+    position: absolute;
+    top: -8px;
+    left: 15px;
+}
+
+/***********************************************************************************************************************
+* modals.less
+***********************************************************************************************************************/
+.modal-backdrop {
+    &.in { .opacity(.3); }
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+
+/* ML FONT AWESOME OVERRIDES/THEME ------------------------------------------------------------------------------------- */
+
+@fa-font-path: "/includes/font-awesome/fonts";

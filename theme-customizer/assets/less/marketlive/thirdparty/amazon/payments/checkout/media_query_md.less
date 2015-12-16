@@ -1,0 +1,23 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-amazon-payments-checkout (@a) when (@a = true), (@a = MD_screenWidth) {
+
+    .make-column(@num) {
+        .make-md-column(@num);
+    }
+
+    .ml-accordion-checkout-amazon {
+        .ml-shipping-delivery-gift{
+            .make-column(12);
+            padding-left: 0;
+        }
+
+        .ml-shipping-container {
+            .ml-shipping-method-type {
+                .ml-ship-method-name {
+                    width: auto;
+                }
+            }
+        }
+    }
+}

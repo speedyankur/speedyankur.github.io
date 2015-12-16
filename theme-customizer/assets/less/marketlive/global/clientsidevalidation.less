@@ -1,0 +1,98 @@
+/*! clientsidevalidation.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+/*********** Styles for erroneous input controls *************/
+input.ml-csvalidation-error, select.ml-csvalidation-error {
+    border: 1px solid @ml-csvalidation-field-error-color !important;
+}
+
+/********** Styles for error message boxes used in ClientSideValidate.errorPlacementUsingCSS method ***********/
+
+div.ml-csvalidation-errmessage {
+    width: @ml-csvalidation-message-width;
+    z-index: 999999;
+    text-align: left;
+
+    /* DIV contains the error message text */
+    div.ml-csvalidation-error {
+        -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+        background: none repeat scroll 0 0 @ml-csvalidation-message-background-color;
+        border: 2px solid @ml-csvalidation-message-background-color;
+        color: @ml-csvalidation-message-text-color;
+        font-size: @ml-csvalidation-message-font-size;
+        padding: 4px 10px;
+        line-height: normal !important;
+        .box-shadow(0 0 6px @ml-csvalidation-message-shadow-color);
+    }
+
+    /* Below styles used to build the arrow for the message box */
+    .ml-csvalidation-errmessagearrow {
+        margin: -2px 0 0 13px;
+        width: 15px;
+        z-index: 5001;
+        text-align: center;
+
+        div {
+            background: none repeat scroll 0 0 @ml-csvalidation-message-background-color;
+            border: medium none;
+            display: block;
+            font-size: 0;
+            height: 1px;
+            line-height: 0;
+            margin: 0 auto;
+            .box-shadow(0 2px 3px @ml-csvalidation-message-arrow-shadow-color);
+        }
+
+        .line10 {
+            border: medium none;
+            width: 15px;
+        }
+
+        .line9 {
+            border: medium none;
+            width: 13px;
+        }
+
+        .line8 {
+            width: 15px;
+        }
+
+        .line7 {
+            width: 13px;
+        }
+
+        .line6 {
+            width: 11px;
+        }
+
+        .line5 {
+            width: 9px;
+        }
+
+        .line4 {
+            width: 7px;
+        }
+
+        .line3 {
+            width: 5px;
+        }
+
+        .line2 {
+            background: none repeat scroll 0 0 @ml-csvalidation-message-background-color;
+            border: none;
+            width: 3px;
+        }
+
+        .line1 {
+            background: none repeat scroll 0 0 @ml-csvalidation-message-background-color;
+            border: none;
+            width: 1px;
+        }
+    }
+}
+
+/* show/hide error message box */
+.ml-csvalidation-forcehide {
+    display: none !important;
+}

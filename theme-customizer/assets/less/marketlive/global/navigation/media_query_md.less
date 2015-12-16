@@ -1,0 +1,369 @@
+/*! media_query_md.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+.ml-mq-md-mixin-navigation (@a) when (@a = true), (@a = MD_screenWidth) {
+    .make-column(@num) {
+        .make-md-column(@num);
+    }
+
+    /*******************************************************************************************************************
+    * Header
+    *******************************************************************************************************************/
+    .ml-header-wrapper {
+        height: @ml-header-height-md;
+    }
+
+    .ml-header-content-wrapper {
+        .make-xs-column(12);
+        height: @ml-header-height-md;
+    }
+
+    .ml-header-wrapper.ml-header-toggle-search, .ml-header-content-wrapper.ml-header-toggle-search{
+        height: @ml-header-height-md;
+    }
+
+    .ml-header-logo-wrapper {
+        .ml-absolute-position(23px; auto; auto; 0); /* top, right, bottom, left */
+    }
+    .ml-header-search-wrapper {
+        width: 240px;
+        .ml-absolute-position(27px; auto; auto; 35%); /* top, right, bottom, left */
+    }
+
+    .ml-header-links-wrapper {
+        .ml-absolute-position(10px; 2px; auto; auto); /* top, right, bottom, left */
+    }
+
+    .ml-header-global-cart-wrapper {
+        .ml-absolute-position(auto; 2px; 15px; auto); /*  top, right, bottom, left */
+        background: inherit;
+        border: 0;
+        filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+        padding: 2px 0 5px 5px;
+    }
+
+    .ml-header-global-cart-label {
+        display: inline-block;
+	font-weight: bold;
+    }
+
+    .ml-header-shop {
+        display: none;
+    }
+
+    .ml-header-phone {
+        display: inline-block;
+    }
+
+    .ml-header-language, .ml-header-language-basic {
+        display: inline-block;
+    }
+
+    .ml-header-bf-ship-to  {
+        display: inline;
+    }
+
+    /** My Account pulldown page **/
+    .ml-myaccount-pulldown {
+        ul {
+            width: @ml-myaccount-pulldown-width;
+
+            li {
+                padding: 10px @ml-padding-default;
+
+                a {
+                    padding: 0px;
+                }
+
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+    /** End My Account pulldown page **/
+
+    /** Category Nav **/
+    .ml-navbar {
+        border-bottom: 1px solid @navbar-default-border;
+
+        .navbar-collapse {
+            padding: 0;
+
+            &.in {
+                overflow: visible;
+            }
+        }
+    }
+
+    .nav.navbar-nav.ml-navbar-nav {
+        font-size: @ml-navbar-font-size;
+
+        li {
+            border-bottom: 0px;
+
+            &:first-child {
+                border-top: 0px;
+            }
+
+            a {
+                padding-left: 0;
+                float: left;
+            }
+
+            &.ml-navbar-separator {
+                display: block;
+
+                &:after {
+                    margin: @ml-navbar-separator-vertical-padding @ml-navbar-separator-horizontal-padding;
+                }
+            }
+        }
+    }
+
+    .ml-navbar-secondary {
+        display: none;
+    }
+
+    header nav {
+        padding-bottom: 0px;
+    }
+
+    /** End Category Nav **/
+
+    /*******************************************************************************************************************
+    * Menu Nav (AKA DHTML Menus)
+    *******************************************************************************************************************/
+    .nav.navbar-nav.ml-navbar-nav.ml-navbar-menu {
+        li.ml-sibling-group-root {
+            a {
+                padding-left:0px;
+                float:none;
+            }
+        }
+
+        > li {
+            &:hover {
+                > .ml-category-nav-arrow {
+                    display:block;
+                }
+
+                > ul {
+                    top: @ml-navbar-menu-top-offset;
+                }
+            }
+
+            > ul {
+                max-width: (@ml-md-screen-width - @ml-grid-gutter-width);
+                display: block;
+            }
+
+            &.ml-sibling-group-root {
+                > ul {
+                    width: (@ml-md-screen-width - @ml-grid-gutter-width);
+                }
+            }
+        }
+    }
+
+    /*******************************************************************************************************************
+    * Lite Registration
+    *******************************************************************************************************************/
+    .ml-lite-registration-dialog {
+        width: @ml-lite-registration-dialog-width;
+    }
+
+    #mlLiteRegistrationDialog .modal-dialog {
+        width: @ml-lite-registration-dialog-width;
+    }
+
+    /*******************************************************************************************************************
+    * Footer
+    *******************************************************************************************************************/
+    .ml-footer-global-include {
+        .make-md-column(12);
+    }
+
+    .ml-footer-global-container {
+        display: block;
+    }
+    .ml-footer-signup-wrapper {
+        border-left: 1px solid @ml-footer-signup-wrapper-border-color;
+    }
+
+    .ml-footer {
+        font-size: @ml-footer-font-size;
+    }
+    .ml-footer-mini {
+        display: none;
+    }
+
+
+    .ml-footer-links-section-mini.ml-footer-mini-off{
+        display:none;
+    }
+    .ml-footer-links-section.ml-footer-mini-off{
+        display:block;
+    }
+    .ml-footer-links-section-mini.ml-footer-mini-on{
+        display:none;
+    }
+    .ml-footer-links-section.ml-footer-mini-on{
+        display:block;
+    }
+
+
+    .ml-footer-signup-wrapper {
+        .make-column(4);
+        .make-md-column-push(8);
+    }
+    .ml-footer-links-wrapper {
+        .make-column(8);
+        .make-md-column-pull(4);
+    }
+    .ml-footer-links-section {
+        .make-column(3);
+    }
+
+    /** configure with variables **/
+
+    .ml-footer-links a {
+        font-size: @ml-footer-font-size;
+        line-height: @ml-footer-links-line-height-md;
+    }
+    .ml-footer-links-wrapper {
+        padding-left: 0px;
+    }
+
+    /** footer bottom **/
+    .ml-footer-copyright {
+        .make-column(4);
+        .make-md-column-push(8);
+    }
+    .ml-footer-security {
+        .make-column(8);
+        .make-md-column-pull(4);
+    }
+    .ml-footer-copyright {
+        text-align: right;
+    }
+    .ml-footer-security {
+        padding-top: 0px;
+    }
+
+    /*******************************************************************************************************************
+    * Left Nav
+    *******************************************************************************************************************/
+    .ml-navleft-body {
+        .make-column(9);
+        padding: 0 0 0 @ml-home-page-padding-default;
+    }
+
+    .ml-navleft-bg {
+        background: @ml-navleft-background;
+    }
+
+    .ml-navleft-body .breadcrumb {
+        margin-bottom: @line-height-computed;
+    }
+
+    .ml-navleft, .ml-faceted-nav-container {
+        display: block;
+        color: @ml-navleft-text-color;
+        font-size: @ml-navleft-font-default;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .ml-leftNav-container {
+        .make-column(3);
+        padding-left: 0px;
+    }
+
+    /*******************************************************************************************************************
+    * Faceted Nav
+    *******************************************************************************************************************/
+    .ml-faceted-nav-left-control {
+        display: block;
+    }
+    #facetedNavContainer {
+	background: transparent;
+    }
+
+    /** start faceted nav **/
+    #facetedNavMqTest {
+        float: left;
+    }
+    .ml-facet-expand-target {
+        display: block;
+    }
+
+    .ml-faceted-nav-left {
+        &.ml-nav-facet-expanded {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .ml-header {
+            .ml-nav-facet-border-bottom;
+            border-top: 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+
+            .ml-toggle-selection, .ml-nav-facet-reset {
+                top: 2px;
+                font-size: @ml-font-size-nav-facet-icon;
+            }
+        }
+
+        .ml-refine-by {
+            .ml-nav-facet-border-bottom;
+	    padding: 0px;
+	    line-height: (@ml-spacer-default*2);
+	    margin-bottom: (@ml-spacer-default/3);
+        }
+
+        .ml-boolean-filter .ml-facet-value {
+            .ml-nav-facet-border-bottom;
+        }
+
+        .ml-boolean-filter {
+            margin-bottom: 20px;
+        }
+
+        .ml-scrollable-filter {
+            border-top: 0px;
+            border-right: 1px solid @ml-nav-facet-filter-border-color;
+            border-bottom: 1px solid @ml-nav-facet-filter-border-color;
+            border-left: 1px solid @ml-nav-facet-filter-border-color;
+        }
+
+        .ml-nav-facet-clear-link {
+            display: inline-block;
+        }
+
+        .ml-nav-facet-clearall {
+            font-size: @ml-font-size-nav-facet-header-clear;
+            right: 0px;
+	    margin-top: (@ml-spacer-default/5);
+        }
+    }
+
+    .ml-faceted-nav-container.ml-nav-facet-expanded {
+        z-index: auto;
+        background-color: transparent;
+        padding: 0px;
+        border: none;
+    }
+    .ml-facted-nav-send-buttons {
+        display: none;
+    }
+
+    .ml-nav-facet-plus, .ml-nav-facet-minus {
+        display: none;
+    }
+
+    .ml-nav-facet-expand-all-toggle-space {
+        display: none;
+    }
+    /** end faceted nav **/
+        }

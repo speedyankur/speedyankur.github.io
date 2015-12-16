@@ -1,0 +1,47 @@
+/*! root.less | (c) 2014 MarketLive, Inc. | All Rights Reserved */
+
+@import "essentials.less";
+@import "navigation/root.less";
+@import "../lite_registration/root.less";
+@import "base_templates.less";
+@import "ab_test.less";
+@import "tables.less";
+@import "social_login.less";
+@import "auto_complete.less";
+@import "thumbnail.less";
+@import "pricing.less";
+@import "rating.less";
+@import "swatches.less";
+@import "qve.less";
+@import "carousel.less";
+@import "error.less";
+
+/** Media Queries *****************************************************************************************************/
+@import "media_query_xs.less";
+@import "media_query_sm.less";
+@import "media_query_md.less";
+@import "media_query_lg.less";
+
+@media all {
+    .ml-mq-xs-mixin-global(@ml-default-screen-width);
+    .ml-mq-sm-mixin-global(@ml-default-screen-width);
+    .ml-mq-md-mixin-global(@ml-default-screen-width);
+    .ml-mq-lg-mixin-global(@ml-default-screen-width);
+}
+
+@media @ml-xs-media-query {
+    .ml-mq-xs-mixin-global(@ml-xs-screen-enabled);
+}
+
+@media @ml-sm-media-query {
+    .ml-mq-sm-mixin-global(@ml-sm-screen-enabled);
+}
+
+@media @ml-md-media-query {
+    .ml-mq-md-mixin-global(@ml-md-screen-enabled);
+}
+
+@media @ml-lg-media-query {
+    .ml-mq-lg-mixin-global(@ml-lg-screen-enabled);
+}
+/** Media Queries End *************************************************************************************************/
