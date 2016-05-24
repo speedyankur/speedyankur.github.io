@@ -1,0 +1,152 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 10px;
+}
+
+header .links {
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+.row:before{
+        display: table;
+}
+.row:after{
+    clear: both;   
+}
+
+.row{
+    
+}
+.row .col-4{
+    padding-right: 5px;
+    float: left;
+    width: 33.33%;    
+}
+.row .col-8{
+    float: left;
+    width: 66%;    
+}
+.row .col-6{
+    float: left;
+    width: 50%;
+}
+.media{
+    padding-top: 10px;
+    display: table;
+}
+.align-top{
+    vertical-align: top;
+}
+.align-bottom{
+    vertical-align: bottom;
+}
+button{width: 100%}
+.media > div{
+    display: table-cell;
+}
+select{
+        padding: 5px;
+    width: 100px;
+    height: 165px;
+}
+.btn-grp{
+    padding: 5px;
+}
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+/* Float the list items side by side */
+
+ul.tab li {
+    float: left;
+}
+
+
+/* Style the links inside the list items */
+
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+/* Change background color of links on hover */
+
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current tablink class */
+.red{
+    color: red;
+}
+ul.tab li a:focus,
+.active{
+    background-color: #ccc !important;
+}
+tr.active {
+    background-color: #5f5f5f !important;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #ccc;
+    color: white;
+}
+
+/* Style the tab content */
+
+.tabcontent {
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
