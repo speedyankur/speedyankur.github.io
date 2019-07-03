@@ -44,7 +44,7 @@ angular.module('main', ['n3-pie-chart','apojop'])
 
 
   }); 
-  $http.get('https://itunes.apple.com/us/rss/toppaidapplications/limit=100/json').
+  $http.get('https://rss.itunes.apple.com/api/v1/us/ios-apps/top-paid/all/100/explicit.json').
     success(function(data, status, headers, config) {
       for(var i=0;i<data.feed.entry.length;i++){
         var app = data.feed.entry[i];
